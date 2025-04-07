@@ -1,0 +1,70 @@
+{
+    "eslint.format.enable": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit",
+        "source.fixAll.stylelint": "explicit"
+    },
+    "[html]": {
+        "editor.formatOnSave": true,
+        "editor.rulers": [79, 120], 
+    },
+
+    "[vue-html]": {
+        "editor.formatOnSave": true,
+        "editor.rulers": [79, 120],
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "prettier.tabWidth": 4
+    },
+    "[css]": {
+        "editor.rulers": [50, 70],
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "prettier.tabWidth": 4
+    },
+    "[scss]": {
+        "editor.rulers": [50, 70],
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "prettier.tabWidth": 4
+    },
+    "[js]": {
+        "editor.formatOnSave": true,
+        "editor.rulers": [79, 120],
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "prettier.tabWidth": 4
+    },
+    "[javascript]": {
+        "editor.formatOnSave": true,
+        "editor.rulers": [79, 120],
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "prettier.tabWidth": 4
+    },
+    "[ts]": {
+        "editor.formatOnSave": true,
+        "editor.rulers": [79, 120],
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "prettier.tabWidth": 4
+    },
+    "[typescript]": {
+        "editor.formatOnSave": true,
+        "editor.rulers": [79, 120],
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "prettier.tabWidth": 4
+    },
+    "[vue]": {
+        "editor.formatOnSave": true,
+        "editor.rulers": [79, 120],
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "prettier.tabWidth": 4
+    },
+    "[json]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "prettier.tabWidth": 4
+    },
+    //stylelint
+    "css.validate": false,
+    "less.validate": false,
+    "scss.validate": false,
+    "prettier.singleQuote": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+}
+    
