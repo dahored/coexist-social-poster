@@ -13,6 +13,8 @@ class TwitterAPI:
         access_token = os.getenv("X_ACCESS_TOKEN")
         access_token_secret = os.getenv("X_ACCESS_TOKEN_SECRET")
 
+        self.allow_posting = os.getenv("X_ALLOW_POSTING", "false").lower() == "true"
+
         self.client = tweepy.Client(
             consumer_key=consumer_key, 
             consumer_secret=consumer_secret,
@@ -31,16 +33,16 @@ class TwitterAPI:
         media = self.api.media_upload(media_path)
         return media.media_id
 
-    def post_tweet(self, message, media_path=None, in_reply_to_tweet_id=None):
+    async def post_tweet(self, message, media_path=None, in_reply_to_tweet_id=None):
         """Publica un solo tweet con o sin imagen"""
         media_id = self.upload_media(media_path) if media_path else None
         return self.client.create_tweet(
-            text=message, 
-            media_ids=[media_id] if media_id else None, 
-            in_reply_to_tweet_id=in_reply_to_tweet_id
+            text = message, 
+            media_ids = [media_id] if media_id else None, 
+            in_reply_to_tweet_id = in_reply_to_tweet_id
         )
 
-    def post_thread(self, tweets):
+    async def post_thread(self, tweets):
         """Publica un hilo de tweets con imágenes opcionales"""
         if not tweets:
             print("El hilo está vacío.")
@@ -58,6 +60,8 @@ class TwitterAPI:
         
     async def update_status_to_post_json(self, post_id):
         """Actualiza el estado de un tweet a 'posted' en el JSON"""
+        print(f"Actualizando el estado del tweet con ID {post_id} a 'posted' en el JSON.")
+
         data = await self.json_handler.load_json()
         if not data:
             return
@@ -207,12 +211,20 @@ class TwitterAPI:
             first_tweet = (tweet_text, media_path)
             thread_list = self.get_thread_list(threads)
             threads_tweet = [first_tweet] + thread_list
-            # await self.post_thread(threads_tweet)  # Usa await si haces async post_thread()
+
+            if not self.allow_posting:
+                print("Publicación de hilo deshabilitada.")
+            else:
+                await self.post_thread(threads_tweet)  # Usa await si haces async post_thread()
         else:
             print("Publicando un tweet normal...")
-            # await self.post_tweet(tweet_text, media_path)
 
-        # await self.update_status_to_post_json(tweet_data["id"])
+            if not self.allow_posting:
+                print("Publicación de tweet deshabilitada.")
+            else:
+                await self.post_tweet(tweet_text, media_path)
+
+        await self.update_status_to_post_json(tweet_data["id"])
 
         print("Publicaciones en Twitter completadas.")
 

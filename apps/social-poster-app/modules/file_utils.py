@@ -1,10 +1,8 @@
 import os
 import shutil
-import aiohttp
 
 class FileHandler:
     def __init__(self):
-        print("FileHandler initialized")
         self.images_path = "../public/uploads/images"
         self.full_images_path = self.get_file_path(self.images_path)
         
