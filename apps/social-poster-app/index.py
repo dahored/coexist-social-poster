@@ -2,10 +2,10 @@ import asyncio
 from modules.twitter import TwitterAPI
 
 async def runPosts():
-    """Ejecuta las publicaciones en Twitter"""
+    """Executes posts on Twitter"""
     twitter_api = TwitterAPI()
-    await twitter_api.run_posts()  # ✅ Se usa await correctamente
+    await twitter_api.run_posts()  # ✅ Await is used correctly
 
-# Ejecutar si el script es ejecutado directamente
+# Run if the script is executed directly
 if __name__ == "__main__":
-    asyncio.run(runPosts())  # ✅ Se ejecuta correctamente en el event loop
+    asyncio.run(runPosts())  # ✅ Correctly executed within the event loop

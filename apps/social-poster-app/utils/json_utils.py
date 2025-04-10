@@ -9,7 +9,7 @@ class JSONHandler:
         self.json_path = json_path
 
     async def load_json(self):
-        """Carga el archivo JSON de manera asíncrona"""
+        """Asynchronously loads the JSON file"""
         if os.path.exists(self.json_path):
             async with aiofiles.open(self.json_path, "r", encoding="utf-8") as file:
                 content = await file.read()
@@ -17,6 +17,6 @@ class JSONHandler:
         return None
 
     async def save_json(self, data):
-        """Guarda el archivo JSON de manera asíncrona"""
+        """Asynchronously saves the JSON file"""
         async with aiofiles.open(self.json_path, "w", encoding="utf-8") as file:
             await file.write(json.dumps(data, indent=4, ensure_ascii=False))

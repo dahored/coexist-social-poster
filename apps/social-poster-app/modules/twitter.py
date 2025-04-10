@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 class TwitterAPI:
     def __init__(self):
-        """Carga credenciales desde .env e inicializa la API"""
+        """Loads credentials from .env and initializes the API"""
         load_dotenv()
         consumer_key = os.getenv("X_CONSUMER_KEY")
         consumer_secret = os.getenv("X_CONSUMER_SECRET")
@@ -29,23 +29,23 @@ class TwitterAPI:
         self.file_handler = FileHandler()
 
     def upload_media(self, media_path):
-        """Sube una imagen y devuelve su ID"""
+        """Uploads an image and returns its ID"""
         media = self.api.media_upload(media_path)
         return media.media_id
 
     async def post_tweet(self, message, media_path=None, in_reply_to_tweet_id=None):
-        """Publica un solo tweet con o sin imagen"""
+        """Posts a single tweet with or without an image"""
         media_id = self.upload_media(media_path) if media_path else None
         return self.client.create_tweet(
-            text = message, 
-            media_ids = [media_id] if media_id else None, 
-            in_reply_to_tweet_id = in_reply_to_tweet_id
+            text=message, 
+            media_ids=[media_id] if media_id else None, 
+            in_reply_to_tweet_id=in_reply_to_tweet_id
         )
 
     async def post_thread(self, tweets):
-        """Publica un hilo de tweets con imágenes opcionales"""
+        """Posts a thread of tweets with optional images"""
         if not tweets:
-            print("El hilo está vacío.")
+            print("The thread is empty.")
             return
         
         first_text, first_media = tweets[0]
@@ -56,11 +56,11 @@ class TwitterAPI:
             response = self.post_tweet(text, media, in_reply_to_tweet_id=tweet_id)
             tweet_id = response.data["id"]
         
-        print("Hilo publicado correctamente.")
+        print("Thread posted successfully.")
         
     async def update_status_to_post_json(self, post_id):
-        """Actualiza el estado de un tweet a 'posted' en el JSON"""
-        print(f"Actualizando el estado del tweet con ID {post_id} a 'posted' en el JSON.")
+        """Updates a tweet's status to 'posted' in the JSON"""
+        print(f"Updating status of tweet with ID {post_id} to 'posted' in JSON.")
 
         data = await self.json_handler.load_json()
         if not data:
@@ -69,12 +69,12 @@ class TwitterAPI:
         for post in data["posts"]:
             if post["id"] == post_id:
                 post["status"] = "posted"
-                break  # Terminar la búsqueda después de encontrar el tweet
+                break
 
-        await self.json_handler.save_json(data)  # Guardar cambios en el archivo JSON
+        await self.json_handler.save_json(data)
         
     async def update_media_path_in_json(self, post_id, media_path):
-        """Actualiza el campo media_path de un tweet en el JSON"""
+        """Updates the media_path of a tweet in the JSON"""
         data = await self.json_handler.load_json()
         if not data:
             return
@@ -82,37 +82,31 @@ class TwitterAPI:
         for post in data["posts"]:
             if post["id"] == post_id:
                 post["media_path"] = media_path
-                break  # Detener la búsqueda después de actualizar el tweet
+                break
 
-        await self.json_handler.save_json(data)  # Guardar los cambios en el JSON
+        await self.json_handler.save_json(data)
 
     async def save_tweet_data_to_json(self, tweet_data):
-        """Guarda los datos del tweet en la lista de 'posts' dentro del JSON de manera asíncrona."""
+        """Saves tweet data into the 'posts' list inside the JSON asynchronously."""
         if not tweet_data:
             return
         
-        # Cargar el JSON actual
         json_data = await self.json_handler.load_json()
 
-        # Asegurar que la clave 'posts' existe
         if "posts" not in json_data:
             json_data["posts"] = []
 
-        # Buscar si el tweet ya existe en la lista de 'posts' y actualizarlo
         for i, existing_tweet in enumerate(json_data["posts"]):
             if existing_tweet["id"] == tweet_data["id"]:
-                json_data["posts"][i] = tweet_data  # Actualizar tweet
+                json_data["posts"][i] = tweet_data
                 break
         else:
-            json_data["posts"].append(tweet_data)  # Si no existe, agregarlo
+            json_data["posts"].append(tweet_data)
         
-        # Guardar el JSON actualizado
         await self.json_handler.save_json(json_data)
 
-
-        
     async def get_tweet_to_post(self):
-        """Obtiene el primer tweet con status 'not_posted'"""
+        """Gets the first tweet with status 'not_posted'"""
         data = await self.json_handler.load_json()
         if not data:
             return None
@@ -130,32 +124,29 @@ class TwitterAPI:
                     "threads": post["threads"],
                 }
 
-        return None  # Si no hay tweets pendientes
-    
+        return None
+
     def get_thread_list(self, threads):
-        """Obtiene la lista de tweets de un hilo"""
+        """Gets the list of tweets in a thread"""
         thread_list = []
         for thread in threads:
             thread_list.append((thread["content"], thread["media_path"]))
         return thread_list
     
     async def preprocess_tweet_data(self, tweet_data):
-        """Preprocesa los datos del tweet y sus threads."""
+        """Preprocesses tweet data and its threads."""
         if not tweet_data:
             return None
 
-        # Función para procesar un solo tweet/thread
         async def process_single_tweet(data, base_id=None, thread_index=None):
-            """Procesa un tweet o thread individual."""
+            """Processes an individual tweet or thread."""
             if len(data["content"]) > 280:
-                print(f"El tweet con ID {data.get('id', 'desconocido')} excede el límite de 280 caracteres.")
+                print(f"Tweet with ID {data.get('id', 'unknown')} exceeds 280 characters.")
                 return None
 
-            # Asignar ID para los threads (ejemplo: 400001, 400002, etc.)
             if base_id is not None and thread_index is not None:
                 data["id"] = base_id * 100000 + (thread_index + 1)
 
-            # Procesar imagen si es necesario
             media_path = data.get("media_path")
             if media_path:
                 data["media_path"] = self.file_handler.get_media_path(media_path)
@@ -167,15 +158,13 @@ class TwitterAPI:
 
             return data
 
-        # Procesar el tweet principal
         tweet_data = await process_single_tweet(tweet_data)
         
         if tweet_data is None:
             return None
 
-        # Procesar threads si existen
         if "threads" in tweet_data:
-            base_id = tweet_data["id"]  # ID base del tweet principal
+            base_id = tweet_data["id"]
             processed_threads = []
 
             for index, thread in enumerate(tweet_data["threads"]):
@@ -187,44 +176,41 @@ class TwitterAPI:
 
         return tweet_data
 
-
     async def run_posts(self):
-        print("Publicando en Twitter...")
+        print("Posting to Twitter...")
 
-        tweet_data = await self.get_tweet_to_post()  # Espera el resultado
-        tweet_data = await self.preprocess_tweet_data(tweet_data)  # Ahora lo procesa
+        tweet_data = await self.get_tweet_to_post()
+        tweet_data = await self.preprocess_tweet_data(tweet_data)
         await self.save_tweet_data_to_json(tweet_data)
         print(tweet_data)
 
         if not tweet_data:
-            print("No hay tweets para publicar.")
+            print("No tweets to post.")
             return
 
-        # Obtener datos del tweet
         tweet_text = tweet_data.get("content")
         media_path = tweet_data.get("media_path")
         is_thread = tweet_data.get("is_thread")
         threads = tweet_data.get("threads")
 
         if is_thread:
-            print("Publicando un hilo...")
+            print("Posting a thread...")
             first_tweet = (tweet_text, media_path)
             thread_list = self.get_thread_list(threads)
             threads_tweet = [first_tweet] + thread_list
 
             if not self.allow_posting:
-                print("Publicación de hilo deshabilitada.")
+                print("Thread posting is disabled.")
             else:
-                await self.post_thread(threads_tweet)  # Usa await si haces async post_thread()
+                await self.post_thread(threads_tweet)
         else:
-            print("Publicando un tweet normal...")
+            print("Posting a single tweet...")
 
             if not self.allow_posting:
-                print("Publicación de tweet deshabilitada.")
+                print("Tweet posting is disabled.")
             else:
                 await self.post_tweet(tweet_text, media_path)
 
         await self.update_status_to_post_json(tweet_data["id"])
 
-        print("Publicaciones en Twitter completadas.")
-
+        print("Twitter posting completed.")

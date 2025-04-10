@@ -22,7 +22,7 @@
             "prompt_to_media": "",
             "media_path": null,
             "hashtags": [],
-            "status": "posted",
+            "status": "not_posted",
             "is_thread": false,
             "threads": []
         },
@@ -32,7 +32,7 @@
             "prompt_to_media": "generar imagen con fondo azul",
             "media_path": "/Users/daho/Documents/Projects/coexist-apps/apps/social-poster-app/modules/../public/uploads/images/image_file_tweet_3.png",
             "hashtags": [],
-            "status": "posted",
+            "status": "not_posted",
             "is_thread": false,
             "threads": []
         },
@@ -42,7 +42,7 @@
             "prompt_to_media": "",
             "media_path": "",
             "hashtags": [],
-            "status": "posted",
+            "status": "not_posted",
             "is_thread": true,
             "threads": [
                 {
