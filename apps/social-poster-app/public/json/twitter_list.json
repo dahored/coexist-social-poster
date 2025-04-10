@@ -42,7 +42,7 @@
             "prompt_to_media": "",
             "media_path": "",
             "hashtags": [],
-            "status": "not_posted",
+            "status": "posted",
             "is_thread": true,
             "threads": [
                 {
@@ -55,7 +55,7 @@
                 {
                     "content": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
                     "prompt_to_media": "generar imagen con fondo rojo",
-                    "media_path": "",
+                    "media_path": "/Users/daho/Documents/Projects/coexist-apps/apps/social-poster-app/utils/../public/uploads/images/image_file_tweet_400002.png",
                     "hashtags": [],
                     "id": 400002
                 }

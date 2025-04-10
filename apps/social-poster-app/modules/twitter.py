@@ -1,7 +1,7 @@
 import tweepy
 import os
-from .json_utils import JSONHandler
-from .file_utils import FileHandler
+from utils.json_utils import JSONHandler
+from utils.file_utils import FileHandler
 from dotenv import load_dotenv
 
 class TwitterAPI:
