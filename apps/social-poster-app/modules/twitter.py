@@ -47,15 +47,15 @@ class TwitterAPI:
         if not tweets:
             print("The thread is empty.")
             return
-        
+
         first_text, first_media = tweets[0]
-        first_tweet = self.post_tweet(first_text, first_media)
+        first_tweet = await self.post_tweet(first_text, first_media)
         tweet_id = first_tweet.data["id"]
 
         for text, media in tweets[1:]:
-            response = self.post_tweet(text, media, in_reply_to_tweet_id=tweet_id)
+            response = await self.post_tweet(text, media, in_reply_to_tweet_id=tweet_id)
             tweet_id = response.data["id"]
-        
+
         print("Thread posted successfully.")
         
     async def update_status_to_post_json(self, post_id):
@@ -211,6 +211,6 @@ class TwitterAPI:
             else:
                 await self.post_tweet(tweet_text, media_path)
 
-        await self.update_status_to_post_json(tweet_data["id"])
+        # await self.update_status_to_post_json(tweet_data["id"])
 
         print("Twitter posting completed.")

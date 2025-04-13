@@ -1,12 +1,11 @@
 import json
 import os
 import aiofiles
+from utils.path_utils import get_path_from_base
 
 class JSONHandler:
-    def __init__(self, json_path):
-        script_dir = os.path.dirname(os.path.abspath(__file__))
-        json_path = os.path.join(script_dir, json_path)  
-        self.json_path = json_path
+    def __init__(self, json_filename):
+        self.json_path = get_path_from_base("public", "json", json_filename)
 
     async def load_json(self):
         """Asynchronously loads the JSON file"""
