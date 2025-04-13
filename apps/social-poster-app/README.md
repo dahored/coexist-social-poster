@@ -32,6 +32,8 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 ```bash
 pip install -r requirements.txt
+or 
+pip install -r apps/social-poster-app/requirements.txt
 ```
 
 ## 🔐 Environment Configuration

@@ -29,10 +29,10 @@
         {
             "id": 3,
             "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
-            "prompt_to_media": "generar imagen con fondo azul",
-            "media_path": "/Users/daho/Documents/Projects/coexist-apps/apps/social-poster-app/public/uploads/images/image_file_tweet_3.png",
+            "prompt_to_media": "Design a single mystical, minimalist logo for *Coexistir*, a conscious digital platform about human connection and spiritual balance. Use a circular form to subtly suggest the letter 'C' without showing the word. Inside, blend abstract human shapes, natural elements (leaf, wave, sun, moon), sacred geometry like the triquetra, and a hidden or symbolic infinity symbol. The design should feel like a sacred vision — poetic, intelligent, and timeless. Use flat design, clean geometry, and tones like earth colors, cosmic blues, and golden light. No text. Only one logo in the image.",
+            "media_path": "/Users/daho/Documents/Projects/coexist-apps/apps/social-poster-app/public/uploads/images/image_file_3.png",
             "hashtags": [],
-            "status": "posted",
+            "status": "not_posted",
             "is_thread": false,
             "threads": []
         },
