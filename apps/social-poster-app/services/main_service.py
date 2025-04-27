@@ -11,7 +11,7 @@ class MainServiceHandler:
         if self.allow_openai_content_generation:
             prompt = await self.openai_service_handler.generate_prompt_image_from_idea(prompt)
 
-        self.allow_openai = os.getenv("ALLOW_OPENAI", "false").lower() == "true"
+        self.allow_openai = os.getenv("ALLOW_OPENAI_IMAGE_GENERATION", "false").lower() == "true"
         if self.allow_openai:
             return await self.openai_service_handler.generate_image_from_prompt(prompt, filename)
         

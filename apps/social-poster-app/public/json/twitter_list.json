@@ -7,13 +7,20 @@
             "id": 1,
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. \nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "prompt_to_media": "",
-            "media_path": "",
+            "media_path": "/Users/daho/Documents/Projects/coexist-apps/apps/social-poster-app/public/uploads/images/image_file_1.png",
             "hashtags": [
                 "#hashtag1",
                 "#hashtag2"
             ],
-            "status": "posted",
+            "metadata_to_media": {
+                "background": "",
+                "prompt_to_background": "",
+                "text": "Hello world, \nDuis aute irure dolor in reprehenderit in voluptate velit"
+            },
+            "status": "not_posted",
             "is_thread": false,
+            "theme": "dark",
+            "ai_content": true,
             "threads": []
         },
         {
@@ -24,7 +31,8 @@
             "hashtags": [],
             "status": "posted",
             "is_thread": false,
-            "threads": []
+            "threads": [],
+            "theme": "light"
         },
         {
             "id": 3,
@@ -32,30 +40,32 @@
             "prompt_to_media": "Design a single mystical, minimalist logo for *Coexistir*, a conscious digital platform about human connection and spiritual balance. Use a circular form to subtly suggest the letter 'C' without showing the word. Inside, blend abstract human shapes, natural elements (leaf, wave, sun, moon), sacred geometry like the triquetra, and a hidden or symbolic infinity symbol. The design should feel like a sacred vision — poetic, intelligent, and timeless. Use flat design, clean geometry, and tones like earth colors, cosmic blues, and golden light. No text. Only one logo in the image.",
             "media_path": "/Users/daho/Documents/Projects/coexist-apps/apps/social-poster-app/public/uploads/images/image_file_3.png",
             "hashtags": [],
-            "status": "not_posted",
+            "status": "posted",
             "is_thread": false,
-            "threads": []
+            "threads": [],
+            "theme": "dark"
         },
         {
             "id": 4,
             "content": "Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin.",
             "prompt_to_media": "generar imagen con fondo verde",
-            "media_path": "/Users/daho/Documents/Projects/coexist-apps/apps/social-poster-app/public/uploads/images/image_file_tweet_4.png",
+            "media_path": null,
             "hashtags": [],
-            "status": "not_posted",
+            "status": "posted",
             "is_thread": true,
+            "theme": "light",
             "threads": [
                 {
                     "content": "In hac habitasse platea dictumst. Maecenas adipiscing faucibus.",
                     "prompt_to_media": "generar imagen con fondo azul",
-                    "media_path": "/Users/daho/Documents/Projects/coexist-apps/apps/social-poster-app/public/uploads/images/image_file_tweet_400001.png",
+                    "media_path": null,
                     "hashtags": [],
                     "id": 400001
                 },
                 {
                     "content": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
                     "prompt_to_media": "generar imagen con fondo rojo",
-                    "media_path": "/Users/daho/Documents/Projects/coexist-apps/apps/social-poster-app/public/uploads/images/image_file_tweet_400002.png",
+                    "media_path": null,
                     "hashtags": [],
                     "id": 400002
                 }

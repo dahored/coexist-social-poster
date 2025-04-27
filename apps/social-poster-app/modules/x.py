@@ -4,7 +4,7 @@ from utils.json_utils import JSONHandler
 from utils.file_utils import FileHandler
 from dotenv import load_dotenv
 
-class TwitterAPI:
+class XAPI:
     def __init__(self):
         """Loads credentials from .env and initializes the API"""
         load_dotenv()
@@ -119,8 +119,11 @@ class TwitterAPI:
                     "prompt_to_media": post.get("prompt_to_media"),
                     "media_path": post["media_path"],
                     "hashtags": post["hashtags"],
+                    "metadata_to_media": post["metadata_to_media"],
                     "status": post["status"],
                     "is_thread": post["is_thread"],
+                    "theme": post["theme"],
+                    "ai_content": post["ai_content"],
                     "threads": post["threads"],
                 }
 
@@ -155,6 +158,14 @@ class TwitterAPI:
                 if file_data:
                     data["media_path"] = file_data.get("full_path")
                     await self.update_media_path_in_json(data["id"], file_data.get("relative_path"))
+            elif data.get("metadata_to_media"):
+                print(f"Generate imagen")
+                file_data = await self.file_handler.generate_image(data["metadata_to_media"], data["id"], data["theme"])
+                if file_data:
+                    data["media_path"] = file_data.get("full_path")
+                    await self.update_media_path_in_json(data["id"], file_data.get("relative_path"))
+            else:
+                print(f"Tweet with ID {data.get('id', 'unknown')} doesn´t have media")
 
             return data
 
@@ -177,7 +188,7 @@ class TwitterAPI:
         return tweet_data
 
     async def run_posts(self):
-        print("Posting to Twitter...")
+        print("Posting to X...")
 
         tweet_data = await self.get_tweet_to_post()
         tweet_data = await self.preprocess_tweet_data(tweet_data)
@@ -213,4 +224,4 @@ class TwitterAPI:
 
         # await self.update_status_to_post_json(tweet_data["id"])
 
-        print("Twitter posting completed.")
+        print("X posting completed.")
