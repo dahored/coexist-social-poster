@@ -2,6 +2,7 @@ import tweepy
 import os
 from utils.json_utils import JSONHandler
 from utils.file_utils import FileHandler
+from services.image_generator import ImageGeneratorHandler
 from dotenv import load_dotenv
 from fastapi import HTTPException
 
@@ -26,10 +27,11 @@ class XAPI:
         self.auth = tweepy.OAuth1UserHandler(consumer_key, consumer_secret, access_token, access_token_secret)
         self.api = tweepy.API(self.auth)
         
-        self.json_handler = JSONHandler(os.getenv("X_JSON_FILE"))
+        self.json_handler = JSONHandler(os.getenv("POSTS_JSON_FILE"))
         self.file_handler = FileHandler()
+        self.image_generator_handler = ImageGeneratorHandler()
 
-    def upload_media(self, media_path):
+    def upload_media_tweet(self, media_path):
         """Uploads an image and returns its ID"""
         media = self.api.media_upload(media_path)
         return media.media_id
@@ -39,7 +41,7 @@ class XAPI:
         if not self.allow_posting:
             raise HTTPException(status_code=403, detail="Posting is disabled by config.")
 
-        media_id = self.upload_media(media_path) if media_path else None
+        media_id = self.upload_media_tweet(media_path) if media_path else None
         result = self.client.create_tweet(
             text=message, 
             media_ids=[media_id] if media_id else None, 
@@ -185,14 +187,14 @@ class XAPI:
                     await self.update_media_path_in_json(data["id"], file_data.get("relative_path"))
 
             elif data.get("metadata_to_media"):
-                if data["metadata_to_media"].get("prompt_to_background"):
+                if data["metadata_to_media"].get("prompt_to_background") and not data["metadata_to_media"].get("background"):
                     file_data = await self.file_handler.generate_media_by_prompt(data["metadata_to_media"]["prompt_to_background"], data["id"], "background.png", "background")
                 
                     if file_data:
                         data["metadata_to_media"]["background"] = file_data.get("full_path")
                         await self.update_background_path_in_json(data["id"], file_data.get("relative_path"))
 
-                file_data = await self.file_handler.generate_image(data["metadata_to_media"], data["id"], data["theme"])
+                file_data = await self.image_generator_handler.generate_image(data["metadata_to_media"], data["id"], data["theme"])
                 if file_data:
                     data["media_path"] = file_data.get("full_path")
                     await self.update_media_path_in_json(data["id"], file_data.get("relative_path"))

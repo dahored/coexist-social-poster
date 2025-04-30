@@ -14,7 +14,7 @@
             ],
             "metadata_to_media": {
                 "background": "",
-                "prompt_to_background": "",
+                "prompt_to_background": "Generate a mountain landscape with a river and a sunset hyperrealistic image for a dark theme",
                 "text": "Hello world, \nDuis aute irure dolor in reprehenderit in voluptate velit"
             },
             "status": "not_posted",

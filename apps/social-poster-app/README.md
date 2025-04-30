@@ -56,7 +56,7 @@ X_ACCESS_TOKEN_SECRET=your_access_token_secret
 
 Other variables
 ```bash
-X_JSON_FILE=../data/twitter_posts.json
+POSTS_JSON_FILE=posts.json
 X_ALLOW_POSTING=true
 ```
 
