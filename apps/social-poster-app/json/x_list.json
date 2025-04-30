@@ -7,7 +7,7 @@
             "id": 1,
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. \nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "prompt_to_media": "",
-            "media_path": "/Users/daho/Documents/Projects/coexist-apps/apps/social-poster-app/public/uploads/images/image_file_1.png",
+            "media_path": "/app/public/uploads/images/image_file_1.png",
             "hashtags": [
                 "#hashtag1",
                 "#hashtag2"

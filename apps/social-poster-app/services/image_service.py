@@ -1,7 +1,7 @@
 import os
 from services.openai_service import OpenaiServiceHandler
 
-class MainServiceHandler:
+class ImageServiceHandler:
     def __init__(self):
         self.openai_service_handler = OpenaiServiceHandler()
 
@@ -15,7 +15,7 @@ class MainServiceHandler:
         if self.allow_openai:
             return await self.openai_service_handler.generate_image_from_prompt(prompt, filename)
         
-        print(f"[main_service] Service not configured. Skipping image generation for prompt: {prompt}")
+        print(f"[image_service] Service not configured. Skipping image generation for prompt: {prompt}")
         return ""
         
         

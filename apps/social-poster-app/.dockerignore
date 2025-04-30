@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.log
+.venv/
+venv/
+.env
+public/uploads/images/*
+public/uploads/temps/*
+.vscode/
+.idea/

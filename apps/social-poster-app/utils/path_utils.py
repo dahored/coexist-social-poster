@@ -1,11 +1,10 @@
 import os
-import sys
-
 
 def get_base_dir():
-    """Returns the base directory where the main script (index.py) is located."""
-    return os.path.dirname(os.path.abspath(sys.argv[0]))
-
+    """Returns the absolute path to the base of the project (where main.py or app root is)."""
+    # return os.path.dirname(os.path.abspath(sys.argv[0]))
+    # return os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+    return os.getcwd()
 
 def get_path_from_base(*path_segments):
     """

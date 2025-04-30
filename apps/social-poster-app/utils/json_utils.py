@@ -5,7 +5,8 @@ from utils.path_utils import get_path_from_base
 
 class JSONHandler:
     def __init__(self, json_filename):
-        self.json_path = get_path_from_base("public", "json", json_filename)
+        self.json_path = get_path_from_base("json", json_filename)
+        print(f"JSON path: {self.json_path}")
 
     async def load_json(self):
         """Asynchronously loads the JSON file"""

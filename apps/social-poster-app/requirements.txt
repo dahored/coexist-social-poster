@@ -4,3 +4,5 @@ aiofiles
 aiohttp
 openai
 Pillow
+fastapi
+uvicorn[standard]
