@@ -1,10 +1,10 @@
 import os
 
 def get_base_dir():
-    """Returns the absolute path to the base of the project (where main.py or app root is)."""
-    # return os.path.dirname(os.path.abspath(sys.argv[0]))
-    # return os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-    return os.getcwd()
+    base = os.getenv("PROJECT_ROOT", os.getcwd())
+    if not os.path.exists(base):
+        raise RuntimeError(f"Base directory does not exist: {base}")
+    return base
 
 def get_path_from_base(*path_segments):
     """

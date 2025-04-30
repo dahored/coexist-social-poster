@@ -22,7 +22,10 @@ class FileHandler:
             print(f"The file {temp_file_path} does not exist.")
             return None
 
+        print(f"Moving file {temp_file_path} to {self.images_path}")
         type_file = self.get_type_file(temp_file_path)
+        if not os.path.exists(self.images_path):
+            os.makedirs(self.images_path)
 
         if type_file in [".jpg", ".png", ".jpeg"]:
             new_filename = f"image_file_{id}{other_name}{type_file}"
