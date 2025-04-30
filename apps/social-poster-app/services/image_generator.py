@@ -148,7 +148,7 @@ class ImageGeneratorHandler:
         background = background.resize((width, height))
         canvas = Image.new('RGBA', (width, height))
         canvas.paste(background, (0, 0))
-        overlay_color = (0, 0, 0, 100) if theme == 'dark' else (255, 255, 255, 100)
+        overlay_color = (0, 0, 0, 150) if theme == 'dark' else (255, 255, 255, 100)
         overlay = Image.new('RGBA', (width, height), overlay_color)
         canvas = Image.alpha_composite(canvas, overlay)
         if theme == 'dark':
