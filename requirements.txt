@@ -6,3 +6,4 @@ openai
 Pillow
 fastapi
 uvicorn[standard]
+cloudinary

@@ -7,7 +7,8 @@
             "id": 1,
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. \nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "prompt_to_media": "",
-            "media_path": "/app/public/uploads/images/image_file_1.jpeg",
+            "media_path": "/app/public/uploads/images/image_file_4.png",
+            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1746170860/uploads/image_file_4.png",
             "hashtags": [
                 "#hashtag1",
                 "#hashtag2"
@@ -19,7 +20,7 @@
             },
             "is_processed": true,
             "x_status": "posted",
-            "ig_status": "not_posted",
+            "ig_status": "posted",
             "is_thread": false,
             "theme": "dark",
             "ai_content": true,
@@ -30,6 +31,7 @@
             "content": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. \n\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
             "prompt_to_media": "",
             "media_path": null,
+            "media_path_remote": null,
             "hashtags": [],
             "is_processed": true,
             "x_status": "posted",
@@ -43,6 +45,7 @@
             "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
             "prompt_to_media": "Design a single mystical, minimalist logo for *Coexistir*, a conscious digital platform about human connection and spiritual balance. Use a circular form to subtly suggest the letter 'C' without showing the word. Inside, blend abstract human shapes, natural elements (leaf, wave, sun, moon), sacred geometry like the triquetra, and a hidden or symbolic infinity symbol. The design should feel like a sacred vision — poetic, intelligent, and timeless. Use flat design, clean geometry, and tones like earth colors, cosmic blues, and golden light. No text. Only one logo in the image.",
             "media_path": "/app/public/uploads/images/image_file_3.png",
+            "media_path_remote": null,
             "hashtags": [],
             "is_processed": true,
             "x_status": "posted",
@@ -56,6 +59,7 @@
             "content": "Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin.",
             "prompt_to_media": "",
             "media_path": "/app/public/uploads/images/image_file_4.png",
+            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1746170860/uploads/image_file_4.png",
             "hashtags": [],
             "metadata_to_media": {
                 "background": "",
@@ -63,7 +67,7 @@
                 "text": "Hello world 0"
             },
             "is_processed": true,
-            "x_status": "not_posted",
+            "x_status": "posted",
             "ig_status": "posted",
             "is_thread": true,
             "theme": "light",
@@ -72,6 +76,7 @@
                     "content": "In hac habitasse platea dictumst. Maecenas adipiscing faucibus.",
                     "prompt_to_media": "Generate a river image",
                     "media_path": "/app/public/uploads/images/image_file_400001.png",
+                    "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1746173227/uploads/image_file_400001.png",
                     "hashtags": [],
                     "metadata_to_media": {
                         "background": "",
@@ -85,6 +90,7 @@
                     "content": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
                     "prompt_to_media": "",
                     "media_path": "/app/public/uploads/images/image_file_400002.png",
+                    "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1746173229/uploads/image_file_400002.png",
                     "metadata_to_media": {
                         "background": "",
                         "prompt_to_background": "generate a forest image",

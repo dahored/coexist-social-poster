@@ -1,14 +1,16 @@
 import os
+from fastapi import HTTPException
 from utils.json_utils import JSONHandler
 from utils.file_utils import FileHandler
 from services.image.image_service import ImageServiceHandler
-from fastapi import HTTPException
+from services.files.remote_upload_service import RemoteUploadService
 
 class PostService:
     def __init__(self):
         self.json_handler = JSONHandler(os.getenv("POSTS_JSON_FILE"))
         self.file_handler = FileHandler()
         self.image_service_handler = ImageServiceHandler()
+        self.upload_service = RemoteUploadService()
 
     async def get_next_post(self, status_key = "status", status_value = "not_posted"):
         data = await self.json_handler.load_json()
@@ -101,11 +103,19 @@ class PostService:
             if data.get("media_path"):
                 data["media_path"] = self.file_handler.get_media_path(data["media_path"])
 
+                if not data.get("media_path_remote"):
+                    remote_url = self.upload_service.upload_file(data["media_path"])
+                    data["media_path_remote"] = remote_url
+
             elif data.get("prompt_to_media"):
                 file_data = await self.image_service_handler.generate_media_by_prompt(data["prompt_to_media"], data["id"])
                 if file_data:
                     data["media_path"] = file_data["full_path"]
                     await self.update_post_media_path(data["id"], file_data["relative_path"])
+
+                    if not data.get("media_path_remote"):
+                        remote_url = self.upload_service.upload_file(data["media_path"])
+                        data["media_path_remote"] = remote_url
 
             elif data.get("metadata_to_media"):
                 if data["metadata_to_media"].get("prompt_to_background") and not data["metadata_to_media"].get("background"):
@@ -122,6 +132,10 @@ class PostService:
                 if img_file:
                     data["media_path"] = img_file["full_path"]
                     await self.update_post_media_path(data["id"], img_file["relative_path"])
+
+                    if not data.get("media_path_remote"):
+                        remote_url = self.upload_service.upload_file(data["media_path"])
+                        data["media_path_remote"] = remote_url
 
                 if data["metadata_to_media"].get("background"):
                     await self.delete_background_image(data["id"], data["metadata_to_media"]["background"])

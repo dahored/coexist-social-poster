@@ -32,6 +32,10 @@ class XAPI:
         self.json_handler = JSONHandler(os.getenv("POSTS_JSON_FILE"))
         self.post_service = PostService()
 
+    def get_rate_limit_status(self):
+        """Fetches and prints the rate limit status for posting tweets"""
+        return self.api.rate_limit_status()
+
     def upload_media_tweet(self, media_path):
         """Uploads a local image and returns its Twitter media ID."""
 
