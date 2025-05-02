@@ -2,8 +2,8 @@ import os
 import openai
 import aiohttp
 import uuid
-from utils.path_utils import get_path_from_base
 from dotenv import load_dotenv
+from config.image_config import TEMPS_DIR
 
 load_dotenv()
 
@@ -48,7 +48,7 @@ class OpenaiServiceHandler:
             print(f"[openai_service] Image URL received: {image_url}")
 
             # Download image
-            temps_path = get_path_from_base("public", "uploads", "temps")
+            temps_path = TEMPS_DIR
             os.makedirs(temps_path, exist_ok=True)
             if not filename:
                 filename = f"temp_{uuid.uuid4().hex}.png"

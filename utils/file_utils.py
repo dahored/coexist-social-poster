@@ -1,8 +1,7 @@
 import os
 import shutil
 
-from utils.path_utils import get_path_from_base
-from services.image_service import ImageServiceHandler
+from utils.base_utils import get_path_from_base
 
 from config.image_config import (
     IMAGES_DIR,
@@ -12,7 +11,6 @@ from config.image_config import (
 class FileHandler:
     def __init__(self):
         self.images_path = IMAGES_DIR
-        self.image_service_handler = ImageServiceHandler()
 
     def get_file_path(self, relative_path):
         return get_path_from_base(relative_path)
@@ -53,9 +51,4 @@ class FileHandler:
     def get_type_file(self, file_path):
         _, file_extension = os.path.splitext(file_path)
         return file_extension
-
-    async def generate_media_by_prompt(self, prompt, id, temp_file_name="temp.png", other_name=""):
-        print(f"Generating file from prompt: {prompt}")
-        temp_file_path = await self.image_service_handler.generate_image_from_prompt(prompt, temp_file_name)
-        return self.move_temp_file_to_folder(temp_file_path, id, other_name)
 

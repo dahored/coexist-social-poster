@@ -6,7 +6,6 @@ from dotenv import load_dotenv
 from services.post_service import PostService
 from utils.json_utils import JSONHandler
 from utils.file_utils import FileHandler
-from services.image_generator import ImageGeneratorHandler
 
 class XAPI:
     def __init__(self):
@@ -17,7 +16,7 @@ class XAPI:
         access_token = os.getenv("X_ACCESS_TOKEN")
         access_token_secret = os.getenv("X_ACCESS_TOKEN_SECRET")
 
-        self.allow_posting = os.getenv("X_ALLOW_POSTING", "false").lower() == "true"
+        self.allow_posting = os.getenv("ALLOW_POSTING", "false").lower() == "true"
 
         self.client = tweepy.Client(
             consumer_key=consumer_key, 
@@ -31,13 +30,30 @@ class XAPI:
 
         self.file_handler = FileHandler()
         self.json_handler = JSONHandler(os.getenv("POSTS_JSON_FILE"))
-        self.image_generator_handler = ImageGeneratorHandler()
         self.post_service = PostService()
 
     def upload_media_tweet(self, media_path):
-        """Uploads an image and returns its ID"""
-        media = self.api.media_upload(media_path)
-        return media.media_id
+        """Uploads a local image and returns its Twitter media ID."""
+
+        if not media_path:
+            raise ValueError("media_path cannot be empty")
+
+        # Check if file exists
+        if not os.path.isfile(media_path):
+            raise FileNotFoundError(f"Media file not found at path: {media_path}")
+
+        # Check valid file extension
+        valid_extensions = ['.jpg', '.jpeg', '.png', '.gif', '.mp4']
+        ext = os.path.splitext(media_path)[1].lower()
+        if ext not in valid_extensions:
+            raise ValueError(f"Unsupported media extension '{ext}'. Supported extensions: {valid_extensions}")
+
+        # Upload to Twitter
+        try:
+            media = self.api.media_upload(media_path)
+            return media.media_id
+        except Exception as e:
+            raise RuntimeError(f"Failed to upload media to Twitter: {e}")
 
     async def post_tweet(self, message, media_path=None, in_reply_to_tweet_id=None):
         """Posts a single tweet with or without an image"""
@@ -53,6 +69,7 @@ class XAPI:
         return {"message": "Tweet posted successfully", "tweet_id": result.data["id"]}
 
     async def post_thread(self, tweets):
+        print(f"Posting thread: {tweets}")
         """Posts a thread of tweets with optional images"""
         if not tweets:
             raise HTTPException(status_code=400, detail="The thread is empty.")
@@ -71,9 +88,11 @@ class XAPI:
         return {"message": "Thread posted successfully", "thread_root_id": first_response["tweet_id"]}
 
     def get_thread_list(self, threads):
+        """Converts a list of threads into a format suitable for posting"""
         return [(thread["content"], thread["media_path"]) for thread in threads]
 
     async def run_posts(self):
+        """Main function to run the posting process"""
         tweet_data = await self.post_service.get_next_post('x_status')
         if not tweet_data:
             raise HTTPException(status_code=404, detail="No tweets to post.")

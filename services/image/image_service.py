@@ -3,7 +3,6 @@ import random
 from PIL import Image, ImageDraw, ImageFont, ImageEnhance
 import uuid
 
-from utils.path_utils import get_path_from_base
 from config.image_config import (
     BACKGROUNDS_DIR,
     FONTS_DIR,
@@ -24,10 +23,12 @@ from config.image_config import (
     LOGOS_DIR
 )
 from utils.file_utils import FileHandler
+from services.ai.openai_service import OpenaiServiceHandler
 
-class ImageGeneratorHandler:
+class ImageServiceHandler:
     def __init__(self):
         self.file_handler = FileHandler()
+        self.openai_service_handler = OpenaiServiceHandler()
         
     def resolve_background_path(self, theme, data_background):
         if data_background:
@@ -180,3 +181,21 @@ class ImageGeneratorHandler:
 
         result = self.file_handler.move_temp_file_to_folder(temp_file_path, id)
         return result
+    
+    async def generate_media_by_prompt(self, prompt, id, temp_file_name="temp.png", other_name=""):
+        print(f"Generating file from prompt: {prompt}")
+        temp_file_path = await self.generate_image_from_prompt(prompt, temp_file_name)
+        return self.file_handler.move_temp_file_to_folder(temp_file_path, id, other_name)
+
+    async def generate_image_from_prompt(self, prompt, filename="temp.png"):
+
+        self.allow_openai_content_generation = os.getenv("ALLOW_OPENAI_CONTENT_GENERATION", "false").lower() == "true"
+        if self.allow_openai_content_generation:
+            prompt = await self.openai_service_handler.generate_prompt_image_from_idea(prompt)
+
+        self.allow_openai = os.getenv("ALLOW_OPENAI_IMAGE_GENERATION", "false").lower() == "true"
+        if self.allow_openai:
+            return await self.openai_service_handler.generate_image_from_prompt(prompt, filename)
+        
+        print(f"[image_service] Service not configured. Skipping image generation for prompt: {prompt}")
+        return ""

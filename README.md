@@ -57,7 +57,7 @@ X_ACCESS_TOKEN_SECRET=your_access_token_secret
 Other variables
 ```bash
 POSTS_JSON_FILE=posts.json
-X_ALLOW_POSTING=true
+ALLOW_POSTING=true
 ```
 
 

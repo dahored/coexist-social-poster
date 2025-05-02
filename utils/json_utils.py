@@ -1,7 +1,7 @@
 import json
 import os
 import aiofiles
-from utils.path_utils import get_path_from_base
+from utils.base_utils import get_path_from_base
 
 class JSONHandler:
     def __init__(self, json_filename):

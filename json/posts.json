@@ -7,7 +7,7 @@
             "id": 1,
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. \nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "prompt_to_media": "",
-            "media_path": "/app/public/uploads/images/image_file_1.png",
+            "media_path": "/app/public/uploads/images/image_file_1.jpeg",
             "hashtags": [
                 "#hashtag1",
                 "#hashtag2"
@@ -18,7 +18,8 @@
                 "text": "Hello world, \nDuis aute irure dolor in reprehenderit in voluptate velit"
             },
             "is_processed": true,
-            "x_status": "not_posted",
+            "x_status": "posted",
+            "ig_status": "not_posted",
             "is_thread": false,
             "theme": "dark",
             "ai_content": true,
@@ -32,6 +33,7 @@
             "hashtags": [],
             "is_processed": true,
             "x_status": "posted",
+            "ig_status": "posted",
             "is_thread": false,
             "threads": [],
             "theme": "light"
@@ -44,6 +46,7 @@
             "hashtags": [],
             "is_processed": true,
             "x_status": "posted",
+            "ig_status": "posted",
             "is_thread": false,
             "threads": [],
             "theme": "dark"
@@ -60,31 +63,34 @@
                 "text": "Hello world 0"
             },
             "is_processed": true,
-            "x_status": "posted",
+            "x_status": "not_posted",
+            "ig_status": "posted",
             "is_thread": true,
             "theme": "light",
             "threads": [
                 {
                     "content": "In hac habitasse platea dictumst. Maecenas adipiscing faucibus.",
                     "prompt_to_media": "Generate a river image",
-                    "media_path": null,
+                    "media_path": "/app/public/uploads/images/image_file_400001.png",
                     "hashtags": [],
                     "metadata_to_media": {
                         "background": "",
                         "prompt_to_background": "",
                         "text": "Hello world 1"
                     },
+                    "theme": "light",
                     "id": 400001
                 },
                 {
                     "content": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
                     "prompt_to_media": "",
+                    "media_path": "/app/public/uploads/images/image_file_400002.png",
                     "metadata_to_media": {
                         "background": "",
-                        "prompt_to_background": "",
+                        "prompt_to_background": "generate a forest image",
                         "text": "Hello world 2"
                     },
-                    "media_path": null,
+                    "theme": "dark",
                     "hashtags": [],
                     "id": 400002
                 }

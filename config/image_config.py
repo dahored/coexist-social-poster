@@ -1,7 +1,8 @@
 import os
-from utils.path_utils import get_path_from_base
+from utils.base_utils import get_path_from_base
 
 # Base directories
+BASE_PUBLIC = get_path_from_base("public")
 BASE_UPLOADS_DIR = get_path_from_base("public", "uploads")
 BASE_ASSETS_DIR = get_path_from_base("assets")
 
