@@ -12,7 +12,7 @@ from utils.path_utils import get_public_image_url
 class InstagramAPI:
     def __init__(self):
         load_dotenv()
-        self.api_url = os.getenv("INSTAGRAM_API")
+        self.api_url = os.getenv("INSTAGRAM_API", "https://graph.instagram.com/v21.0")
         self.access_token = os.getenv("IG_ACCESS_TOKEN").strip()
         self.instagram_account_id = os.getenv("IG_ACCOUNT_ID")
         self.allow_posting = os.getenv("ALLOW_POSTING", "false").lower() == "true"
@@ -22,7 +22,6 @@ class InstagramAPI:
         self.post_service = PostService()
 
     async def get_user_data(self):
-        print(f"Loaded token: {self.access_token}")
         url = f'{self.api_url}/{self.instagram_account_id}?fields=username&access_token={self.access_token}'
         response = requests.get(url)
         return response.json()

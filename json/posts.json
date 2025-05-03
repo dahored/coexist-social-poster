@@ -7,8 +7,8 @@
             "id": 1,
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. \nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "prompt_to_media": "",
-            "media_path": "/app/public/uploads/images/image_file_4.png",
-            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1746170860/uploads/image_file_4.png",
+            "media_path": "",
+            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1746173229/uploads/image_file_400002.png",
             "hashtags": [
                 "#hashtag1",
                 "#hashtag2"
@@ -21,6 +21,7 @@
             "is_processed": true,
             "x_status": "posted",
             "ig_status": "posted",
+            "fb_status": "posted",
             "is_thread": false,
             "theme": "dark",
             "ai_content": true,
@@ -36,6 +37,7 @@
             "is_processed": true,
             "x_status": "posted",
             "ig_status": "posted",
+            "fb_status": "posted",
             "is_thread": false,
             "threads": [],
             "theme": "light"
@@ -50,6 +52,7 @@
             "is_processed": true,
             "x_status": "posted",
             "ig_status": "posted",
+            "fb_status": "posted",
             "is_thread": false,
             "threads": [],
             "theme": "dark"
@@ -69,6 +72,7 @@
             "is_processed": true,
             "x_status": "posted",
             "ig_status": "posted",
+            "fb_status": "posted",
             "is_thread": true,
             "theme": "light",
             "threads": [

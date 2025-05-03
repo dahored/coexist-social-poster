@@ -37,10 +37,14 @@ class XAPI:
         return self.api.rate_limit_status()
 
     def upload_media_tweet(self, media_path):
-        """Uploads a local image and returns its Twitter media ID."""
+        """Uploads a local or remote image and returns its Twitter media ID."""
 
         if not media_path:
             raise ValueError("media_path cannot be empty")
+
+        # Si es una URL (http o https), descargarla primero
+        if media_path.startswith("http://") or media_path.startswith("https://"):
+            media_path = self.file_handler.download_media_to_temp(media_path)
 
         # Check if file exists
         if not os.path.isfile(media_path):
@@ -64,13 +68,23 @@ class XAPI:
         if not self.allow_posting:
             raise HTTPException(status_code=403, detail="Posting is disabled by config.")
 
-        media_id = self.upload_media_tweet(media_path) if media_path else None
-        result = self.client.create_tweet(
-            text=message, 
-            media_ids=[media_id] if media_id else None, 
-            in_reply_to_tweet_id=in_reply_to_tweet_id
-        )
-        return {"message": "Tweet posted successfully", "tweet_id": result.data["id"]}
+        try:
+            print(f"Posting tweet: {message} with media: {media_path}")
+            media_id = self.upload_media_tweet(media_path) if media_path else None
+            result = self.client.create_tweet(
+                text=message, 
+                media_ids=[media_id] if media_id else None, 
+                in_reply_to_tweet_id=in_reply_to_tweet_id
+            )
+            return {"message": "Tweet posted successfully", "tweet_id": result.data["id"]}
+        finally:
+            # Clean up temporary files from /tmp/
+            if media_path and media_path.startswith("/tmp/"):
+                try:
+                    os.remove(media_path)
+                    print(f"Deleted temporary file: {media_path}")
+                except Exception as e:
+                    print(f"Warning: Failed to delete {media_path}: {e}")
 
     async def post_thread(self, tweets):
         print(f"Posting thread: {tweets}")
@@ -102,10 +116,9 @@ class XAPI:
             raise HTTPException(status_code=404, detail="No tweets to post.")
 
         tweet_text = tweet_data.get("content")
-        media_path = tweet_data.get("media_path")
+        media_path = tweet_data.get("media_path_remote") or tweet_data.get("media_path")
         is_thread = tweet_data.get("is_thread")
         threads = tweet_data.get("threads")
-        
 
         if is_thread:
             first_tweet = (tweet_text, media_path)

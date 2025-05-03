@@ -1,5 +1,6 @@
 import os
 import shutil
+import requests
 
 from utils.base_utils import get_path_from_base
 
@@ -51,4 +52,18 @@ class FileHandler:
     def get_type_file(self, file_path):
         _, file_extension = os.path.splitext(file_path)
         return file_extension
+    
+    def download_media_to_temp(self, url, temp_dir='/tmp'):
+        """Descarga una imagen de Cloudinary y guarda un archivo temporal"""
+        response = requests.get(url, stream=True)
+        if response.status_code != 200:
+            raise RuntimeError(f"Failed to download media from {url}")
+
+        filename = os.path.join(temp_dir, os.path.basename(url))
+        with open(filename, 'wb') as f:
+            for chunk in response.iter_content(1024):
+                f.write(chunk)
+
+        return filename
+
 
