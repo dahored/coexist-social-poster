@@ -1,11 +1,37 @@
 {
-    "name": "Twitter List",
-    "description": "A list of Twitter posts to be shared",
-    "topic": "Social Media",
+    "name": "Post List",
+    "description": "A list of posts to be shared",
+    "date": "2025-05-04",
+    "options": {
+        "topics": [],
+        "squema": {},
+        "main_prompt": "",
+        "limits": {
+            "content": {
+                "x": {
+                    "max_length": 280,
+                    "max_hashtags": 4
+                },
+                "ig": {
+                    "max_length": 2200,
+                    "max_hashtags": 30
+                },
+                "fb": {
+                    "max_length": 63206,
+                    "max_hashtags": 30
+                }
+            },
+            "media": {
+                "max_files": 10
+            }
+        }
+    },
     "posts": [
         {
             "id": 1,
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. \nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "x_content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. \nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "ig_content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. \nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "fb_content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. \nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "prompt_to_media": "",
             "media_path": "",
             "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1746173229/uploads/image_file_400002.png",
@@ -18,6 +44,24 @@
                 "prompt_to_background": "",
                 "text": "Hello world, \nDuis aute irure dolor in reprehenderit in voluptate velit"
             },
+            "x_links": [
+                {
+                    "url": "https://example.com",
+                    "description": "Example link"
+                }
+            ],
+            "ig_links": [
+                {
+                    "url": "https://example.com",
+                    "description": "Example link"
+                }
+            ],
+            "fb_links": [
+                {
+                    "url": "https://example.com",
+                    "description": "Example link"
+                }
+            ],
             "is_processed": true,
             "x_status": "posted",
             "ig_status": "posted",
@@ -29,11 +73,14 @@
         },
         {
             "id": 2,
-            "content": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. \n\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "x_content": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. \n\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "ig_content": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. \n\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "fb_content": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. \n\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
             "prompt_to_media": "",
             "media_path": null,
             "media_path_remote": null,
             "hashtags": [],
+            "links": [],
             "is_processed": true,
             "x_status": "posted",
             "ig_status": "posted",
@@ -44,11 +91,16 @@
         },
         {
             "id": 3,
-            "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+            "x_content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+            "ig_content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+            "fb_content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
             "prompt_to_media": "Design a single mystical, minimalist logo for *Coexistir*, a conscious digital platform about human connection and spiritual balance. Use a circular form to subtly suggest the letter 'C' without showing the word. Inside, blend abstract human shapes, natural elements (leaf, wave, sun, moon), sacred geometry like the triquetra, and a hidden or symbolic infinity symbol. The design should feel like a sacred vision — poetic, intelligent, and timeless. Use flat design, clean geometry, and tones like earth colors, cosmic blues, and golden light. No text. Only one logo in the image.",
             "media_path": "/app/public/uploads/images/image_file_3.png",
             "media_path_remote": null,
             "hashtags": [],
+            "x_links": [],
+            "ig_links": [],
+            "fb_links": [],
             "is_processed": true,
             "x_status": "posted",
             "ig_status": "posted",
@@ -59,11 +111,31 @@
         },
         {
             "id": 4,
-            "content": "Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin.",
+            "x_content": "Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin.",
+            "ig_content": "Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin.",
+            "fb_content": "Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin.",
             "prompt_to_media": "",
             "media_path": "/app/public/uploads/images/image_file_4.png",
             "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1746170860/uploads/image_file_4.png",
             "hashtags": [],
+            "x_links": [
+                {
+                    "url": "https://example.com",
+                    "description": "Example link 2"
+                }
+            ],
+            "ig_links": [
+                {
+                    "url": "https://example.com",
+                    "description": "Example link 2"
+                }
+            ],
+            "fb_links": [
+                {
+                    "url": "https://example.com",
+                    "description": "Example link 2"
+                }
+            ],
             "metadata_to_media": {
                 "background": "",
                 "prompt_to_background": "",
@@ -77,11 +149,31 @@
             "theme": "light",
             "threads": [
                 {
-                    "content": "In hac habitasse platea dictumst. Maecenas adipiscing faucibus.",
+                    "x_content": "In hac habitasse platea dictumst. Maecenas adipiscing faucibus.",
+                    "ig_content": "In hac habitasse platea dictumst. Maecenas adipiscing faucibus.",
+                    "fb_content": "In hac habitasse platea dictumst. Maecenas adipiscing faucibus.",
                     "prompt_to_media": "Generate a river image",
                     "media_path": "/app/public/uploads/images/image_file_400001.png",
                     "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1746173227/uploads/image_file_400001.png",
                     "hashtags": [],
+                    "x_links": [
+                        {
+                            "url": "https://example.com",
+                            "description": "Example link 1"
+                        }
+                    ],
+                    "ig_links": [
+                        {
+                            "url": "https://example.com",
+                            "description": "Example link 1"
+                        }
+                    ],
+                    "fb_links": [
+                        {
+                            "url": "https://example.com",
+                            "description": "Example link 1"
+                        }
+                    ],
                     "metadata_to_media": {
                         "background": "",
                         "prompt_to_background": "",
@@ -91,7 +183,9 @@
                     "id": 400001
                 },
                 {
-                    "content": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                    "x_content": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                    "ig_content": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                    "fb_content": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
                     "prompt_to_media": "",
                     "media_path": "/app/public/uploads/images/image_file_400002.png",
                     "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1746173229/uploads/image_file_400002.png",
@@ -102,6 +196,24 @@
                     },
                     "theme": "dark",
                     "hashtags": [],
+                    "x_links": [
+                        {
+                            "url": "https://example.com",
+                            "description": "Example link"
+                        }
+                    ],
+                    "ig_links": [
+                        {
+                            "url": "https://example.com",
+                            "description": "Example link"
+                        }
+                    ],
+                    "fb_links": [
+                        {
+                            "url": "https://example.com",
+                            "description": "Example link"
+                        }
+                    ],
                     "id": 400002
                 }
             ]

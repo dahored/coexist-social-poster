@@ -8,6 +8,7 @@ from utils.json_utils import JSONHandler
 from utils.file_utils import FileHandler
 from utils.path_utils import get_public_image_url
 
+KEY_CONTENT = "fb_content"
 
 class FacebookAPI:
     def __init__(self):
@@ -30,7 +31,7 @@ class FacebookAPI:
             raise HTTPException(status_code=response.status_code, detail=f"Error fetching user data: {data}")
 
         return data
-    
+
     async def get_page_access_token(self):
         url = f"{self.api_url}/me/accounts?access_token={self.access_token}"
         response = requests.get(url)
@@ -47,8 +48,6 @@ class FacebookAPI:
         return data.get("data", [])
 
     async def post_photo(self, message, media_path):
-        """Posts a single photo to Facebook Page"""
-
         if not self.allow_posting:
             raise HTTPException(status_code=403, detail="Posting is disabled by configuration.")
 
@@ -72,19 +71,13 @@ class FacebookAPI:
             raise HTTPException(status_code=500, detail=f"Error posting photo: {data}")
 
         photo_id = data['id']
-        post_id = data.get('post_id')  # Safe: might be missing
+        post_id = data.get('post_id')
 
         print(f"✅ Photo posted successfully: photo_id={photo_id}, post_id={post_id}")
 
-        return {
-            "message": "Facebook photo posted successfully",
-            "photo_id": photo_id,
-            "post_id": post_id
-        }
+        return {"message": "Facebook photo posted successfully", "photo_id": photo_id, "post_id": post_id}
 
     async def post_album(self, message, media_paths):
-        """Posts an album (multiple photos) to Facebook Page"""
-
         if not self.allow_posting:
             raise HTTPException(status_code=403, detail="Posting is disabled by configuration.")
 
@@ -101,7 +94,7 @@ class FacebookAPI:
             post_url = f"{self.api_url}/{self.page_id}/photos"
             payload = {
                 "url": image_url,
-                "published": False,  # Upload without publishing immediately
+                "published": False,
                 "access_token": self.access_token
             }
 
@@ -118,7 +111,6 @@ class FacebookAPI:
         if not children_ids:
             raise HTTPException(status_code=500, detail="No valid album items created")
 
-        # Step 2: Create album (as a post)
         album_url = f"{self.api_url}/{self.page_id}/feed"
         payload = {
             "message": message,
@@ -135,12 +127,24 @@ class FacebookAPI:
         print(f"✅ Album posted successfully: {data['id']}")
         return {"message": "Facebook album posted successfully", "post_id": data["id"]}
 
-    def combine_captions(self, main_caption, threads):
+    def combine_captions(self, main_caption, threads, links=None):
         captions = [main_caption.strip()] if main_caption else []
+
         for t in threads:
-            thread_caption = t.get("content", "").strip()
+            thread_caption = t.get(KEY_CONTENT, "").strip()
+            thread_links = t.get("fb_links", [])
+
             if thread_caption:
                 captions.append(thread_caption)
+
+            if thread_links:
+                links_block = "\n".join(f"{link['description']}: {link['url']}" for link in thread_links)
+                captions.append(links_block)
+
+        if links:
+            root_links_block = "\n".join(f"{link['description']}: {link['url']}" for link in links)
+            captions.append(root_links_block)
+
         return "\n\n".join(captions)
 
     async def run_posts(self):
@@ -151,10 +155,11 @@ class FacebookAPI:
         if not post_data:
             raise HTTPException(status_code=404, detail="No Facebook posts found to publish.")
 
-        caption = post_data.get("content")
+        caption = post_data.get(KEY_CONTENT)
         media_path = post_data.get("media_path_remote") or post_data.get("media_path")
         is_album = post_data.get("is_thread")
         threads = post_data.get("threads")
+        links = post_data.get("fb_links", [])
 
         if is_album:
             thread_media_paths = [
@@ -163,10 +168,11 @@ class FacebookAPI:
                 if t.get("media_path_remote") or t.get("media_path")
             ]
             media_paths = [media_path] + thread_media_paths
-            combined_caption = self.combine_captions(caption, threads)
+            combined_caption = self.combine_captions(caption, threads, links)
             result = await self.post_album(combined_caption, media_paths)
         else:
-            result = await self.post_photo(caption, media_path)
+            combined_caption = self.combine_captions(caption, [], links)
+            result = await self.post_photo(combined_caption, media_path)
 
         await self.post_service.update_post_status(post_data["id"], status_key="fb_status")
         return result

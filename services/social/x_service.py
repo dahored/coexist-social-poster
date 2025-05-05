@@ -7,9 +7,10 @@ from services.post_service import PostService
 from utils.json_utils import JSONHandler
 from utils.file_utils import FileHandler
 
+KEY_CONTENT = "x_content"
+
 class XAPI:
     def __init__(self):
-        """Loads credentials from .env and initializes the API"""
         load_dotenv()
         consumer_key = os.getenv("X_CONSUMER_KEY")
         consumer_secret = os.getenv("X_CONSUMER_SECRET")
@@ -32,31 +33,39 @@ class XAPI:
         self.json_handler = JSONHandler(os.getenv("POSTS_JSON_FILE"))
         self.post_service = PostService()
 
-    def get_rate_limit_status(self):
-        """Fetches and prints the rate limit status for posting tweets"""
-        return self.api.rate_limit_status()
+    def combine_caption(self, caption, links=None):
+        """Combines the caption with links for a single tweet."""
+        parts = [caption.strip()] if caption else []
+        if links:
+            links_block = "\n".join(f"{link['description']}: {link['url']}" for link in links)
+            parts.append(links_block)
+        return "\n".join(parts)
+
+    def get_thread_list(self, threads):
+        """Builds list of (caption, media) tuples for each thread tweet."""
+        return [
+            (
+                self.combine_caption(thread[KEY_CONTENT], thread.get("x_links", [])),
+                thread.get("media_path_remote") or thread.get("media_path")
+            )
+            for thread in threads
+        ]
 
     def upload_media_tweet(self, media_path):
-        """Uploads a local or remote image and returns its Twitter media ID."""
-
         if not media_path:
             raise ValueError("media_path cannot be empty")
 
-        # Si es una URL (http o https), descargarla primero
         if media_path.startswith("http://") or media_path.startswith("https://"):
             media_path = self.file_handler.download_media_to_temp(media_path)
 
-        # Check if file exists
         if not os.path.isfile(media_path):
             raise FileNotFoundError(f"Media file not found at path: {media_path}")
 
-        # Check valid file extension
         valid_extensions = ['.jpg', '.jpeg', '.png', '.gif', '.mp4']
         ext = os.path.splitext(media_path)[1].lower()
         if ext not in valid_extensions:
-            raise ValueError(f"Unsupported media extension '{ext}'. Supported extensions: {valid_extensions}")
+            raise ValueError(f"Unsupported media extension '{ext}'. Supported: {valid_extensions}")
 
-        # Upload to Twitter
         try:
             media = self.api.media_upload(media_path)
             return media.media_id
@@ -64,7 +73,6 @@ class XAPI:
             raise RuntimeError(f"Failed to upload media to Twitter: {e}")
 
     async def post_tweet(self, message, media_path=None, in_reply_to_tweet_id=None):
-        """Posts a single tweet with or without an image"""
         if not self.allow_posting:
             raise HTTPException(status_code=403, detail="Posting is disabled by config.")
 
@@ -78,17 +86,14 @@ class XAPI:
             )
             return {"message": "Tweet posted successfully", "tweet_id": result.data["id"]}
         finally:
-            # Clean up temporary files from /tmp/
             if media_path and media_path.startswith("/tmp/"):
                 try:
                     os.remove(media_path)
-                    print(f"Deleted temporary file: {media_path}")
+                    print(f"Deleted temp file: {media_path}")
                 except Exception as e:
                     print(f"Warning: Failed to delete {media_path}: {e}")
 
     async def post_thread(self, tweets):
-        print(f"Posting thread: {tweets}")
-        """Posts a thread of tweets with optional images"""
         if not tweets:
             raise HTTPException(status_code=400, detail="The thread is empty.")
 
@@ -105,28 +110,26 @@ class XAPI:
 
         return {"message": "Thread posted successfully", "thread_root_id": first_response["tweet_id"]}
 
-    def get_thread_list(self, threads):
-        """Converts a list of threads into a format suitable for posting"""
-        return [(thread["content"], thread["media_path"]) for thread in threads]
-
     async def run_posts(self):
-        """Main function to run the posting process"""
         tweet_data = await self.post_service.get_next_post('x_status')
         if not tweet_data:
             raise HTTPException(status_code=404, detail="No tweets to post.")
 
-        tweet_text = tweet_data.get("content")
+        tweet_text = tweet_data.get(KEY_CONTENT)
         media_path = tweet_data.get("media_path_remote") or tweet_data.get("media_path")
         is_thread = tweet_data.get("is_thread")
         threads = tweet_data.get("threads")
+        links = tweet_data.get("x_links", [])
 
         if is_thread:
-            first_tweet = (tweet_text, media_path)
+            first_caption = self.combine_caption(tweet_text, links)
+            first_tweet = (first_caption, media_path)
             thread_list = self.get_thread_list(threads)
-            threads_tweet = [first_tweet] + thread_list
-            result = await self.post_thread(threads_tweet)
+            tweets = [first_tweet] + thread_list
+            result = await self.post_thread(tweets)
         else:
-            result = await self.post_tweet(tweet_text, media_path)
+            combined_caption = self.combine_caption(tweet_text, links)
+            result = await self.post_tweet(combined_caption, media_path)
 
         await self.post_service.update_post_status(tweet_data["id"], status_key="x_status")
         return result
