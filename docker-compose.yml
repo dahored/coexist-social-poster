@@ -12,3 +12,10 @@ services:
       - ./public/uploads:/app/public/uploads
       - ./json:/app/json
     command: uvicorn main:app --host 0.0.0.0 --port 8000
+
+  scheduler:
+    build:
+      context: ./scheduler-folder  # carpeta donde tienes scheduler.py y su Dockerfile
+    container_name: coexist-scheduler
+    depends_on:
+      - app

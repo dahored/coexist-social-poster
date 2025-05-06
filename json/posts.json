@@ -2,7 +2,6 @@
     "name": "Post List",
     "description": "A list of posts to be shared",
     "created_date": "2025-05-05",
-
     "posts": [
         {
             "id": 10,
@@ -13,7 +12,11 @@
             "prompt_to_media": "Imagen de un caminante al borde de un sendero que se bifurca hacia el horizonte",
             "media_path": "",
             "media_path_remote": "",
-            "hashtags": ["#destino", "#elección", "#libertad"],
+            "hashtags": [
+                "#destino",
+                "#elección",
+                "#libertad"
+            ],
             "metadata_to_media": {
                 "background": "",
                 "prompt_to_background": "",
@@ -22,7 +25,7 @@
             "x_links": [],
             "ig_links": [],
             "fb_links": [],
-            "is_processed": false,
+            "is_processed": true,
             "x_status": "not_posted",
             "ig_status": "not_posted",
             "fb_status": "not_posted",
@@ -38,9 +41,13 @@
             "meta_content": "En el caos, nacemos de nuevo. No para ser quienes éramos, sino para ser lo que nunca imaginamos.  \n\nEl desorden revela el coraje oculto.  \n\nCada fragmento roto es una oportunidad de reconstrucción, no una sentencia. Cuando aceptamos la tormenta, entendemos que lo importante no es lo que cae, sino lo que aprendemos a levantar.",
             "estimated_shareability": "96%",
             "prompt_to_media": "",
-            "media_path": "",
+            "media_path": "/app/public/uploads/images/image_file_11.png",
             "media_path_remote": "",
-            "hashtags": ["#caos", "#renacer", "#aprendizaje"],
+            "hashtags": [
+                "#caos",
+                "#renacer",
+                "#aprendizaje"
+            ],
             "metadata_to_media": {
                 "background": "",
                 "prompt_to_background": "",
@@ -49,7 +56,7 @@
             "x_links": [],
             "ig_links": [],
             "fb_links": [],
-            "is_processed": false,
+            "is_processed": true,
             "x_status": "not_posted",
             "ig_status": "not_posted",
             "fb_status": "not_posted",
@@ -62,9 +69,11 @@
                     "x_content": "A veces, el caos es la prueba de fuego que quema lo falso y deja lo esencial.",
                     "meta_content": "A veces, el caos es la prueba de fuego que quema lo falso y deja lo esencial.  \n\nLa incomodidad nos señala lo que necesita transformarse.",
                     "prompt_to_media": "",
-                    "media_path": "",
+                    "media_path": "/app/public/uploads/images/image_file_1100001.png",
                     "media_path_remote": "",
-                    "hashtags": ["#transformación"],
+                    "hashtags": [
+                        "#transformación"
+                    ],
                     "x_links": [],
                     "ig_links": [],
                     "fb_links": [],
@@ -80,9 +89,11 @@
                     "x_content": "Cuando todo se derrumba, el alma encuentra espacio para respirar.",
                     "meta_content": "Cuando todo se derrumba, el alma encuentra espacio para respirar.  \n\nEl vacío no es ausencia, es posibilidad.",
                     "prompt_to_media": "",
-                    "media_path": "",
+                    "media_path": "/app/public/uploads/images/image_file_1100002.png",
                     "media_path_remote": "",
-                    "hashtags": ["#renovación"],
+                    "hashtags": [
+                        "#renovación"
+                    ],
                     "x_links": [],
                     "ig_links": [],
                     "fb_links": [],
@@ -98,9 +109,11 @@
                     "x_content": "Resistirse al caos es perdernos el milagro de la reinvención.",
                     "meta_content": "Resistirse al caos es perdernos el milagro de la reinvención.  \n\nCuando nos rendimos al proceso, descubrimos nuevas versiones de nosotros mismos.",
                     "prompt_to_media": "",
-                    "media_path": "",
+                    "media_path": "/app/public/uploads/images/image_file_1100003.png",
                     "media_path_remote": "",
-                    "hashtags": ["#cambio"],
+                    "hashtags": [
+                        "#cambio"
+                    ],
                     "x_links": [],
                     "ig_links": [],
                     "fb_links": [],
@@ -122,7 +135,11 @@
             "prompt_to_media": "Imagen de un cielo estrellado reflejado en un lago en calma",
             "media_path": "",
             "media_path_remote": "",
-            "hashtags": ["#misterio", "#sabiduría", "#confianza"],
+            "hashtags": [
+                "#misterio",
+                "#sabiduría",
+                "#confianza"
+            ],
             "metadata_to_media": {
                 "background": "",
                 "prompt_to_background": "",
@@ -131,7 +148,7 @@
             "x_links": [],
             "ig_links": [],
             "fb_links": [],
-            "is_processed": false,
+            "is_processed": true,
             "x_status": "not_posted",
             "ig_status": "not_posted",
             "fb_status": "not_posted",
@@ -149,7 +166,11 @@
             "prompt_to_media": "",
             "media_path": "",
             "media_path_remote": "",
-            "hashtags": ["#humildad", "#sabiduría", "#aprendizaje"],
+            "hashtags": [
+                "#humildad",
+                "#sabiduría",
+                "#aprendizaje"
+            ],
             "metadata_to_media": {
                 "background": "",
                 "prompt_to_background": "",
@@ -176,7 +197,11 @@
             "prompt_to_media": "",
             "media_path": "",
             "media_path_remote": "",
-            "hashtags": ["#luz", "#esperanza", "#resiliencia"],
+            "hashtags": [
+                "#luz",
+                "#esperanza",
+                "#resiliencia"
+            ],
             "metadata_to_media": {
                 "background": "",
                 "prompt_to_background": "",
@@ -203,7 +228,11 @@
             "prompt_to_media": "",
             "media_path": "",
             "media_path_remote": "",
-            "hashtags": ["#amor", "#aceptación", "#empatía"],
+            "hashtags": [
+                "#amor",
+                "#aceptación",
+                "#empatía"
+            ],
             "metadata_to_media": {
                 "background": "",
                 "prompt_to_background": "",
