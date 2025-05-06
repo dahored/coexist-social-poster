@@ -19,18 +19,20 @@
         "Usa el esquema ('squema') proporcionado para estructurar cada post e incluye todos los campos aunque estén vacíos.",
         "Crea contenido que fomente reflexión, diálogo y conexión con la audiencia.",
         "Si generas links, asegúrate de que sean relevantes, no spam, provengan de fuentes confiables y cumplan con las limitaciones de cada red social (máximo 3 links por post según 'limits.links').",
-        "Alterna los temas claros ('light') en posts pares e intensos ('dark') en posts impares.",
-        "De los 9 posts generados, el post número 5 debe ser un hilo ('is_thread': true) con entre 2 y 10 subposts, según 'conditions.threads'. El hilo debe tratar o continuar un tema similar al post principal.",
+        "Alterna los temas claros ('light') en posts con id pares e intensos ('dark') en posts con id impares.",
+        "De los 6 posts generados, el post número 2 de la lista debe ser un hilo ('is_thread': true) con un maximo de 10 subposts de forma aleatoria, según 'conditions.threads'. El hilo debe continuar un tema similar al post principal.",
         "El campo 'prompt_to_media' debe ser una frase que describa la imagen o video relevante al post y al tema, generado solo si 'metadata_to_media.text' está vacío, según 'conditions.prompt_to_media'.",
         "Si un post incluye 'prompt_to_media', omite 'metadata_to_media', y viceversa, como indica 'conditions.metadata_to_media'.",
         "Si generas 'metadata_to_media', puedes agregar opcionalmente 'prompt_to_background'. Si no lo incluyes, se usarán fondos predeterminados ('conditions.metadata_to_media.prompt_to_background').",
         "Alinea cada post a uno de los temas específicos de 'options.topics': 'Amor sin condiciones', 'Fuerza en la vulnerabilidad', 'El valor del silencio compartido', 'Caos como maestro', 'Unidad en la diferencia', 'Redención y perdón', 'Rendirse al misterio de la vida', 'Sabiduría en la humildad', 'Luz en medio de la oscuridad', 'Destino y elección'.",
         "Incluye en cada objeto del post todos los campos definidos en el esquema ('squema'), aunque no se utilicen (por ejemplo, 'x_links': [], 'ig_links': [], 'fb_links': []).",
-        "Los 3 primeros y los 3 últimos posts deben usar 'metadata_to_media'; los posts 4 y 6 deben usar 'prompt_to_media'; el post 5 debe ser el hilo.",
+        "El 1 y el 3 post de la lista que se va a generar deben usar 'prompt_to_media'; los 3 restantes deben usar 'metadata_to_media'.",
         "Si el hilo es 'metadata_to_media', todos los subposts deben ser 'metadata_to_media'; si es 'prompt_to_media', todos los subposts deben ser 'prompt_to_media'.",
         "Genera hashtags y links aleatoriamente pero relevantes al tema del post. Cumple siempre los límites de cada red social y asegúrate de que los links sean confiables.",
-        "los subposts del hilo deben Alterna los temas claros ('light') en posts pares e intensos ('dark') en posts impares.",
-        "El numero de subposts en el hilo debe ser entre 2 y 10, según 'conditions.threads'."
+        "los subposts del hilo deben Alterna los temas claros ('light') en posts con id pares e intensos ('dark') en posts con id impares.",
+        "El numero total de subposts en el hilo debe ser aleatoriamente, con un maximo de 10 subposts",
+        "El consecutive debe continnuar desde el ultimo post generado, si el ultimo post generado fue 9, el siguiente debe ser 10, y asi sucesivamente.",
+        "Si se tiene metadata_to_media y consideras que es necesario un background personalizado, puedes usar 'prompt_to_background' para describirlo. Si no lo usas, se generará un fondo aleatorio."
     ],
     "options": {
         "topics": [
@@ -175,7 +177,7 @@
             },
             "metadata_to_media.prompt_to_background": {
                 "condition": "is optional if you want is not necesary because exists defaults randoms backgrounds in folder media",
-                "condition_2": "if you want to use a specific background, you can use this field to describe it. This is a background"
+                "condition_2": "if you want to use a specific background, you can use this field to describe it. This is a prompt to generage a background image."
             }
         },
         "limits": {

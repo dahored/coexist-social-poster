@@ -65,5 +65,17 @@ class FileHandler:
                 f.write(chunk)
 
         return filename
+    
+    async def clean_uploaded_files(self):
+        """Deletes all files inside public/uploads/images without deleting the folder itself."""
+        for root, dirs, files in os.walk(self.images_path):
+            for file in files:
+                file_path = os.path.join(root, file)
+                try:
+                    os.remove(file_path)
+                    print(f"✅ Deleted file: {file_path}")
+                except Exception as e:
+                    print(f"❌ Failed to delete {file_path}: {e}")
+        print(f"✅ Cleanup of {self.images_path} completed.")
 
 
