@@ -34,17 +34,30 @@ class XAPI:
         self.post_service = PostService()
 
     def combine_caption(self, caption, links=None, hashtags=None):
-        """Combines the caption with links for a single tweet."""
+        """Combines the caption with links and hashtags, avoiding duplicate hashtags that already appear in the caption."""
         parts = [caption.strip()] if caption else []
+        existing_caption = caption.lower() if caption else ""
+        
+        # Añadir links si existen
         if links:
             links_block = "\n".join(f"{link['description']}: {link['url']}" for link in links)
             parts.append(links_block)
 
+        # Añadir hashtags solo si el hashtag exacto (#tag) no está ya en el caption
         if hashtags:
-            hashtags_block = " ".join(f"#{tag.lstrip('#')}" for tag in hashtags)
-            parts.append(hashtags_block)
+            unique_hashtags = []
+            for tag in hashtags:
+                clean_tag = tag.lstrip('#').lower()
+                hashtag_with_hash = f"#{clean_tag}"
+                if hashtag_with_hash not in existing_caption:
+                    unique_hashtags.append(hashtag_with_hash)
+            
+            if unique_hashtags:
+                hashtags_block = " ".join(unique_hashtags)
+                parts.append(hashtags_block)
 
         return "\n".join(parts)
+
 
     def get_thread_list(self, threads):
         """Builds list of (caption, media) tuples for each thread tweet."""

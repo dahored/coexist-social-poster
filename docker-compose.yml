@@ -15,7 +15,7 @@ services:
 
   scheduler:
     build:
-      context: ./scheduler-folder  # carpeta donde tienes scheduler.py y su Dockerfile
-    container_name: coexist-scheduler
+      context: ./scheduler  # carpeta donde tienes scheduler.py y su Dockerfile
+    container_name: coexist-social-poster-scheduler
     depends_on:
       - app
