@@ -8,7 +8,7 @@ from utils.json_utils import JSONHandler
 from utils.file_utils import FileHandler
 from utils.path_utils import get_public_image_url
 
-KEY_CONTENT = "ig_content"
+KEY_CONTENT = "meta_content"
 
 class InstagramAPI:
     def __init__(self):
@@ -177,21 +177,19 @@ class InstagramAPI:
             "post_id": post_id
         }
 
-    def combine_captions(self, main_caption, threads, links=None):
+    def combine_captions(self, main_caption, threads, links=None, hashtags=None):
         """
-        Combines the main caption with thread captions and links into a single string.
-        Args:
-            main_caption (str): The main caption for the post.
-            threads (list): A list of thread dictionaries, each containing a caption and links.
-            links (list): A list of root-level links to include in the caption.
-        Returns:
-            str: The combined caption string.
+        Combina el caption principal, los captions de los threads, los links y hashtags.
+        Los hashtags finales incluirán los del post principal + todos los de los threads.
         """
         captions = [main_caption.strip()] if main_caption else []
+        all_hashtags = hashtags or []
 
+        # Recorrer threads y acumular captions, links y hashtags
         for t in threads:
             thread_caption = t.get(KEY_CONTENT, "").strip()
-            thread_links = t.get("ig_links", [])
+            thread_links = t.get("links", [])  # O "ig_links" según tu modelo real
+            thread_hashtags = t.get("hashtags", [])
 
             if thread_caption:
                 captions.append(thread_caption)
@@ -200,11 +198,19 @@ class InstagramAPI:
                 links_block = "\n".join(f"{link['description']}: {link['url']}" for link in thread_links)
                 captions.append(links_block)
 
+            if thread_hashtags:
+                all_hashtags.extend(thread_hashtags)
+
         if links:
             root_links_block = "\n".join(f"{link['description']}: {link['url']}" for link in links)
             captions.append(root_links_block)
 
+        if all_hashtags:
+            hashtags_block = " ".join(f"#{tag.lstrip('#')}" for tag in all_hashtags)
+            captions.append(hashtags_block)
+
         return "\n\n".join(captions)
+
 
     async def run_posts(self):
         """Main function to process and publish posts"""
@@ -220,6 +226,7 @@ class InstagramAPI:
         is_carousel = post_data.get("is_thread")
         threads = post_data.get("threads")
         links = post_data.get("ig_links", [])
+        hashtags = post_data.get("hashtags", [])
 
         if is_carousel:
             thread_media_paths = [
@@ -229,11 +236,11 @@ class InstagramAPI:
             ]
 
             media_paths = [media_path] + thread_media_paths
-            combined_caption = self.combine_captions(caption, threads, links)
+            combined_caption = self.combine_captions(caption, threads, links, hashtags)
 
             result = await self.carousel(combined_caption, media_paths)
         else:
-            combined_caption = self.combine_captions(caption, [], links)
+            combined_caption = self.combine_captions(caption, [], links, hashtags)
             result = await self.single(combined_caption, media_path)
 
         await self.post_service.update_post_status(post_data["id"], status_key="ig_status")

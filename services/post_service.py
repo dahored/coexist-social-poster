@@ -97,11 +97,11 @@ class PostService:
             if len(data["x_content"]) > 280:
                 raise HTTPException(status_code=400, detail="Content too long")
             
-            if len(data["ig_content"]) > 2200:
-                raise HTTPException(status_code=400, detail="Instagram content too long")
+            if len(data["meta_content"]) > 2200:
+                raise HTTPException(status_code=400, detail="Instagram and facebook content too long")
             
-            if len(data["fb_content"]) > 63206:
-                raise HTTPException(status_code=400, detail="Facebook content too long")
+            # if len(data["fb_content"]) > 2200:
+            #     raise HTTPException(status_code=400, detail="Facebook content too long")
 
             if base_id and thread_index is not None:
                 data["id"] = base_id * 100000 + (thread_index + 1)

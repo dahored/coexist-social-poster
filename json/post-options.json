@@ -7,8 +7,12 @@
         "El contenido de la frase debe validarse usando los límites de longitud definidos en 'limits.metadata_to_media.text' (mínimo 120, máximo 280 caracteres). No hagas resúmenes ni frases sin sentido de dos palabras.",
         "Fusiona la sabiduría de Yoda, la valentía reflexiva de Ragnar Lothbrok, la lucidez cruda de Rick Sánchez y la compasión profunda de Jesucristo.",
         "Hazlas entendibles para personas simples y resonantes para personas reflexivas.",
-        "Respeta las condiciones y límites de cada red social definidos en 'limits': longitud de texto ('x_content', 'ig_content', 'fb_content'), número de hashtags y cantidad de links.",
-        "Genera contenido para cada red social ('x_content', 'ig_content', 'fb_content') ajustado a los nuevos límites mínimos y máximos: X (100-280 caracteres, 0-4 hashtags), IG (300-2200, 0-10 hashtags), FB (300-63206, 0-10 hashtags). Los textos pueden incluir párrafos separados por saltos de línea.",
+        "Genera contenido para tres redes sociales: X (anteriormente Twitter), (Instagram y Facebook como meta_content), con un enfoque en la empatía y la conexión humana. Se creativo, incluye saltos de línea y párrafos, ademas quiero que el contenido sea como una reflexion, explicacion o profundizacion sobre la frase principal.",
+        "Si hay saltos de linea usa doble espacio para separarlos.",
+        "Respeta las condiciones y límites de cada red social definidos en 'limits': longitud de texto ('x_content', 'meta_content'), número de hashtags y cantidad de links.",
+        "Genera contenido para cada red social ('x_content', 'meta_content') ajustado a los nuevos límites mínimos y máximos: X (100-280 caracteres, 0-4 hashtags), META (300-2100, 0-10 hashtags). Los textos pueden incluir párrafos separados por saltos de línea.",
+        "El contenido 'x_content', 'meta_content' debe tener continuidad entre parrafos, no unir frases al azar. No uses frases sueltas o sin sentido. hazlo tipo ensayo o reflexion. tipo introduccion, desarrollo y conclusion.",
+        "'Facebook e instagram' tendran el mismo contenido ya que tienen los mismo limites",
         "Valida longitud, hashtags y links según los límites definidos para cada red social. Si no hay links, deja los arrays ('x_links', 'ig_links', 'fb_links') vacíos.",
         "Mantén un balance entre realismo y esperanza en los mensajes.",
         "Asegúrate de que al menos el 50% de las frases tengan un potencial de compartibilidad igual o mayor al 93%.",
@@ -79,8 +83,7 @@
                     "id": "consecutive",
                     "topic": "string",
                     "x_content": "string",
-                    "ig_content": "string",
-                    "fb_content": "string",
+                    "meta_content": "string",
                     "estimated_shareability": "percentage",
                     "prompt_to_media": "string",
                     "media_path": "",
@@ -120,8 +123,7 @@
                         {
                             "id": "number(consecutive*10000)+(index)",
                             "x_content": "string",
-                            "ig_content": "string",
-                            "fb_content": "string",
+                            "meta_content": "string",
                             "prompt_to_media": "string",
                             "media_path": "",
                             "media_path_remote": "",
@@ -183,15 +185,9 @@
                 "min_hastags": 0,
                 "max_hashtags": 4
             },
-            "ig_content": {
+            "meta_content": {
                 "min_length": 300,
                 "max_length": 2200,
-                "min_hastags": 0,
-                "max_hashtags": 10
-            },
-            "fb_content": {
-                "min_length": 300,
-                "max_length": 63206,
                 "min_hastags": 0,
                 "max_hashtags": 10
             },

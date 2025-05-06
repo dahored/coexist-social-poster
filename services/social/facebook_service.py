@@ -8,7 +8,7 @@ from utils.json_utils import JSONHandler
 from utils.file_utils import FileHandler
 from utils.path_utils import get_public_image_url
 
-KEY_CONTENT = "fb_content"
+KEY_CONTENT = "meta_content"
 
 class FacebookAPI:
     def __init__(self):
@@ -127,12 +127,23 @@ class FacebookAPI:
         print(f"✅ Album posted successfully: {data['id']}")
         return {"message": "Facebook album posted successfully", "post_id": data["id"]}
 
-    def combine_captions(self, main_caption, threads, links=None):
+    def combine_captions(self, main_caption, threads, links=None, hashtags=None):
+        """
+        Combines the main caption with thread captions, links, and hashtags.
+        :param main_caption: The main caption for the post.
+        :param threads: List of thread captions.
+        :param
+        links: List of links to include in the post.
+        :param hashtags: List of hashtags to include in the post.
+        :return: Combined caption string.
+        """
         captions = [main_caption.strip()] if main_caption else []
+        all_hashtags = hashtags or []
 
         for t in threads:
             thread_caption = t.get(KEY_CONTENT, "").strip()
             thread_links = t.get("fb_links", [])
+            thread_hashtags = t.get("hashtags", [])
 
             if thread_caption:
                 captions.append(thread_caption)
@@ -141,9 +152,16 @@ class FacebookAPI:
                 links_block = "\n".join(f"{link['description']}: {link['url']}" for link in thread_links)
                 captions.append(links_block)
 
+            if thread_hashtags:
+                all_hashtags.extend(thread_hashtags)
+
         if links:
             root_links_block = "\n".join(f"{link['description']}: {link['url']}" for link in links)
             captions.append(root_links_block)
+
+        if all_hashtags:
+            hashtags_block = " ".join(f"#{tag.lstrip('#')}" for tag in all_hashtags)
+            captions.append(hashtags_block)
 
         return "\n\n".join(captions)
 
@@ -160,6 +178,7 @@ class FacebookAPI:
         is_album = post_data.get("is_thread")
         threads = post_data.get("threads")
         links = post_data.get("fb_links", [])
+        hashtags = post_data.get("hashtags", [])
 
         if is_album:
             thread_media_paths = [
@@ -168,10 +187,10 @@ class FacebookAPI:
                 if t.get("media_path_remote") or t.get("media_path")
             ]
             media_paths = [media_path] + thread_media_paths
-            combined_caption = self.combine_captions(caption, threads, links)
+            combined_caption = self.combine_captions(caption, threads, links, hashtags)
             result = await self.post_album(combined_caption, media_paths)
         else:
-            combined_caption = self.combine_captions(caption, [], links)
+            combined_caption = self.combine_captions(caption, [], links, hashtags)
             result = await self.post_photo(combined_caption, media_path)
 
         await self.post_service.update_post_status(post_data["id"], status_key="fb_status")

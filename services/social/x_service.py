@@ -33,12 +33,17 @@ class XAPI:
         self.json_handler = JSONHandler(os.getenv("POSTS_JSON_FILE"))
         self.post_service = PostService()
 
-    def combine_caption(self, caption, links=None):
+    def combine_caption(self, caption, links=None, hashtags=None):
         """Combines the caption with links for a single tweet."""
         parts = [caption.strip()] if caption else []
         if links:
             links_block = "\n".join(f"{link['description']}: {link['url']}" for link in links)
             parts.append(links_block)
+
+        if hashtags:
+            hashtags_block = " ".join(f"#{tag.lstrip('#')}" for tag in hashtags)
+            parts.append(hashtags_block)
+
         return "\n".join(parts)
 
     def get_thread_list(self, threads):
@@ -120,15 +125,16 @@ class XAPI:
         is_thread = tweet_data.get("is_thread")
         threads = tweet_data.get("threads")
         links = tweet_data.get("x_links", [])
+        hashtags = tweet_data.get("hashtags", [])
 
         if is_thread:
-            first_caption = self.combine_caption(tweet_text, links)
+            first_caption = self.combine_caption(tweet_text, links, hashtags)
             first_tweet = (first_caption, media_path)
             thread_list = self.get_thread_list(threads)
             tweets = [first_tweet] + thread_list
             result = await self.post_thread(tweets)
         else:
-            combined_caption = self.combine_caption(tweet_text, links)
+            combined_caption = self.combine_caption(tweet_text, links, hashtags)
             result = await self.post_tweet(combined_caption, media_path)
 
         await self.post_service.update_post_status(tweet_data["id"], status_key="x_status")
