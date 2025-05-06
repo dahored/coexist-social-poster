@@ -179,34 +179,43 @@ class InstagramAPI:
 
     def combine_captions(self, main_caption, threads, links=None, hashtags=None):
         """
-        Combina el caption principal, los captions de los threads, los links y hashtags.
-        Los hashtags finales incluirán los del post principal + todos los de los threads.
+        Combina el caption principal, los captions de los threads, los links y hashtags,
+        evitando duplicar hashtags que ya aparezcan en los textos.
         """
         captions = [main_caption.strip()] if main_caption else []
-        all_hashtags = hashtags or []
+        existing_text = (main_caption or "").lower()
+        all_hashtags = set(tag.lstrip('#').lower() for tag in hashtags or [])
 
         # Recorrer threads y acumular captions, links y hashtags
         for t in threads:
             thread_caption = t.get(KEY_CONTENT, "").strip()
-            thread_links = t.get("links", [])  # O "ig_links" según tu modelo real
+            thread_links = t.get("ig_links", [])
             thread_hashtags = t.get("hashtags", [])
 
             if thread_caption:
                 captions.append(thread_caption)
+                existing_text += " " + thread_caption.lower()
 
             if thread_links:
                 links_block = "\n".join(f"{link['description']}: {link['url']}" for link in thread_links)
                 captions.append(links_block)
 
             if thread_hashtags:
-                all_hashtags.extend(thread_hashtags)
+                all_hashtags.update(tag.lstrip('#').lower() for tag in thread_hashtags)
 
         if links:
             root_links_block = "\n".join(f"{link['description']}: {link['url']}" for link in links)
             captions.append(root_links_block)
 
-        if all_hashtags:
-            hashtags_block = " ".join(f"#{tag.lstrip('#')}" for tag in all_hashtags)
+        # Filtrar hashtags ya presentes en los textos
+        unique_hashtags = []
+        for tag in all_hashtags:
+            hashtag_with_hash = f"#{tag}"
+            if hashtag_with_hash not in existing_text:
+                unique_hashtags.append(hashtag_with_hash)
+
+        if unique_hashtags:
+            hashtags_block = " ".join(unique_hashtags)
             captions.append(hashtags_block)
 
         return "\n\n".join(captions)
