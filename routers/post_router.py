@@ -1,5 +1,6 @@
 from fastapi import APIRouter
-from services.post_service import PostService
+from services.post.post_service import PostService
+from services.post.post_generator_service import PostGeneratorService
 from services.social.x_service import XAPI
 from services.social.instagram_service import InstagramAPI
 from services.social.facebook_service import FacebookAPI
@@ -8,6 +9,7 @@ from utils.file_utils import FileHandler
 
 router = APIRouter()
 post_service = PostService()
+post_generator_service = PostGeneratorService()
 
 x_api = XAPI()
 instagram_api = InstagramAPI()
@@ -16,12 +18,27 @@ telegram_api = TelegramAPI()
 
 file_handler = FileHandler()
 
-@router.post("/run")
+@router.post("/generate-posts")
+async def generate_posts():
+    await post_generator_service.generate_posts()
+    return {"message": "Posts generated."}
+
+@router.post("/generate-post")
+async def generate_posts():
+    await post_generator_service.generate_post()
+    return {"message": "Post generated."}
+
+# @router.post("/process-post")
+# async def process_post():
+#     await post_service.process_post()
+#     return {"message": "Post processed."}
+
+@router.post("/run-posts")
 async def run():
     result = {}
     errors = []
 
-    await post_service.process_posts()
+    await post_generator_service.generate_post()
 
     x_ok = instagram_ok = facebook_ok = True
 

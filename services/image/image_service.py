@@ -144,7 +144,7 @@ class ImageServiceHandler:
 
     async def generate_image(self, data, id, theme='light', width=1024, height=1024, font_size=None, font_ratio=24, text_scale=1.0):
         text = data["text"]
-        background_path = self.resolve_background_path(theme, data.get("background"))
+        background_path = self.resolve_background_path(theme, data.get("background_path"))
         background = Image.open(background_path).convert('RGBA')
         background = background.resize((width, height))
         canvas = Image.new('RGBA', (width, height))

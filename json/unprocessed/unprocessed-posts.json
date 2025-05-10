@@ -1,0 +1,94 @@
+{
+    "posts": [
+        {
+            "topic": "Amor sin condiciones",
+            "phrase": "Amar sin condiciones no es ser débil, es tener el coraje de ver a otro en su sombra y aún así abrazar su luz, porque amar es desarmarse frente al otro y seguir de pie.",
+            "is_thread": false
+        },
+        {
+            "topic": "Fuerza en la vulnerabilidad",
+            "phrase": "Cuando muestro mis grietas, no me rompo: me revelo. Es en lo que oculto donde está mi mayor fuerza, porque solo quien se atreve a ser visto, puede verdaderamente resistir.",
+            "is_thread": true
+        },
+        {
+            "topic": "El valor del silencio compartido",
+            "phrase": "Hay momentos en que el silencio entre dos almas grita verdades que las palabras no alcanzan: es ahí donde el alma reconoce que ha encontrado un refugio verdadero.",
+            "is_thread": false
+        },
+        {
+            "topic": "Caos como maestro",
+            "phrase": "El caos no llega a destruirte, llega a revelarte. Cada grieta que abre en tu mundo es una ventana a la versión de ti que aún no te atreves a ser.",
+            "is_thread": false
+        },
+        {
+            "topic": "Unidad en la diferencia",
+            "phrase": "No somos espejos ni iguales, y ahí está la magia. La verdadera unión nace cuando entendemos que nuestras diferencias son el puente que nos une, no la grieta que nos separa.",
+            "is_thread": false
+        },
+        {
+            "topic": "Redención y perdón",
+            "phrase": "El perdón no es olvido ni indulgencia: es rebelión. Es mirarte al espejo y decidir que ya no vas a ser prisionero del daño, sino arquitecto de tu propia redención.",
+            "is_thread": false
+        },
+        {
+            "topic": "Rendirse al misterio de la vida",
+            "phrase": "No todo tiene que ser entendido para ser amado. Hay belleza en rendirse al misterio, en aceptar que algunas respuestas están destinadas solo a ser vividas.",
+            "is_thread": true
+        },
+        {
+            "topic": "Sabiduría en la humildad",
+            "phrase": "El sabio no es el que lo sabe todo, sino el que se atreve a aprender incluso de quien menos espera. La humildad no es rendirse, es abrir espacio para crecer.",
+            "is_thread": false
+        },
+        {
+            "topic": "Luz en medio de la oscuridad",
+            "phrase": "La oscuridad no es el enemigo; es la madre de toda chispa. No huyas de ella: camina, porque solo en lo más negro del túnel descubrirás de qué está hecha tu luz.",
+            "is_thread": false
+        },
+        {
+            "topic": "Destino y elección",
+            "phrase": "Tal vez el destino ya está escrito, pero cada paso que das lo vuelve tuyo. Eres tanto el viajero como el camino, y en esa danza, hasta el destino tiembla.",
+            "is_thread": false
+        },
+        {
+            "topic": "Amor sin condiciones",
+            "phrase": "Amar es decir: te veo completo, con tus demonios y tus ángeles, y aún así elijo quedarme. No porque seas perfecto, sino porque en tu imperfección yo también me reconozco.",
+            "is_thread": false
+        },
+        {
+            "topic": "Fuerza en la vulnerabilidad",
+            "phrase": "No es débil quien llora, es fuerte quien no teme romperse frente a otro. Porque las lágrimas no son caída, son puente entre dos corazones que se atreven a encontrarse.",
+            "is_thread": true
+        },
+        {
+            "topic": "El valor del silencio compartido",
+            "phrase": "En un mundo que grita para existir, sentarse en silencio junto a otro es un acto revolucionario. Ahí, entre respiraciones, se confiesan las verdades más puras.",
+            "is_thread": false
+        },
+        {
+            "topic": "Caos como maestro",
+            "phrase": "No maldigas al caos, pregúntale qué quiere mostrarte. Solo quien atraviesa la tormenta sin cerrar los ojos, descubre qué estrellas estaban ocultas detrás de las nubes.",
+            "is_thread": false
+        },
+        {
+            "topic": "Unidad en la diferencia",
+            "phrase": "La armonía no nace de hacer que todos piensen igual, sino de aprender a danzar con las diferencias, sin intentar borrarlas, porque ahí vive la belleza del nosotros.",
+            "is_thread": false
+        },
+        {
+            "topic": "Redención y perdón",
+            "phrase": "Redimirte no es borrar tu historia, es abrazarla. Cada cicatriz que cargas es una página que ya fue escrita, pero lo que haces con ella hoy es el verdadero milagro.",
+            "is_thread": false
+        },
+        {
+            "topic": "Rendirse al misterio de la vida",
+            "phrase": "La vida no pide ser entendida, pide ser respirada. Si dejas de exigirle respuestas, tal vez empieces a escuchar las preguntas que realmente importan.",
+            "is_thread": true
+        },
+        {
+            "topic": "Sabiduría en la humildad",
+            "phrase": "Humilde es el guerrero que sabe cuándo soltar la espada, no por miedo, sino porque entiende que a veces la mayor victoria es no pelear la batalla equivocada.",
+            "is_thread": false
+        }
+    ]
+}

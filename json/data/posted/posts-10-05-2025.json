@@ -1,0 +1,254 @@
+{
+    "name": "Post List",
+    "description": "A list of posts to be shared",
+    "created_date": "2025-05-05",
+    "posts": [
+        {
+            "id": 10,
+            "topic": "Destino y elección",
+            "x_content": "El destino escribe las líneas, pero nosotros elegimos el tono. Cada paso consciente es un acto de rebelión amorosa contra lo inevitable. #destino #elección #libertad",
+            "meta_content": "El destino escribe las líneas, pero nosotros elegimos el tono.  \n\nCada paso consciente es un acto de rebelión amorosa contra lo inevitable.  \n\nAceptar lo que no controlamos no significa rendirse, sino encontrar espacios de libertad en medio de lo escrito.  \n\nCuando abrazamos el misterio, descubrimos que lo importante no es cambiar el guion, sino cómo lo interpretamos.",
+            "estimated_shareability": "95%",
+            "prompt_to_media": "Imagen de un caminante al borde de un sendero que se bifurca hacia el horizonte",
+            "media_path": "/app/public/uploads/images/image_file_10.png",
+            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1746543636/uploads/image_file_10.png",
+            "hashtags": [
+                "#destino",
+                "#elección",
+                "#libertad"
+            ],
+            "metadata_to_media": {
+                "background_path": "",
+                "prompt_to_background": "",
+                "text": ""
+            },
+            "x_links": [],
+            "ig_links": [],
+            "fb_links": [],
+            "is_processed": true,
+            "x_status": "posted",
+            "ig_status": "posted",
+            "fb_status": "posted",
+            "is_thread": false,
+            "theme": "dark",
+            "ai_content": true,
+            "threads": []
+        },
+        {
+            "id": 11,
+            "topic": "Caos como maestro",
+            "x_content": "En el caos, nacemos de nuevo. No para ser quienes éramos, sino para ser lo que nunca imaginamos.  \n\nEl desorden revela el coraje oculto. #caos #renacer #aprendizaje",
+            "meta_content": "En el caos, nacemos de nuevo. No para ser quienes éramos, sino para ser lo que nunca imaginamos.  \n\nEl desorden revela el coraje oculto.  \n\nCada fragmento roto es una oportunidad de reconstrucción, no una sentencia. Cuando aceptamos la tormenta, entendemos que lo importante no es lo que cae, sino lo que aprendemos a levantar.",
+            "estimated_shareability": "96%",
+            "prompt_to_media": "",
+            "media_path": "/app/public/uploads/images/image_file_11.png",
+            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1746563243/uploads/image_file_11.png",
+            "hashtags": [
+                "#caos",
+                "#renacer",
+                "#aprendizaje"
+            ],
+            "metadata_to_media": {
+                "background_path": "",
+                "prompt_to_background": "",
+                "text": "El caos revela el coraje que no sabías que tenías."
+            },
+            "x_links": [],
+            "ig_links": [],
+            "fb_links": [],
+            "is_processed": true,
+            "x_status": "posted",
+            "ig_status": "posted",
+            "fb_status": "posted",
+            "is_thread": true,
+            "theme": "light",
+            "ai_content": true,
+            "threads": [
+                {
+                    "id": 1100000,
+                    "x_content": "A veces, el caos es la prueba de fuego que quema lo falso y deja lo esencial.",
+                    "meta_content": "A veces, el caos es la prueba de fuego que quema lo falso y deja lo esencial.  \n\nLa incomodidad nos señala lo que necesita transformarse.",
+                    "prompt_to_media": "",
+                    "media_path": "/app/public/uploads/images/image_file_1100000.png",
+                    "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1746563245/uploads/image_file_1100000.png",
+                    "hashtags": [
+                        "#transformación"
+                    ],
+                    "x_links": [],
+                    "ig_links": [],
+                    "fb_links": [],
+                    "metadata_to_media": {
+                        "background_path": "",
+                        "prompt_to_background": "",
+                        "text": "El caos quema lo falso y deja lo esencial."
+                    },
+                    "theme": "dark"
+                },
+                {
+                    "id": 1100001,
+                    "x_content": "Cuando todo se derrumba, el alma encuentra espacio para respirar.",
+                    "meta_content": "Cuando todo se derrumba, el alma encuentra espacio para respirar.  \n\nEl vacío no es ausencia, es posibilidad.",
+                    "prompt_to_media": "",
+                    "media_path": "/app/public/uploads/images/image_file_1100001.png",
+                    "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1746563247/uploads/image_file_1100001.png",
+                    "hashtags": [
+                        "#renovación"
+                    ],
+                    "x_links": [],
+                    "ig_links": [],
+                    "fb_links": [],
+                    "metadata_to_media": {
+                        "background_path": "",
+                        "prompt_to_background": "",
+                        "text": "El derrumbe abre espacio para respirar."
+                    },
+                    "theme": "light"
+                },
+                {
+                    "id": 1100002,
+                    "x_content": "Resistirse al caos es perdernos el milagro de la reinvención.",
+                    "meta_content": "Resistirse al caos es perdernos el milagro de la reinvención.  \n\nCuando nos rendimos al proceso, descubrimos nuevas versiones de nosotros mismos.",
+                    "prompt_to_media": "",
+                    "media_path": "/app/public/uploads/images/image_file_1100002.png",
+                    "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1746563249/uploads/image_file_1100002.png",
+                    "hashtags": [
+                        "#cambio"
+                    ],
+                    "x_links": [],
+                    "ig_links": [],
+                    "fb_links": [],
+                    "metadata_to_media": {
+                        "background_path": "",
+                        "prompt_to_background": "",
+                        "text": "El caos es la puerta al cambio."
+                    },
+                    "theme": "dark"
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "topic": "Rendirse al misterio de la vida",
+            "x_content": "El misterio no pide ser resuelto, pide ser honrado. Dejar de luchar contra lo desconocido es un acto de sabiduría. #misterio #sabiduría #confianza",
+            "meta_content": "El misterio no pide ser resuelto, pide ser honrado.  \n\nDejar de luchar contra lo desconocido es un acto de sabiduría.  \n\nCuando aceptamos no tener todas las respuestas, abrimos espacio para asombrarnos. La vida florece en las grietas de lo incomprendido.",
+            "estimated_shareability": "94%",
+            "prompt_to_media": "Imagen de un cielo estrellado reflejado en un lago en calma",
+            "media_path": "/app/public/uploads/images/image_file_12.png",
+            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1746563360/uploads/image_file_12.png",
+            "hashtags": [
+                "#misterio",
+                "#sabiduría",
+                "#confianza"
+            ],
+            "metadata_to_media": {
+                "background_path": "",
+                "prompt_to_background": "",
+                "text": ""
+            },
+            "x_links": [],
+            "ig_links": [],
+            "fb_links": [],
+            "is_processed": true,
+            "x_status": "posted",
+            "ig_status": "posted",
+            "fb_status": "posted",
+            "is_thread": false,
+            "theme": "dark",
+            "ai_content": true,
+            "threads": []
+        },
+        {
+            "id": 13,
+            "topic": "Sabiduría en la humildad",
+            "x_content": "El sabio sabe que no lo sabe todo. La humildad no nos reduce: nos expande, nos hace permeables a lo nuevo. #humildad #sabiduría #aprendizaje",
+            "meta_content": "El sabio sabe que no lo sabe todo.  \n\nLa humildad no nos reduce: nos expande, nos hace permeables a lo nuevo.  \n\nAl reconocer nuestras limitaciones, creamos espacio para el aprendizaje. La verdadera grandeza no está en imponer, sino en inspirar desde la sencillez.",
+            "estimated_shareability": "95%",
+            "prompt_to_media": "",
+            "media_path": "/app/public/uploads/images/image_file_13.png",
+            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1746630785/uploads/image_file_13.png",
+            "hashtags": [
+                "#humildad",
+                "#sabiduría",
+                "#aprendizaje"
+            ],
+            "metadata_to_media": {
+                "background_path": "",
+                "prompt_to_background": "",
+                "text": "La humildad nos expande hacia lo nuevo."
+            },
+            "x_links": [],
+            "ig_links": [],
+            "fb_links": [],
+            "is_processed": true,
+            "x_status": "posted",
+            "ig_status": "posted",
+            "fb_status": "posted",
+            "is_thread": false,
+            "theme": "light",
+            "ai_content": true,
+            "threads": []
+        },
+        {
+            "id": 14,
+            "topic": "Luz en medio de la oscuridad",
+            "x_content": "La oscuridad es solo el lienzo donde la luz pinta su historia. Cada gesto de bondad es un destello que rompe la noche. #luz #esperanza #resiliencia",
+            "meta_content": "La oscuridad es solo el lienzo donde la luz pinta su historia.  \n\nCada gesto de bondad es un destello que rompe la noche.  \n\nLa esperanza no es ceguera: es coraje. La luz más poderosa suele ser la que se enciende cuando menos fuerzas tenemos.",
+            "estimated_shareability": "97%",
+            "prompt_to_media": "",
+            "media_path": "/app/public/uploads/images/image_file_14.png",
+            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1746639224/uploads/image_file_14.png",
+            "hashtags": [
+                "#luz",
+                "#esperanza",
+                "#resiliencia"
+            ],
+            "metadata_to_media": {
+                "background_path": "",
+                "prompt_to_background": "",
+                "text": "Cada gesto de bondad rompe la noche."
+            },
+            "x_links": [],
+            "ig_links": [],
+            "fb_links": [],
+            "is_processed": true,
+            "x_status": "posted",
+            "ig_status": "posted",
+            "fb_status": "posted",
+            "is_thread": false,
+            "theme": "dark",
+            "ai_content": true,
+            "threads": []
+        },
+        {
+            "id": 15,
+            "topic": "Amor sin condiciones",
+            "x_content": "Amar sin condiciones es abrir la puerta incluso cuando no entendemos lo que llega. Es elegir abrazar antes que explicar. #amor #aceptación #empatía",
+            "meta_content": "Amar sin condiciones es abrir la puerta incluso cuando no entendemos lo que llega.  \n\nEs elegir abrazar antes que explicar.  \n\nEl amor crece cuando soltamos la necesidad de tener razón y aprendemos a simplemente estar presentes para el otro.",
+            "estimated_shareability": "96%",
+            "prompt_to_media": "",
+            "media_path": "/app/public/uploads/images/image_file_15.png",
+            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1746651604/uploads/image_file_15.png",
+            "hashtags": [
+                "#amor",
+                "#aceptación",
+                "#empatía"
+            ],
+            "metadata_to_media": {
+                "background_path": "",
+                "prompt_to_background": "",
+                "text": "Amar es abrazar antes que explicar."
+            },
+            "x_links": [],
+            "ig_links": [],
+            "fb_links": [],
+            "is_processed": true,
+            "x_status": "posted",
+            "ig_status": "posted",
+            "fb_status": "posted",
+            "is_thread": false,
+            "theme": "light",
+            "ai_content": true,
+            "threads": []
+        }
+    ]
+}

@@ -14,7 +14,7 @@ class RemoteUploadService:
         else:
             raise ValueError(f"Unsupported remote upload provider: {self.provider}")
 
-    def upload_file(self, file_path, folder="uploads"):
+    async def upload_file(self, file_path, folder="uploads"):
         if not self.allow_remote_upload:
             return "" 
 

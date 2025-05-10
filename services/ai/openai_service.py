@@ -30,7 +30,6 @@ class OpenaiServiceHandler:
 
         return response.choices[0].message.content
         
-
     async def generate_image_from_prompt(self, prompt, filename=None):
         """Generates an image using DALL·E and saves it locally"""
         try:
@@ -68,3 +67,72 @@ class OpenaiServiceHandler:
         except Exception as e:
             print(f"[openai_service] Error: {e}")
             return ""
+        
+    async def generate_prompt_to_media_post(self, idea):
+        """Generates a prompt for prompt_to_media using the OpenAI API"""
+        print(f"[openai_service] Generating prompt_to_media from idea: {idea}")
+        client = openai.AsyncOpenAI()
+        response = await client.chat.completions.create(
+            model=self.content_model,
+            messages=[
+                {"role": "system", "content": "You are a creative assistant that generates prompts for AI-service this prompt is necesary to generate a media according to the idea."},
+                {"role": "user", "content": f"Generate a text prompt from this idea: {idea}"}
+            ],
+            temperature=0.9,
+        )
+        print(f"[openai_service] Prompt generated: {response.choices[0].message}")
+        return response.choices[0].message.content
+    
+
+    async def generate_hashtags(self, idea):
+        """Generates hashtags using the OpenAI API"""
+        print(f"[openai_service] Generating hashtags for idea: {idea}")
+        client = openai.AsyncOpenAI()
+        response = await client.chat.completions.create(
+            model=self.content_model,
+            messages=[
+                {"role": "system", "content": "You are a creative assistant that generates hashtags for social media."},
+                {"role": "user", "content": f"Generate between 2 to 10 hashtags for this idea: {idea}"}
+            ],
+            temperature=0.9,
+        )
+        print(f"[openai_service] Hashtags generated: {response.choices[0].message}")
+        return response.choices[0].message.content
+    
+    async def generate_post_content(self, idea, limit=1000, extra_message=None, language="spanish"):
+        """Generates content using the OpenAI API"""
+        print(f"[openai_service] Generating content for idea: {idea}")
+        client = openai.AsyncOpenAI()
+        messages = [
+            {"role": "system", "content": "You are a creative assistant that generates content for social media."},
+            {"role": "user", "content": f"Generate a post with a maximum of {limit} characters for this idea: {idea} in {language} and do not include hashtags."}
+        ]
+        if extra_message:
+            messages.append({"role": "user", "content": extra_message})
+
+        response = await client.chat.completions.create(
+            model=self.content_model,
+            messages=messages,
+            temperature=0.9,
+        )
+        print(f"[openai_service] Content generated: {response.choices[0].message}")
+        return response.choices[0].message.content
+    
+    async def generate_default_phrase(self, idea, limit=300, extra_message=None, language="spanish"):
+        """Generates a default phrase using the OpenAI API"""
+        print(f"[openai_service] Generating default phrase for idea: {idea}")
+        client = openai.AsyncOpenAI()
+        messages = [
+            {"role": "system", "content": "You are a creative assistant that generates default phrases for social media."},
+            {"role": "user", "content": f"Generate a default phrase with a maximum of {limit} characters for this idea: {idea} in {language} and do not include hashtags, do not include titles"}
+        ]
+        if extra_message:
+            messages.append({"role": "user", "content": extra_message})
+
+        response = await client.chat.completions.create(
+            model=self.content_model,
+            messages=messages,
+            temperature=0.9,
+        )
+        print(f"[openai_service] Default phrase generated: {response.choices[0].message}")
+        return response.choices[0].message.content

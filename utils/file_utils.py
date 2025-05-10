@@ -78,4 +78,20 @@ class FileHandler:
                     print(f"❌ Failed to delete {file_path}: {e}")
         print(f"✅ Cleanup of {self.images_path} completed.")
 
+    async def delete_file(self, file_path):
+        if os.path.exists(file_path):
+            os.remove(file_path)
+        else:
+            print(f"File {file_path} does not exist.")
+
+    def file_exists(self, path):
+        """
+        Verifica si el archivo existe en el sistema de archivos.
+        """
+        if not path:
+            return False  # Si path es None o vacío, devuelve False
+        
+        full_path = self.get_media_path(path)
+        return os.path.isfile(full_path)
+
 

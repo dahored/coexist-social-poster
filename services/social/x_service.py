@@ -3,8 +3,7 @@ import os
 from fastapi import HTTPException
 from dotenv import load_dotenv
 
-from services.post_service import PostService
-from utils.json_utils import JSONHandler
+from services.post.post_service import PostService
 from utils.file_utils import FileHandler
 
 KEY_CONTENT = "x_content"
@@ -30,7 +29,6 @@ class XAPI:
         self.api = tweepy.API(self.auth)
 
         self.file_handler = FileHandler()
-        self.json_handler = JSONHandler(os.getenv("POSTS_JSON_FILE"))
         self.post_service = PostService()
 
     def combine_caption(self, caption, links=None, hashtags=None):
@@ -129,7 +127,11 @@ class XAPI:
         return {"message": "Thread posted successfully", "thread_root_id": first_response["tweet_id"]}
 
     async def run_posts(self):
-        tweet_data = await self.post_service.get_next_post('x_status')
+        if not self.allow_posting:
+            raise HTTPException(status_code=403, detail="Posting is disabled by configuration.")
+        
+        tweet_data = await self.post_service.get_next_post('x_status', 'not_posted', extra_filters={'is_processed': True})
+
         if not tweet_data:
             raise HTTPException(status_code=404, detail="No tweets to post.")
 

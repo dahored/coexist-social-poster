@@ -14,7 +14,7 @@
             "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1746430246/uploads/image_file_1.png",
             "hashtags": ["#amor", "#empatía", "#unidad"],
             "metadata_to_media": {
-                "background": "",
+                "background_path": "",
                 "prompt_to_background": "",
                 "text": "Amar es aceptar que luz y sombra bailan juntas y descubrir allí el verdadero amor."
             },
@@ -41,7 +41,7 @@
             "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1746430822/uploads/image_file_2.png",
             "hashtags": ["#fuerza", "#vulnerabilidad", "#sabiduría"],
             "metadata_to_media": {
-                "background": "",
+                "background_path": "",
                 "prompt_to_background": "",
                 "text": "La vulnerabilidad es la luz que nace en cada grieta, sanando a quien mira y a quien muestra."
             },
@@ -68,7 +68,7 @@
             "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1746453622/uploads/image_file_3.png",
             "hashtags": ["#silencio", "#presencia", "#unidad"],
             "metadata_to_media": {
-                "background": "",
+                "background_path": "",
                 "prompt_to_background": "",
                 "text": "En el silencio compartido, la soledad desaparece y nace el lenguaje sagrado de las almas."
             },
@@ -95,7 +95,7 @@
             "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1746462815/uploads/image_file_4.png",
             "hashtags": ["#caos", "#renacimiento", "#aprendizaje"],
             "metadata_to_media": {
-                "background": "",
+                "background_path": "",
                 "prompt_to_background": "",
                 "text": ""
             },
@@ -122,7 +122,7 @@
             "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1746464764/uploads/image_file_5.png",
             "hashtags": ["#unidad", "#diversidad", "#diálogo"],
             "metadata_to_media": {
-                "background": "",
+                "background_path": "",
                 "prompt_to_background": "",
                 "text": "La unidad nace cuando aprendemos a escuchar sin imponer."
             },
@@ -149,7 +149,7 @@
                     "ig_links": [],
                     "fb_links": [],
                     "metadata_to_media": {
-                        "background": "",
+                        "background_path": "",
                         "prompt_to_background": "",
                         "text": "La diversidad es el aire fresco que rompe certezas."
                     },
@@ -167,7 +167,7 @@
                     "ig_links": [],
                     "fb_links": [],
                     "metadata_to_media": {
-                        "background": "",
+                        "background_path": "",
                         "prompt_to_background": "",
                         "text": "Escuchar al otro amplía tu mapa del mundo."
                     },
@@ -186,7 +186,7 @@
             "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1746468079/uploads/image_file_6.png",
             "hashtags": ["#perdón", "#liberación", "#sanación"],
             "metadata_to_media": {
-                "background": "",
+                "background_path": "",
                 "prompt_to_background": "",
                 "text": ""
             },
@@ -213,7 +213,7 @@
             "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1746493507/uploads/image_file_7.png",
             "hashtags": ["#misterio", "#confianza", "#aceptación"],
             "metadata_to_media": {
-                "background": "",
+                "background_path": "",
                 "prompt_to_background": "",
                 "text": "Rendirse al misterio es encontrar paz en el no saber."
             },
@@ -240,7 +240,7 @@
             "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1746497598/uploads/image_file_8.png",
             "hashtags": ["#humildad", "#aprendizaje", "#sabiduría"],
             "metadata_to_media": {
-                "background": "",
+                "background_path": "",
                 "prompt_to_background": "",
                 "text": "La humildad nos enseña que no somos menos, pero tampoco más."
             },
@@ -267,7 +267,7 @@
             "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1746497509/uploads/image_file_9.png",
             "hashtags": ["#esperanza", "#luz", "#resiliencia"],
             "metadata_to_media": {
-                "background": "",
+                "background_path": "",
                 "prompt_to_background": "",
                 "text": "Es en la noche más larga donde aprendemos a encender nuestra propia llama."
             },

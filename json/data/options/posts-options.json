@@ -1,0 +1,44 @@
+{
+    "name": "Post List",
+    "description": "A list of posts to be shared",
+    "created_date": "2025-05-04",
+    "main_prompt": [
+        "Usa el esquema ('squema') proporcionado para estructurar cada post",
+        "en 'phrase' Genera frases poderosas, filosóficas y espirituales que resuenen con una personalidad introspectiva, curiosa, esotérica y rebelde. Mezcla sabiduría ancestral, valentía reflexiva, lucidez cruda y compasión profunda. Las frases deben ser breves, impactantes, y dejar al lector pensando en los contrastes de la existencia: destino y libre albedrío, amor y sombra, redención y caída.No uses clichés, ni palabras vacías; hazlas entendibles para todos, pero con capas ocultas para quien quiera descubrirlas, ademas Fusiona la sabiduría de Yoda, la valentía reflexiva de Ragnar Lothbrok, la lucidez cruda de Rick Sánchez y la compasión profunda de Jesucristo, Hazlas entendibles para personas simples y resonantes para personas reflexivas, Cada frase generada debe tener una longitud de entre 120 y 280 caracteres, estas deben transmitir unidad, empatía, fuerza interior, redención y aceptación del otro, sin usar la palabra 'coexistir', evitando el uso de clichés o frases comunes, Mantén un balance entre realismo y esperanza en los mensajes, Asegúrate de que al menos el 50% de las frases tengan un potencial de compartibilidad igual o mayor al 93%, Alinea cada post a uno de los temas específicos de forma aleatoria: 'Amor sin condiciones', 'Fuerza en la vulnerabilidad', 'El valor del silencio compartido', 'Caos como maestro', 'Unidad en la diferencia', 'Redención y perdón', 'Rendirse al misterio de la vida', 'Sabiduría en la humildad', 'Luz en medio de la oscuridad', 'Destino y elección', u otros temas que consideres cercanos a lo que se quiere",
+        "En el contenido para 'x_content', 'meta_content' No hagas resúmenes ni incluyas frases sin sentido de dos palabras, no incluir la 'phrase' en el texto generado, debe tener continuidad entre parrafos, no unir frases al azar. No uses frases sueltas, hazlo tipo ensayo o reflexion, tipo (introduccion, desarrollo y conclusion) sin incluir estas palabras, ni titulos (titulo:), debe ser texto continuo. No uses palabras o frases que no tengan sentido o que sean irrelevantes para el tema, Se creativo, incluye saltos de línea (\n) y párrafos, ademas quiero que el contenido sea como una reflexion, explicacion o profundizacion sobre la frase principal, Si hay saltos de linea usa doble espacio para separarlos si lo consideras necesario, pero si separa los parrafos con saltos de linea, ademas para 'x_content' la longitud minima es de 100 caracteres y la maxima de 280, para 'meta_content' la longitud minima es de 300 y la maxima de 2200, valida que la longitud no supere los limites si los unes con los hashtags, ademas de validar que la longitud de cada parrafo no supere los limites definidos para cada red social.",
+        "Genera 'hashtags' relevantes y aleatorios para cada post, pero asegúrate de que sean coherentes con el tema y la frase principal. No uses hashtags irrelevantes o spam. Los hashtags deben ser únicos y no repetidos en el mismo post. Usa un máximo de 4 hashtags para 'x_content' y 10 para meta_content.",
+        "La 'phrase' y el 'x_content' deben ser diferentes, pero relacionados. No uses la misma frase en ambos campos. La frase principal debe ser una reflexión o pensamiento profundo, mientras que el 'x_content' puede ser una explicación o desarrollo de esa idea como el significa de esta. Asegúrate de que ambos textos se complementen entre sí. No de seben incluir titulos, ni subtitulos como (Post 1:, titulo:, continuacion:) en ningun caso, ni en 'x_content' ni en meta_content, no uses palabras como 'post', 'tema', 'titulo', 'subtitulo', 'contenido', 'texto' o similares. No uses palabras como 'reflexion', 'ensayo' o similares. No uses palabras como 'introduccion', 'desarrollo' o similares. No uses palabras como 'conclusion', 'resumen' o similares. No uses palabras como 'análisis', 'opinión' o similares. No uses palabras como 'comentario', 'observación' o similares. No uses palabras como 'explicación', 'justificación' o similares.",
+        "En la lista de post cada cada uno tiene un index implicito qu lo identifica en la lista, hay un campo `is_thread` que debe ser asignado automáticamente. La regla para asignar `is_thread` es: Si (index - 2) % 6 == 0, entonces is_thread = true. En todos los demás casos, is_thread = false. Si el post es un hilo, entonces el campo `threads` debe ser una lista de subposts. Cada subpost debe tener su propio `phrase`, `x_content`, `meta_content`, `prompt_to_media`, `prompt_to_background` y `hashtags`. El total de subposts es de forma aleatoria con un maximo de 10 subposts, Si el post no es un hilo, entonces el campo `threads` debe estar vacío. Ademas los subposts deben dar continuidad al tema del post principal, para que no se pierda el sentido. las 'phrase' de los subposts deben ser una continuación de la frase principal, pero no necesariamente una repetición. Deben ser frases que complementen o amplíen el mensaje del post principal. No uses frases que sean demasiado similares a la frase principal, pero tampoco las hagas tan diferentes que pierdan el sentido.",
+
+        "El campo 'prompt_to_media' debe ser una frase que ayude a generar una imagen muy fiel a la frase princiapal",
+        "El campo 'prompt_to_background' debe ser una frase que ayude a generar una imagen muy fiel a la frase princiapal",
+        "el index inicia desde 1"
+    ],
+    "options": {
+        "squema": {
+            "posts": [
+                {
+                    "topic": "string",
+                    "phrase": "string",
+                    "x_content": "string",
+                    "meta_content": "string",
+                    "prompt_to_media": "string",
+                    "prompt_to_background": "string",
+                    "estimated_shareability": "percentage",
+                    "hashtags": ["#hashtag"],
+                    "is_thread": "boolean",
+                    "threads": [
+                        {
+                            "phrase": "string",
+                            "x_content": "string",
+                            "meta_content": "string",
+                            "prompt_to_media": "string",
+                            "prompt_to_background": "string",
+                            "hashtags": ["#hashtag"]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

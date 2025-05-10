@@ -1,0 +1,24 @@
+{
+    "name": "Post List",
+    "description": "A list of posts to be shared",
+    "created_date": "2025-05-04",
+    "main_prompt": [
+        "Usa el esquema ('squema') proporcionado para estructurar cada post",
+        "en 'phrase' Genera frases poderosas, filosóficas y espirituales que resuenen con una personalidad introspectiva, curiosa, esotérica y rebelde. Mezcla sabiduría ancestral, valentía reflexiva, lucidez cruda y compasión profunda. Las frases deben ser breves, impactantes, y dejar al lector pensando en los contrastes de la existencia: destino y libre albedrío, amor y sombra, redención y caída.No uses clichés, ni palabras vacías; hazlas entendibles para todos, pero con capas ocultas para quien quiera descubrirlas, ademas Fusiona la sabiduría de Yoda, la valentía reflexiva de Ragnar Lothbrok, la lucidez cruda de Rick Sánchez y la compasión profunda de Jesucristo, Hazlas entendibles para personas simples y resonantes para personas reflexivas, Cada frase generada debe tener una longitud de entre 120 y 280 caracteres, estas deben transmitir unidad, empatía, fuerza interior, redención y aceptación del otro, sin usar la palabra 'coexistir', evitando el uso de clichés o frases comunes, Mantén un balance entre realismo y esperanza en los mensajes, Asegúrate de que al menos el 50% de las frases tengan un potencial de compartibilidad igual o mayor al 93%, Alinea cada post a uno de los temas específicos de forma aleatoria: 'Amor sin condiciones', 'Fuerza en la vulnerabilidad', 'El valor del silencio compartido', 'Caos como maestro', 'Unidad en la diferencia', 'Redención y perdón', 'Rendirse al misterio de la vida', 'Sabiduría en la humildad', 'Luz en medio de la oscuridad', 'Destino y elección', u otros temas que consideres cercanos a lo que se quiere",
+
+        "En la lista de post cada cada uno tiene un index implicito qu lo identifica en la lista, hay un campo `is_thread` que debe ser asignado automáticamente. La regla para asignar `is_thread` es: Si (index - 2) % 6 == 0, entonces is_thread = true. En todos los demás casos, is_thread = false.",
+
+        "el index inicia desde 1"
+    ],
+    "options": {
+        "squema": {
+            "posts": [
+                {
+                    "topic": "string",
+                    "phrase": "string",
+                    "is_thread": "boolean"
+                }
+            ]
+        }
+    }
+}

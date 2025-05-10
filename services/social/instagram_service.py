@@ -3,9 +3,7 @@ import requests
 from fastapi import HTTPException
 from dotenv import load_dotenv
 
-from services.post_service import PostService
-from utils.json_utils import JSONHandler
-from utils.file_utils import FileHandler
+from services.post.post_service import PostService
 from utils.path_utils import get_public_image_url
 
 KEY_CONTENT = "meta_content"
@@ -18,8 +16,6 @@ class InstagramAPI:
         self.instagram_account_id = os.getenv("IG_ACCOUNT_ID")
         self.allow_posting = os.getenv("ALLOW_POSTING", "false").lower() == "true"
 
-        self.file_handler = FileHandler()
-        self.json_handler = JSONHandler(os.getenv("POSTS_JSON_FILE"))
         self.post_service = PostService()
 
     async def get_user_data(self):
@@ -226,7 +222,8 @@ class InstagramAPI:
         if not self.allow_posting:
             raise HTTPException(status_code=403, detail="Posting is disabled by configuration.")
 
-        post_data = await self.post_service.get_next_post('ig_status')
+        post_data = await self.post_service.get_next_post('ig_status', 'not_posted', extra_filters={'is_processed': True})
+
         if not post_data:
             raise HTTPException(status_code=404, detail="No Instagram posts found to publish.")
 
