@@ -66,6 +66,7 @@ async def run():
     all_ok = x_ok and instagram_ok and facebook_ok
 
     if all_ok:
+        print("All posts processed successfully.")
         await file_handler.clean_uploaded_files()
 
     message = "✅ Posts processed and published successfully."

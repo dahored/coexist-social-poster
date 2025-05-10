@@ -157,9 +157,6 @@ class PostGeneratorService:
         """
         Generate threads content for a single post.
         """
-        def get_prompt(limit): 
-            return f"Generate a thread with the limit of {limit} characters for only one post without numeration, this is a reflexion description of the post main idea, in this text dont include the idea of the post";
-
         index = 0
 
         if post_data["is_thread"]:
@@ -289,8 +286,10 @@ class PostGeneratorService:
         post_type = post_data["post_type"]
         hashtags_string = join_array(post_data["hashtags"])
         characters_hashtags = count_characters(hashtags_string) + 3
-        x_content_limit = int(os.getenv("X_CONTENT_LIMIT", "1000"))
+        x_content_limit = int(os.getenv("X_CONTENT_LIMIT", "288"))
         meta_content_limit = int(os.getenv("META_CONTENT_LIMIT", "1000"))
+        if is_thread:
+            x_content_limit = int(os.getenv("X_CONTENT_LIMIT_THREAD", "1000")) / 5
         
         message = f"the idea must be in the in-depth content"
 
@@ -336,7 +335,7 @@ class PostGeneratorService:
         post_data["is_processed"] = True
         await self.post_service.save_updated_post(post_data, json_file=json_file)
         await self.post_service.save_updated_post(post_data)
-        print(f"Post processed successfully.{post_data['id']}")
+        print(f"Post {post_data['id']} processed successfully.")
         return post_data
     
     def generate_thread_id(self, parent_id, index):

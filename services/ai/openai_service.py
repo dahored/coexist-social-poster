@@ -76,7 +76,7 @@ class OpenaiServiceHandler:
             model=self.content_model,
             messages=[
                 {"role": "system", "content": "You are a creative assistant that generates prompts for AI-service this prompt is necesary to generate a media according to the idea."},
-                {"role": "user", "content": f"Generate a text prompt from this idea: {idea}"}
+                {"role": "user", "content": f"Generate a text prompt from this idea: {idea}, without quotation marks"}
             ],
             temperature=0.9,
         )

@@ -28,8 +28,8 @@ class PostService:
                     return post
         return None
 
-    async def update_post_status(self, post_id, status="posted", status_key = "status"):
-        data = await self.json_handler.load_json()
+    async def update_post_status(self, post_id, status="posted", status_key = "status", json_file=POST_JSON_FILE):
+        data = await self.json_handler.load_json(json_file)
         if not data:
             return
 
@@ -38,7 +38,7 @@ class PostService:
                 post[status_key] = status
                 break
 
-        await self.json_handler.save_json(data)
+        await self.json_handler.save_json(data, json_file)
 
     async def save_updated_post(self, post_data, json_file=POST_JSON_FILE):
         if not post_data:
