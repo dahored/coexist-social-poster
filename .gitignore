@@ -1,6 +1,51 @@
-venv
-env
-.env
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
 
-# macOS system file
+# Virtual environment
+venv/
+.env
+.env.*
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS files
 .DS_Store
+
+# Docker files
+*.log
+docker-compose.override.yml
+
+# Pytest cache
+.pytest_cache/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# MyPy
+.mypy_cache/
+
+# Coverage reports
+htmlcov/
+.coverage
+.cache
+
+# Local JSON and uploads (if dynamic)
+# json/data/
+# json/posted/
+# json/processed/
+# json/unprocessed/
+# public/uploads/images/
+# public/uploads/temps/
+
+# Ignore compiled C extensions
+*.so
+
+# Ignore scheduler logs or temporary files
+scheduler/__pycache__/
+scheduler/*.pyc

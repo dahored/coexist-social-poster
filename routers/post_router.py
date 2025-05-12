@@ -18,6 +18,10 @@ telegram_api = TelegramAPI()
 
 file_handler = FileHandler()
 
+@router.get("/ping")
+async def ping():
+    return {"message": "Post module is up and running!"}
+
 @router.post("/generate-posts")
 async def generate_posts():
     await post_generator_service.generate_posts()
