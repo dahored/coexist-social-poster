@@ -69,7 +69,7 @@ class FacebookAPI:
         photo_id = data['id']
         post_id = data.get('post_id')
 
-        print(f"✅ Photo posted successfully: photo_id={photo_id}, post_id={post_id}")
+        print(f"✅ Facebook: Photo posted successfully: photo_id={photo_id}, post_id={post_id}")
 
         return {"message": "Facebook photo posted successfully", "photo_id": photo_id, "post_id": post_id}
 
@@ -120,7 +120,7 @@ class FacebookAPI:
         if response.status_code != 200 or 'id' not in data:
             raise HTTPException(status_code=500, detail=f"Error posting album: {data}")
 
-        print(f"✅ Album posted successfully: {data['id']}")
+        print(f"✅ Facebook: Album posted successfully: {data['id']}")
         return {"message": "Facebook album posted successfully", "post_id": data["id"]}
 
     def combine_captions(self, main_caption, threads, links=None, hashtags=None):

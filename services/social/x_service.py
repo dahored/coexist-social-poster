@@ -100,6 +100,7 @@ class XAPI:
                 media_ids=[media_id] if media_id else None, 
                 in_reply_to_tweet_id=in_reply_to_tweet_id
             )
+            print(f"✅ X: Tweet posted successfully: {result.data['id']}")
             return {"message": "Tweet posted successfully", "tweet_id": result.data["id"]}
         finally:
             if media_path and media_path.startswith("/tmp/"):
@@ -124,7 +125,8 @@ class XAPI:
             response = await self.post_tweet(text, media, in_reply_to_tweet_id=tweet_id)
             tweet_id = response["tweet_id"]
 
-        return {"message": "Thread posted successfully", "thread_root_id": first_response["tweet_id"]}
+        print(f"✅ X: Thread posted successfully {tweet_id}")
+        return {"message": "X Thread posted successfully", "thread_root_id": first_response["tweet_id"]}
 
     async def run_posts(self):
         if not self.allow_posting:

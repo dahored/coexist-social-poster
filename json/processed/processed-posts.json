@@ -201,16 +201,27 @@
         },
         {
             "id": 19,
-            "x_content": "",
-            "meta_content": "",
+            "x_content": "Descubre la mejor versión de ti mismo con nosotros. 🚀 ¡Síguenos para más inspiración! 🌟",
+            "meta_content": "🌟 ¡Descubre tu verdadero potencial! 🌟 El caos en tu vida no es el fin, sino el comienzo de un nuevo tú. Cada grieta es una oportunidad de crecimiento y revelación. No te resistas al cambio, ¡abraza la transformación! 🚀 Únete a nosotros y despierta a tu mejor versión. ¡Síguenos para más inspiración!",
             "prompt_to_media": "",
-            "media_path": "",
-            "media_path_remote": "",
-            "hashtags": [],
+            "media_path": "/app/public/uploads/images/image_file_19.png",
+            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1746973801/uploads/image_file_19.png",
+            "hashtags": [
+                "#TransformaciónPersonal",
+                "#RenacerDesdeElCaos",
+                "#Redescubrirse",
+                "#ElPoderDeLasGrietas",
+                "#CrecimientoInterior",
+                "#ValentíaEnElCambio",
+                "#VentanasDeOportunidad",
+                "#EvoluciónConstante",
+                "#SerAuténtico",
+                "#DescubrirTuEsencia"
+            ],
             "metadata_to_media": {
                 "background_path": "",
                 "prompt_to_background": "",
-                "text": ""
+                "text": "El caos no llega a destruirte, llega a revelarte. Cada grieta que abre en tu mundo es una ventana a la versión de ti que aún no te atreves a ser."
             },
             "x_links": [],
             "ig_links": [],
@@ -219,7 +230,7 @@
             "post_type": "metadata_to_media",
             "default_phrase": "El caos no llega a destruirte, llega a revelarte. Cada grieta que abre en tu mundo es una ventana a la versión de ti que aún no te atreves a ser.",
             "topic": "Caos como maestro",
-            "is_processed": false,
+            "is_processed": true,
             "x_status": "not_posted",
             "ig_status": "not_posted",
             "fb_status": "not_posted",
@@ -230,11 +241,11 @@
         },
         {
             "id": 20,
-            "x_content": "",
-            "meta_content": "",
+            "x_content": "¡Únete a nuestra aventura! 🌟✨",
+            "meta_content": "🌟 ¡Descubre un mundo donde las diferencias nos unen! 🌟 Únete a nuestra comunidad y sé parte de una magia única, donde cada perspectiva enriquece y cada voz importa. No te pierdas la oportunidad de conectar con lo diverso. ¡Síguenos y sé parte del cambio! 🎉👏",
             "prompt_to_media": "",
             "media_path": "/app/public/uploads/images/image_file_20.png",
-            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1746905158/uploads/image_file_20.png",
+            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1746985511/uploads/image_file_20.png",
             "hashtags": [
                 "#UnidosEnLaDiversidad",
                 "#MagiaDeLasDiferencias",
@@ -259,7 +270,7 @@
             "post_type": "metadata_to_media_with_background",
             "default_phrase": "No somos espejos ni iguales, y ahí está la magia. La verdadera unión nace cuando entendemos que nuestras diferencias son el puente que nos une, no la grieta que nos separa.",
             "topic": "Unidad en la diferencia",
-            "is_processed": false,
+            "is_processed": true,
             "x_status": "not_posted",
             "ig_status": "not_posted",
             "fb_status": "not_posted",
@@ -270,16 +281,27 @@
         },
         {
             "id": 21,
-            "x_content": "",
-            "meta_content": "",
+            "x_content": "¡Descubre más contenido inspirador! 🌟 Sigue y transforma tu día. 🔄✨",
+            "meta_content": "✨ ¡Descubre un nuevo horizonte con nosotros! 🌟 Si buscas inspiración, motivación y momentos que transformen tu día, has llegado al lugar correcto. Únete a nuestra comunidad y sé parte del cambio. ¡Dale al botón de seguir y empieza esta aventura juntos! 🚀👥",
             "prompt_to_media": "",
-            "media_path": "",
-            "media_path_remote": "",
-            "hashtags": [],
+            "media_path": "/app/public/uploads/images/image_file_21.png",
+            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1746995598/uploads/image_file_21.png",
+            "hashtags": [
+                "#ElPoderDelPerdón",
+                "#ArquitectosDeRedención",
+                "#RebeliónInterior",
+                "#LibertadEmocional",
+                "#SuperaciónPersonal",
+                "#RedefiniendoElPerdón",
+                "#ValentíaInterior",
+                "#LibérateDelPasado",
+                "#CaminoAHaciaLaRedención",
+                "#TransformaciónPersonal"
+            ],
             "metadata_to_media": {
                 "background_path": "",
                 "prompt_to_background": "",
-                "text": ""
+                "text": "El perdón no es olvido ni indulgencia: es rebelión. Es mirarte al espejo y decidir que ya no vas a ser prisionero del daño, sino arquitecto de tu propia redención."
             },
             "x_links": [],
             "ig_links": [],
@@ -288,7 +310,7 @@
             "post_type": "metadata_to_media",
             "default_phrase": "El perdón no es olvido ni indulgencia: es rebelión. Es mirarte al espejo y decidir que ya no vas a ser prisionero del daño, sino arquitecto de tu propia redención.",
             "topic": "Redención y perdón",
-            "is_processed": false,
+            "is_processed": true,
             "x_status": "not_posted",
             "ig_status": "not_posted",
             "fb_status": "not_posted",
@@ -304,6 +326,7 @@
             "prompt_to_media": "",
             "media_path": "",
             "media_path_remote": "",
+            "default_phrase": "No todo tiene que ser entendido para ser amado. Hay belleza en rendirse al misterio, en aceptar que algunas respuestas están destinadas solo a ser vividas.",
             "hashtags": [],
             "metadata_to_media": {
                 "background_path": "",
@@ -315,111 +338,14 @@
             "fb_links": [],
             "theme": "dark",
             "post_type": "prompt_to_media",
-            "default_phrase": "No todo tiene que ser entendido para ser amado. Hay belleza en rendirse al misterio, en aceptar que algunas respuestas están destinadas solo a ser vividas.",
             "topic": "Rendirse al misterio de la vida",
             "is_processed": false,
             "x_status": "not_posted",
             "ig_status": "not_posted",
             "fb_status": "not_posted",
-            "is_thread": true,
+            "is_thread": false,
             "ai_content": true,
-            "threads": [
-                {
-                    "id": 2200000,
-                    "x_content": "",
-                    "meta_content": "",
-                    "prompt_to_media": "",
-                    "media_path": "",
-                    "media_path_remote": "",
-                    "hashtags": [],
-                    "post_type": "prompt_to_media",
-                    "metadata_to_media": {
-                        "background_path": "",
-                        "prompt_to_background": "",
-                        "text": ""
-                    },
-                    "x_links": [],
-                    "ig_links": [],
-                    "fb_links": [],
-                    "theme": "dark"
-                },
-                {
-                    "id": 2200001,
-                    "x_content": "",
-                    "meta_content": "",
-                    "prompt_to_media": "",
-                    "media_path": "",
-                    "media_path_remote": "",
-                    "hashtags": [],
-                    "post_type": "prompt_to_media",
-                    "metadata_to_media": {
-                        "background_path": "",
-                        "prompt_to_background": "",
-                        "text": ""
-                    },
-                    "x_links": [],
-                    "ig_links": [],
-                    "fb_links": [],
-                    "theme": "light"
-                },
-                {
-                    "id": 2200002,
-                    "x_content": "",
-                    "meta_content": "",
-                    "prompt_to_media": "",
-                    "media_path": "",
-                    "media_path_remote": "",
-                    "hashtags": [],
-                    "post_type": "prompt_to_media",
-                    "metadata_to_media": {
-                        "background_path": "",
-                        "prompt_to_background": "",
-                        "text": ""
-                    },
-                    "x_links": [],
-                    "ig_links": [],
-                    "fb_links": [],
-                    "theme": "dark"
-                },
-                {
-                    "id": 2200003,
-                    "x_content": "",
-                    "meta_content": "",
-                    "prompt_to_media": "",
-                    "media_path": "",
-                    "media_path_remote": "",
-                    "hashtags": [],
-                    "post_type": "prompt_to_media",
-                    "metadata_to_media": {
-                        "background_path": "",
-                        "prompt_to_background": "",
-                        "text": ""
-                    },
-                    "x_links": [],
-                    "ig_links": [],
-                    "fb_links": [],
-                    "theme": "light"
-                },
-                {
-                    "id": 2200004,
-                    "x_content": "",
-                    "meta_content": "",
-                    "prompt_to_media": "",
-                    "media_path": "",
-                    "media_path_remote": "",
-                    "hashtags": [],
-                    "post_type": "prompt_to_media",
-                    "metadata_to_media": {
-                        "background_path": "",
-                        "prompt_to_background": "",
-                        "text": ""
-                    },
-                    "x_links": [],
-                    "ig_links": [],
-                    "fb_links": [],
-                    "theme": "dark"
-                }
-            ],
+            "threads": [],
             "copied": false
         },
         {
@@ -429,6 +355,7 @@
             "prompt_to_media": "",
             "media_path": "",
             "media_path_remote": "",
+            "default_phrase": "El sabio no es el que lo sabe todo, sino el que se atreve a aprender incluso de quien menos espera. La humildad no es rendirse, es abrir espacio para crecer.",
             "hashtags": [],
             "metadata_to_media": {
                 "background_path": "",
@@ -440,15 +367,95 @@
             "fb_links": [],
             "theme": "light",
             "post_type": "metadata_to_media",
-            "default_phrase": "El sabio no es el que lo sabe todo, sino el que se atreve a aprender incluso de quien menos espera. La humildad no es rendirse, es abrir espacio para crecer.",
             "topic": "Sabiduría en la humildad",
             "is_processed": false,
             "x_status": "not_posted",
             "ig_status": "not_posted",
             "fb_status": "not_posted",
-            "is_thread": false,
+            "is_thread": true,
             "ai_content": true,
-            "threads": [],
+            "threads": [
+                {
+                    "id": 2300000,
+                    "x_content": "",
+                    "meta_content": "",
+                    "prompt_to_media": "",
+                    "media_path": "",
+                    "media_path_remote": "",
+                    "default_phrase": "",
+                    "hashtags": [],
+                    "metadata_to_media": {
+                        "background_path": "",
+                        "prompt_to_background": "",
+                        "text": ""
+                    },
+                    "x_links": [],
+                    "ig_links": [],
+                    "fb_links": [],
+                    "theme": "dark",
+                    "post_type": "metadata_to_media"
+                },
+                {
+                    "id": 2300001,
+                    "x_content": "",
+                    "meta_content": "",
+                    "prompt_to_media": "",
+                    "media_path": "",
+                    "media_path_remote": "",
+                    "default_phrase": "",
+                    "hashtags": [],
+                    "metadata_to_media": {
+                        "background_path": "",
+                        "prompt_to_background": "",
+                        "text": ""
+                    },
+                    "x_links": [],
+                    "ig_links": [],
+                    "fb_links": [],
+                    "theme": "light",
+                    "post_type": "metadata_to_media"
+                },
+                {
+                    "id": 2300002,
+                    "x_content": "",
+                    "meta_content": "",
+                    "prompt_to_media": "",
+                    "media_path": "",
+                    "media_path_remote": "",
+                    "default_phrase": "",
+                    "hashtags": [],
+                    "metadata_to_media": {
+                        "background_path": "",
+                        "prompt_to_background": "",
+                        "text": ""
+                    },
+                    "x_links": [],
+                    "ig_links": [],
+                    "fb_links": [],
+                    "theme": "dark",
+                    "post_type": "metadata_to_media"
+                },
+                {
+                    "id": 2300003,
+                    "x_content": "",
+                    "meta_content": "",
+                    "prompt_to_media": "",
+                    "media_path": "",
+                    "media_path_remote": "",
+                    "default_phrase": "",
+                    "hashtags": [],
+                    "metadata_to_media": {
+                        "background_path": "",
+                        "prompt_to_background": "",
+                        "text": ""
+                    },
+                    "x_links": [],
+                    "ig_links": [],
+                    "fb_links": [],
+                    "theme": "light",
+                    "post_type": "metadata_to_media"
+                }
+            ],
             "copied": false
         },
         {
@@ -458,6 +465,7 @@
             "prompt_to_media": "",
             "media_path": "",
             "media_path_remote": "",
+            "default_phrase": "La oscuridad no es el enemigo; es la madre de toda chispa. No huyas de ella: camina, porque solo en lo más negro del túnel descubrirás de qué está hecha tu luz.",
             "hashtags": [],
             "metadata_to_media": {
                 "background_path": "",
@@ -469,7 +477,6 @@
             "fb_links": [],
             "theme": "dark",
             "post_type": "prompt_to_media",
-            "default_phrase": "La oscuridad no es el enemigo; es la madre de toda chispa. No huyas de ella: camina, porque solo en lo más negro del túnel descubrirás de qué está hecha tu luz.",
             "topic": "Luz en medio de la oscuridad",
             "is_processed": false,
             "x_status": "not_posted",
@@ -487,6 +494,7 @@
             "prompt_to_media": "",
             "media_path": "",
             "media_path_remote": "",
+            "default_phrase": "Tal vez el destino ya está escrito, pero cada paso que das lo vuelve tuyo. Eres tanto el viajero como el camino, y en esa danza, hasta el destino tiembla.",
             "hashtags": [],
             "metadata_to_media": {
                 "background_path": "",
@@ -498,7 +506,6 @@
             "fb_links": [],
             "theme": "light",
             "post_type": "metadata_to_media",
-            "default_phrase": "Tal vez el destino ya está escrito, pero cada paso que das lo vuelve tuyo. Eres tanto el viajero como el camino, y en esa danza, hasta el destino tiembla.",
             "topic": "Destino y elección",
             "is_processed": false,
             "x_status": "not_posted",
@@ -516,6 +523,7 @@
             "prompt_to_media": "",
             "media_path": "",
             "media_path_remote": "",
+            "default_phrase": "Amar es decir: te veo completo, con tus demonios y tus ángeles, y aún así elijo quedarme. No porque seas perfecto, sino porque en tu imperfección yo también me reconozco.",
             "hashtags": [],
             "metadata_to_media": {
                 "background_path": "",
@@ -527,7 +535,6 @@
             "fb_links": [],
             "theme": "dark",
             "post_type": "metadata_to_media_with_background",
-            "default_phrase": "Amar es decir: te veo completo, con tus demonios y tus ángeles, y aún así elijo quedarme. No porque seas perfecto, sino porque en tu imperfección yo también me reconozco.",
             "topic": "Amor sin condiciones",
             "is_processed": false,
             "x_status": "not_posted",
@@ -545,6 +552,7 @@
             "prompt_to_media": "",
             "media_path": "",
             "media_path_remote": "",
+            "default_phrase": "No es débil quien llora, es fuerte quien no teme romperse frente a otro. Porque las lágrimas no son caída, son puente entre dos corazones que se atreven a encontrarse.",
             "hashtags": [],
             "metadata_to_media": {
                 "background_path": "",
@@ -556,111 +564,14 @@
             "fb_links": [],
             "theme": "light",
             "post_type": "metadata_to_media",
-            "default_phrase": "No es débil quien llora, es fuerte quien no teme romperse frente a otro. Porque las lágrimas no son caída, son puente entre dos corazones que se atreven a encontrarse.",
             "topic": "Fuerza en la vulnerabilidad",
             "is_processed": false,
             "x_status": "not_posted",
             "ig_status": "not_posted",
             "fb_status": "not_posted",
-            "is_thread": true,
+            "is_thread": false,
             "ai_content": true,
-            "threads": [
-                {
-                    "id": 2700000,
-                    "x_content": "",
-                    "meta_content": "",
-                    "prompt_to_media": "",
-                    "media_path": "",
-                    "media_path_remote": "",
-                    "hashtags": [],
-                    "post_type": "metadata_to_media",
-                    "metadata_to_media": {
-                        "background_path": "",
-                        "prompt_to_background": "",
-                        "text": ""
-                    },
-                    "x_links": [],
-                    "ig_links": [],
-                    "fb_links": [],
-                    "theme": "dark"
-                },
-                {
-                    "id": 2700001,
-                    "x_content": "",
-                    "meta_content": "",
-                    "prompt_to_media": "",
-                    "media_path": "",
-                    "media_path_remote": "",
-                    "hashtags": [],
-                    "post_type": "metadata_to_media",
-                    "metadata_to_media": {
-                        "background_path": "",
-                        "prompt_to_background": "",
-                        "text": ""
-                    },
-                    "x_links": [],
-                    "ig_links": [],
-                    "fb_links": [],
-                    "theme": "light"
-                },
-                {
-                    "id": 2700002,
-                    "x_content": "",
-                    "meta_content": "",
-                    "prompt_to_media": "",
-                    "media_path": "",
-                    "media_path_remote": "",
-                    "hashtags": [],
-                    "post_type": "metadata_to_media",
-                    "metadata_to_media": {
-                        "background_path": "",
-                        "prompt_to_background": "",
-                        "text": ""
-                    },
-                    "x_links": [],
-                    "ig_links": [],
-                    "fb_links": [],
-                    "theme": "dark"
-                },
-                {
-                    "id": 2700003,
-                    "x_content": "",
-                    "meta_content": "",
-                    "prompt_to_media": "",
-                    "media_path": "",
-                    "media_path_remote": "",
-                    "hashtags": [],
-                    "post_type": "metadata_to_media",
-                    "metadata_to_media": {
-                        "background_path": "",
-                        "prompt_to_background": "",
-                        "text": ""
-                    },
-                    "x_links": [],
-                    "ig_links": [],
-                    "fb_links": [],
-                    "theme": "light"
-                },
-                {
-                    "id": 2700004,
-                    "x_content": "",
-                    "meta_content": "",
-                    "prompt_to_media": "",
-                    "media_path": "",
-                    "media_path_remote": "",
-                    "hashtags": [],
-                    "post_type": "metadata_to_media",
-                    "metadata_to_media": {
-                        "background_path": "",
-                        "prompt_to_background": "",
-                        "text": ""
-                    },
-                    "x_links": [],
-                    "ig_links": [],
-                    "fb_links": [],
-                    "theme": "dark"
-                }
-            ],
+            "threads": [],
             "copied": false
         },
         {
@@ -670,6 +581,7 @@
             "prompt_to_media": "",
             "media_path": "",
             "media_path_remote": "",
+            "default_phrase": "En un mundo que grita para existir, sentarse en silencio junto a otro es un acto revolucionario. Ahí, entre respiraciones, se confiesan las verdades más puras.",
             "hashtags": [],
             "metadata_to_media": {
                 "background_path": "",
@@ -681,7 +593,6 @@
             "fb_links": [],
             "theme": "dark",
             "post_type": "prompt_to_media",
-            "default_phrase": "En un mundo que grita para existir, sentarse en silencio junto a otro es un acto revolucionario. Ahí, entre respiraciones, se confiesan las verdades más puras.",
             "topic": "El valor del silencio compartido",
             "is_processed": false,
             "x_status": "not_posted",
@@ -699,6 +610,7 @@
             "prompt_to_media": "",
             "media_path": "",
             "media_path_remote": "",
+            "default_phrase": "No maldigas al caos, pregúntale qué quiere mostrarte. Solo quien atraviesa la tormenta sin cerrar los ojos, descubre qué estrellas estaban ocultas detrás de las nubes.",
             "hashtags": [],
             "metadata_to_media": {
                 "background_path": "",
@@ -710,15 +622,35 @@
             "fb_links": [],
             "theme": "light",
             "post_type": "metadata_to_media",
-            "default_phrase": "No maldigas al caos, pregúntale qué quiere mostrarte. Solo quien atraviesa la tormenta sin cerrar los ojos, descubre qué estrellas estaban ocultas detrás de las nubes.",
             "topic": "Caos como maestro",
             "is_processed": false,
             "x_status": "not_posted",
             "ig_status": "not_posted",
             "fb_status": "not_posted",
-            "is_thread": false,
+            "is_thread": true,
             "ai_content": true,
-            "threads": [],
+            "threads": [
+                {
+                    "id": 2900000,
+                    "x_content": "",
+                    "meta_content": "",
+                    "prompt_to_media": "",
+                    "media_path": "",
+                    "media_path_remote": "",
+                    "default_phrase": "",
+                    "hashtags": [],
+                    "metadata_to_media": {
+                        "background_path": "",
+                        "prompt_to_background": "",
+                        "text": ""
+                    },
+                    "x_links": [],
+                    "ig_links": [],
+                    "fb_links": [],
+                    "theme": "dark",
+                    "post_type": "metadata_to_media"
+                }
+            ],
             "copied": false
         },
         {
@@ -728,6 +660,7 @@
             "prompt_to_media": "",
             "media_path": "",
             "media_path_remote": "",
+            "default_phrase": "La armonía no nace de hacer que todos piensen igual, sino de aprender a danzar con las diferencias, sin intentar borrarlas, porque ahí vive la belleza del nosotros.",
             "hashtags": [],
             "metadata_to_media": {
                 "background_path": "",
@@ -739,7 +672,6 @@
             "fb_links": [],
             "theme": "dark",
             "post_type": "prompt_to_media",
-            "default_phrase": "La armonía no nace de hacer que todos piensen igual, sino de aprender a danzar con las diferencias, sin intentar borrarlas, porque ahí vive la belleza del nosotros.",
             "topic": "Unidad en la diferencia",
             "is_processed": false,
             "x_status": "not_posted",
@@ -757,6 +689,7 @@
             "prompt_to_media": "",
             "media_path": "",
             "media_path_remote": "",
+            "default_phrase": "Redimirte no es borrar tu historia, es abrazarla. Cada cicatriz que cargas es una página que ya fue escrita, pero lo que haces con ella hoy es el verdadero milagro.",
             "hashtags": [],
             "metadata_to_media": {
                 "background_path": "",
@@ -768,7 +701,6 @@
             "fb_links": [],
             "theme": "light",
             "post_type": "metadata_to_media",
-            "default_phrase": "Redimirte no es borrar tu historia, es abrazarla. Cada cicatriz que cargas es una página que ya fue escrita, pero lo que haces con ella hoy es el verdadero milagro.",
             "topic": "Redención y perdón",
             "is_processed": false,
             "x_status": "not_posted",
@@ -786,6 +718,7 @@
             "prompt_to_media": "",
             "media_path": "",
             "media_path_remote": "",
+            "default_phrase": "La vida no pide ser entendida, pide ser respirada. Si dejas de exigirle respuestas, tal vez empieces a escuchar las preguntas que realmente importan.",
             "hashtags": [],
             "metadata_to_media": {
                 "background_path": "",
@@ -797,35 +730,14 @@
             "fb_links": [],
             "theme": "dark",
             "post_type": "metadata_to_media_with_background",
-            "default_phrase": "La vida no pide ser entendida, pide ser respirada. Si dejas de exigirle respuestas, tal vez empieces a escuchar las preguntas que realmente importan.",
             "topic": "Rendirse al misterio de la vida",
             "is_processed": false,
             "x_status": "not_posted",
             "ig_status": "not_posted",
             "fb_status": "not_posted",
-            "is_thread": true,
+            "is_thread": false,
             "ai_content": true,
-            "threads": [
-                {
-                    "id": 3200000,
-                    "x_content": "",
-                    "meta_content": "",
-                    "prompt_to_media": "",
-                    "media_path": "",
-                    "media_path_remote": "",
-                    "hashtags": [],
-                    "post_type": "metadata_to_media_with_background",
-                    "metadata_to_media": {
-                        "background_path": "",
-                        "prompt_to_background": "",
-                        "text": ""
-                    },
-                    "x_links": [],
-                    "ig_links": [],
-                    "fb_links": [],
-                    "theme": "dark"
-                }
-            ],
+            "threads": [],
             "copied": false
         },
         {
@@ -835,6 +747,7 @@
             "prompt_to_media": "",
             "media_path": "",
             "media_path_remote": "",
+            "default_phrase": "Humilde es el guerrero que sabe cuándo soltar la espada, no por miedo, sino porque entiende que a veces la mayor victoria es no pelear la batalla equivocada.",
             "hashtags": [],
             "metadata_to_media": {
                 "background_path": "",
@@ -846,7 +759,6 @@
             "fb_links": [],
             "theme": "light",
             "post_type": "metadata_to_media",
-            "default_phrase": "Humilde es el guerrero que sabe cuándo soltar la espada, no por miedo, sino porque entiende que a veces la mayor victoria es no pelear la batalla equivocada.",
             "topic": "Sabiduría en la humildad",
             "is_processed": false,
             "x_status": "not_posted",

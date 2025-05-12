@@ -65,7 +65,7 @@ class InstagramAPI:
             raise HTTPException(status_code=500, detail=f"Error publishing post: {publish_data}")
 
         post_id = publish_data['id']
-        print(f"✅ Post published successfully: {post_id}")
+        print(f"✅ Instagram: Post published successfully: {post_id}")
 
         return {
             "message": "Instagram post published successfully",
@@ -166,7 +166,7 @@ class InstagramAPI:
             raise HTTPException(status_code=500, detail=f"Error publishing carousel: {publish_data}")
 
         post_id = publish_data['id']
-        print(f"✅ Carousel published successfully: {post_id}")
+        print(f"✅ Instagram: Carousel published successfully: {post_id}")
 
         return {
             "message": "Instagram carousel published successfully",

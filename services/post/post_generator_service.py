@@ -69,6 +69,15 @@ class PostGeneratorService:
         - metadata_to_media_with_background
         """
         return SEQUENCE[index]
+    
+    def get_is_thread(self, index):
+        """
+        Get if the post is a thread based on the index.
+        """
+        is_thread = False
+        if index == 1:
+            is_thread = True
+        return is_thread
 
     def get_theme(self, new_id):
         theme = "light"
@@ -113,6 +122,7 @@ class PostGeneratorService:
         base_post = self.get_base_post()
         processed_post = base_post.copy()
         post_type = self.get_post_type(index)
+        is_thread = self.get_is_thread(index)
 
         processed_post["id"] = new_id
         processed_post["post_type"] = post_type
@@ -122,10 +132,10 @@ class PostGeneratorService:
         processed_post["x_status"] = "not_posted"
         processed_post["ig_status"] = "not_posted"
         processed_post["fb_status"] = "not_posted"
-        processed_post["is_thread"] = post["is_thread"]
+        processed_post["is_thread"] = is_thread
         processed_post["theme"] = self.get_theme(new_id)
         processed_post["ai_content"] = True
-        processed_post["threads"] = self.get_generated_threads(post["is_thread"], new_id, post_type)
+        processed_post["threads"] = self.get_generated_threads(is_thread, new_id, post_type)
         processed_post["copied"] = False
 
         return processed_post
@@ -288,8 +298,10 @@ class PostGeneratorService:
         characters_hashtags = count_characters(hashtags_string) + 3
         x_content_limit = int(os.getenv("X_CONTENT_LIMIT", "288"))
         meta_content_limit = int(os.getenv("META_CONTENT_LIMIT", "1000"))
+
         if is_thread:
             x_content_limit = int(os.getenv("X_CONTENT_LIMIT_THREAD", "1000")) / 5
+            characters_hashtags = 0
         
         message = f"the idea must be in the in-depth content"
 
@@ -304,7 +316,7 @@ class PostGeneratorService:
 
                 post_data["meta_content"] = await self.openai_service.generate_post_content(post_data["default_phrase"], limit, message)
 
-        elif post_type == "metadata_to_media":
+        elif post_type == "metadata_to_media" or post_type == "metadata_to_media_with_background":
 
             if not is_thread:
                 message = f"Generate an invitation to follow, you can include emojis, or phrases that motivate or invite the user to follow the page"
@@ -329,18 +341,22 @@ class PostGeneratorService:
         post_data = await self.post_service.get_next_post("is_processed", False, json_file=json_file)
         if not post_data:
             return None
-
+        
         post_data = await self.generate_data_post(post_data)
+
+        if not post_data.get("media_path") and not post_data.get("media_path_remote"):
+            print("📷 Post has no media files, regenerating...")
+            post_data = await self.generate_data_post(post_data)
 
         post_data["is_processed"] = True
         await self.post_service.save_updated_post(post_data, json_file=json_file)
         await self.post_service.save_updated_post(post_data)
-        print(f"Post {post_data['id']} processed successfully.")
+        print(f"✅ App: Post {post_data['id']} processed successfully.")
         return post_data
     
     def generate_thread_id(self, parent_id, index):
-        print("Generating thread ID...")
-        print(f"Parent ID: {parent_id}, Index: {index}")
+        # print("Generating thread ID...")
+        # print(f"Parent ID: {parent_id}, Index: {index}")
         return (parent_id * 100000) + index
     
     async def save_processed_posts_to_json(self):
