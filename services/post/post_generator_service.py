@@ -19,6 +19,8 @@ SEQUENCE = [
     "metadata_to_media" #6
 ]
 
+MODEL_MINI = os.getenv("OPENAI_CONTENT_MODEL_2")
+
 class PostGeneratorService:
     def __init__(self):
         self.json_handler = JSONHandler()
@@ -163,7 +165,7 @@ class PostGeneratorService:
         await self.get_unprocessed_posts_from_json()
         await self.process_posts()
 
-    async def generate_threads_content(self, post_data):
+    async def generate_threads_content(self, post_data, total_threads=0):
         """
         Generate threads content for a single post.
         """
@@ -178,29 +180,39 @@ class PostGeneratorService:
 
                 if(index == 0):
                     last_phrase = post_data["default_phrase"]
+                    last_content_x = post_data["x_content"]
+                    last_content_meta = post_data["meta_content"]
                 else:
                     last_phrase = threads[index - 1]["default_phrase"]
+                    last_content_x = threads[index - 1]["x_content"]
+                    last_content_meta = threads[index - 1]["meta_content"]
 
                 if not thread.get("default_phrase"):
                     thread["default_phrase"] = await self.openai_service.generate_default_phrase(last_phrase, limit_default_phrase, prompt_default_phrase)
 
-                thread = await self.generate_data_post(thread, is_thread=True)
+                thread = await self.generate_data_post(thread, is_thread=True, last_content={
+                    "x_content": last_content_x,
+                    "meta_content": last_content_meta
+                }, total_threads=total_threads)
 
         return post_data
 
-    async def generate_data_post(self, post_data, is_thread=False):
+    async def generate_data_post(self, post_data, is_thread=False, last_content={}, total_threads=0):
         """
         Generate data for a single post.
         """
+        if not is_thread:
+            total_threads = len(post_data["threads"])
+
         post_data = await self.generate_media_by_post_type(post_data)
         if not is_thread:
             post_data = await self.generate_post_hashtags(post_data)
 
-        post_data = await self.generate_post_content(post_data, "x_content", is_thread)
-        post_data = await self.generate_post_content(post_data, "meta_content", is_thread)
+        post_data = await self.generate_post_content(post_data, "x_content", is_thread, last_content, total_threads=total_threads)
+        post_data = await self.generate_post_content(post_data, "meta_content", is_thread, last_content, total_threads=total_threads)
 
         if not is_thread:
-            post_data = await self.generate_threads_content(post_data)
+            post_data = await self.generate_threads_content(post_data, total_threads=total_threads)
 
         return post_data
 
@@ -284,12 +296,13 @@ class PostGeneratorService:
         """
         Generate hashtags for a single post.
         """
+        total_random_hashtags = random.randint(2, 8)
         if not len(post_data["hashtags"]) > 0:
-            hashtags = await self.openai_service.generate_hashtags(post_data["default_phrase"])
+            hashtags = await self.openai_service.generate_hashtags(post_data["default_phrase"], total_random_hashtags, model=MODEL_MINI)
             post_data["hashtags"] = split_array(hashtags)
         return post_data
     
-    async def generate_post_content(self, post_data, content_type, is_thread=False):
+    async def generate_post_content(self, post_data, content_type, is_thread=False, last_content={}, total_threads=0):
         """
         Generate content for a single post.
         """
@@ -299,37 +312,47 @@ class PostGeneratorService:
         x_content_limit = int(os.getenv("X_CONTENT_LIMIT", "288"))
         meta_content_limit = int(os.getenv("META_CONTENT_LIMIT", "1000"))
 
+        divider_content = total_threads + 1
+        print(f"total_threads {total_threads} post_data {post_data.get('id')} divider_content {divider_content}")
+
         if is_thread:
-            x_content_limit = int(os.getenv("X_CONTENT_LIMIT_THREAD", "1000")) / 5
+            x_content_limit = x_content_limit
+            meta_content_limit = int(os.getenv("META_CONTENT_LIMIT", "1000")) / divider_content
             characters_hashtags = 0
+            print(f"characters_hashtags {characters_hashtags} x_content_limit {x_content_limit} meta_content_limit {meta_content_limit}")
         
-        message = f"the idea must be in the in-depth content"
+        message = f"continue with the reflection according to the idea and the idea must be in the in-depth content and respect the limit characters"
 
         if post_type == "prompt_to_media":
             if content_type == "x_content" and not post_data["x_content"]:
                 limit = str(x_content_limit - characters_hashtags)
+                print(f"Limit: {limit}")
+                last_content_x = last_content.get("x_content", post_data["default_phrase"])
 
-                post_data["x_content"] = await self.openai_service.generate_post_content(post_data["default_phrase"], limit, message)
+                print(f"Last content x: {last_content_x}")
+
+                post_data["x_content"] = await self.openai_service.generate_post_content(last_content_x, limit, message)
 
             elif content_type == "meta_content" and not post_data["meta_content"]:
                 limit = str(meta_content_limit - characters_hashtags)
+                last_content_meta = last_content.get("meta_content", post_data["default_phrase"])
 
-                post_data["meta_content"] = await self.openai_service.generate_post_content(post_data["default_phrase"], limit, message)
+                post_data["meta_content"] = await self.openai_service.generate_post_content(last_content_meta, limit, message)
 
         elif post_type == "metadata_to_media" or post_type == "metadata_to_media_with_background":
 
-            if not is_thread:
+            if total_threads == 0:
                 message = f"Generate an invitation to follow, you can include emojis, or phrases that motivate or invite the user to follow the page"
 
             if content_type == "x_content" and not post_data["x_content"]:
                 limit = str(x_content_limit - characters_hashtags)
 
-                post_data["x_content"] = await self.openai_service.generate_post_content(post_data["default_phrase"], limit, message)
+                post_data["x_content"] = await self.openai_service.generate_post_content(post_data["default_phrase"], limit, message, model=MODEL_MINI)
 
             elif content_type == "meta_content" and not post_data["meta_content"]:
                 limit = str((meta_content_limit/2) - characters_hashtags)
 
-                post_data["meta_content"] = await self.openai_service.generate_post_content(post_data["default_phrase"], limit, message)
+                post_data["meta_content"] = await self.openai_service.generate_post_content(post_data["default_phrase"], limit, message, model=MODEL_MINI)
 
         return post_data
 

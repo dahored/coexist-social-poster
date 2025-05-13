@@ -1,3 +1,4 @@
+import os
 from fastapi import APIRouter
 from services.post.post_service import PostService
 from services.post.post_generator_service import PostGeneratorService
@@ -32,11 +33,6 @@ async def generate_posts():
     await post_generator_service.generate_post()
     return {"message": "Post generated."}
 
-# @router.post("/process-post")
-# async def process_post():
-#     await post_service.process_post()
-#     return {"message": "Post processed."}
-
 @router.post("/run-posts")
 async def run():
     result = {}
@@ -69,8 +65,9 @@ async def run():
 
     all_ok = x_ok and instagram_ok and facebook_ok
 
-    if all_ok:
-        await file_handler.clean_uploaded_files()
+    if all_ok and os.getenv("ALLOW_DELETE_LOCAL_UPLOADS", "false").lower() == "true":
+        print("Deleting local uploads...")
+        # await file_handler.clean_uploaded_files()
 
     message = "✅ App: Posts processed and published successfully."
     if errors:

@@ -39,7 +39,7 @@
             "is_thread": false,
             "ai_content": true,
             "threads": [],
-            "copied": false
+            "copied": true
         },
         {
             "id": 17,
@@ -160,7 +160,7 @@
                     "default_phrase": "Al dejar ver mis grietas, me hago más fuerte. La verdadera resistencia está en mostrarnos tal como somos, porque en la vulnerabilidad encontramos el poder de ser auténticos y valientes."
                 }
             ],
-            "copied": false
+            "copied": true
         },
         {
             "id": 18,
@@ -200,7 +200,7 @@
             "is_thread": false,
             "ai_content": true,
             "threads": [],
-            "copied": false
+            "copied": true
         },
         {
             "id": 19,
@@ -240,7 +240,7 @@
             "is_thread": false,
             "ai_content": true,
             "threads": [],
-            "copied": false
+            "copied": true
         },
         {
             "id": 20,
@@ -280,7 +280,7 @@
             "is_thread": false,
             "ai_content": true,
             "threads": [],
-            "copied": false
+            "copied": true
         },
         {
             "id": 21,
@@ -320,7 +320,204 @@
             "is_thread": false,
             "ai_content": true,
             "threads": [],
-            "copied": false
+            "copied": true
+        },
+        {
+            "id": 22,
+            "x_content": "A veces, lo inexplicable también encanta. Hay belleza en amar lo que no se entiende y vivir el misterio.",
+            "meta_content": "En un mundo que a menudo demanda respuestas claras y certezas, hay un rincón especial para lo inexplicable, para lo que simplemente es. No todo en la vida está diseñado para ser descifrado; algunos misterios existen solo para ser disfrutados desde el corazón. Amar no siempre requiere comprensión total; a veces, la verdadera belleza yace en la aceptación de lo desconocido. Cuando nos rendimos al misterio, permitimos que la vida nos sorprenda y nos enseñe en formas que nunca imaginamos. Las respuestas no siempre llegan en palabras, a veces se viven, se sienten, se experimentan. Así que, en lugar de buscar entenderlo todo, abraza la libertad de no saber, y descubre la magia en el simple acto de ser.",
+            "prompt_to_media": "Find beauty in surrendering to mystery; not everything needs to be understood to be loved. Embrace the idea that some answers are meant to be lived rather than comprehended. Explore a world where the unseen and unexplained are cherished, inviting a deeper appreciation of the unknown.",
+            "media_path": "/app/public/uploads/images/image_file_22.png",
+            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1747060426/uploads/image_file_22.png",
+            "default_phrase": "No todo tiene que ser entendido para ser amado. Hay belleza en rendirse al misterio, en aceptar que algunas respuestas están destinadas solo a ser vividas.",
+            "hashtags": [
+                "#AmorSinExplicación",
+                "#BellezaDelMisterio",
+                "#VivirElEnigma",
+                "#AceptaciónMisteriosa",
+                "#RendirseAlDesconocido",
+                "#ExplorandoElAmor",
+                "#MisterioAmado",
+                "#ViveSinResponder"
+            ],
+            "metadata_to_media": {
+                "background_path": "",
+                "prompt_to_background": "",
+                "text": ""
+            },
+            "x_links": [],
+            "ig_links": [],
+            "fb_links": [],
+            "theme": "dark",
+            "post_type": "prompt_to_media",
+            "topic": "Rendirse al misterio de la vida",
+            "is_processed": true,
+            "x_status": "posted",
+            "ig_status": "posted",
+            "fb_status": "posted",
+            "is_thread": false,
+            "ai_content": true,
+            "threads": [],
+            "copied": true
+        },
+        {
+            "id": 23,
+            "x_content": "🌟 ¡Únete a nuestra comunidad de aprendizaje y crecimiento! 🌱 Comparte, aprende y crece con nosotros. ¡Síguenos para inspirarte cada día! 🚀✨ ",
+            "meta_content": "🌟 ¡Descubre un mundo de sabiduría y aprendizaje! ✨ Aquí celebramos el poder de la humildad y el crecimiento personal. Únete a nuestra comunidad y atrévete a aprender algo nuevo cada día. 🚀 ¡Síguenos y transforma tu visión del conocimiento! 📖❤️",
+            "prompt_to_media": "",
+            "media_path": "/app/public/uploads/images/image_file_23.png",
+            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1747071001/uploads/image_file_23.png",
+            "default_phrase": "El sabio no es el que lo sabe todo, sino el que se atreve a aprender incluso de quien menos espera. La humildad no es rendirse, es abrir espacio para crecer.",
+            "hashtags": [
+                "#SabiduríaHumilde",
+                "#AprenderDeTodos",
+                "#CrecimientoPersonal",
+                "#Humildad",
+                "#SabioEnCadaLección",
+                "#EspacioParaCrecer",
+                "#EscucharYAprender",
+                "#ValorDeLaHumildad",
+                "#AprendizajeContinuo",
+                "#LeccionesDeVida"
+            ],
+            "metadata_to_media": {
+                "background_path": "",
+                "prompt_to_background": "",
+                "text": "El sabio no es el que lo sabe todo, sino el que se atreve a aprender incluso de quien menos espera. La humildad no es rendirse, es abrir espacio para crecer."
+            },
+            "x_links": [],
+            "ig_links": [],
+            "fb_links": [],
+            "theme": "light",
+            "post_type": "metadata_to_media",
+            "topic": "Sabiduría en la humildad",
+            "is_processed": true,
+            "x_status": "posted",
+            "ig_status": "posted",
+            "fb_status": "posted",
+            "is_thread": true,
+            "ai_content": true,
+            "threads": [
+                {
+                    "id": 2300000,
+                    "x_content": "La verdadera sabiduría no se encuentra solo en libros, sino en cada experiencia y persona que cruzamos en nuestro camino. Cada encuentro trae consigo una lección valiosa. Practicar la humildad nos abre a un crecimiento constante y profundo, transformando nuestra vida en un aprendizaje continuo. ",
+                    "meta_content": "La verdadera sabiduría se encuentra al aprender de cada experiencia y persona. La humildad es clave para crecer.",
+                    "prompt_to_media": "",
+                    "media_path": "/app/public/uploads/images/image_file_2300000.png",
+                    "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1747078380/uploads/image_file_2300000.png",
+                    "default_phrase": "La verdadera sabiduría radica en reconocer que cada experiencia y persona puede enseñarnos algo nuevo. La humildad es el primer paso hacia un crecimiento constante y profundo en nuestras vidas.",
+                    "hashtags": [],
+                    "metadata_to_media": {
+                        "background_path": "",
+                        "prompt_to_background": "",
+                        "text": "La verdadera sabiduría radica en reconocer que cada experiencia y persona puede enseñarnos algo nuevo. La humildad es el primer paso hacia un crecimiento constante y profundo en nuestras vidas."
+                    },
+                    "x_links": [],
+                    "ig_links": [],
+                    "fb_links": [],
+                    "theme": "dark",
+                    "post_type": "metadata_to_media"
+                },
+                {
+                    "id": 2300001,
+                    "x_content": "La verdadera sabiduría no se encuentra solo en los libros, sino en la humildad de aprender de cada experiencia y persona que cruzamos en nuestro camino. Al abrir nuestra mente y corazón, descubrimos lecciones valiosas que nos enriquecen y nos hacen crecer. ¡Nunca dejemos de aprender!",
+                    "meta_content": "La verdadera sabiduría se encuentra en la humildad de aprender de cada experiencia y persona. Al abrir nuestra mente y corazón, crecemos de maneras inesperadas y enriquecedoras. Cada interacción, cada desafío, ofrece lecciones valiosas que nos moldean. Nunca olvidemos que el aprendizaje es un viaje continuo. ¡Sigamos creciendo juntos!",
+                    "prompt_to_media": "",
+                    "media_path": "/app/public/uploads/images/image_file_2300001.png",
+                    "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1747078389/uploads/image_file_2300001.png",
+                    "default_phrase": "La verdadera sabiduría radica en la humildad de aprender de cada experiencia y persona. Al abrir nuestra mente y corazón, crecemos en formas inesperadas y enriquecedoras. ¡Nunca dejemos de aprender!",
+                    "hashtags": [],
+                    "metadata_to_media": {
+                        "background_path": "",
+                        "prompt_to_background": "",
+                        "text": "La verdadera sabiduría radica en la humildad de aprender de cada experiencia y persona. Al abrir nuestra mente y corazón, crecemos en formas inesperadas y enriquecedoras. ¡Nunca dejemos de aprender!"
+                    },
+                    "x_links": [],
+                    "ig_links": [],
+                    "fb_links": [],
+                    "theme": "light",
+                    "post_type": "metadata_to_media"
+                },
+                {
+                    "id": 2300002,
+                    "x_content": "Cada encuentro es una oportunidad de aprendizaje. La verdadera sabiduría radica en reconocer que siempre hay algo nuevo por descubrir. A veces, las lecciones más valiosas vienen de lugares inesperados. Abramos nuestros corazones y mentes a la riqueza del conocimiento compartido.",
+                    "meta_content": "Cada encuentro es una oportunidad para aprender. La sabiduría reside en descubrir lo nuevo en cada experiencia.",
+                    "prompt_to_media": "",
+                    "media_path": "/app/public/uploads/images/image_file_2300002.png",
+                    "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1747078398/uploads/image_file_2300002.png",
+                    "default_phrase": "Cada encuentro es una oportunidad de aprendizaje. La verdadera sabiduría radica en reconocer que siempre hay algo nuevo por descubrir, sin importar de dónde venga esa enseñanza.",
+                    "hashtags": [],
+                    "metadata_to_media": {
+                        "background_path": "",
+                        "prompt_to_background": "",
+                        "text": "Cada encuentro es una oportunidad de aprendizaje. La verdadera sabiduría radica en reconocer que siempre hay algo nuevo por descubrir, sin importar de dónde venga esa enseñanza."
+                    },
+                    "x_links": [],
+                    "ig_links": [],
+                    "fb_links": [],
+                    "theme": "dark",
+                    "post_type": "metadata_to_media"
+                },
+                {
+                    "id": 2300003,
+                    "x_content": "La verdadera sabiduría no se encuentra solo en la experiencia acumulada, sino en la curiosidad y la disposición a escuchar. Cada persona tiene una historia que contar y algo que enseñarnos. Aprendamos de los demás y permitamos que su conocimiento enriquezca nuestro propio camino. La vida es un viaje de crecimiento constante. ",
+                    "meta_content": "La verdadera sabiduría surge de la curiosidad y la escucha activa. Aprender de los demás, sin importar su experiencia, nos enriquece y fomenta un crecimiento constante en nuestras vidas. Cada persona tiene una historia, una lección valiosa que ofrecer. Al abrirnos a nuevas perspectivas, no solo expandimos nuestro entendimiento, sino que también fortalecemos nuestras relaciones y comunidades. La vida es un continuo intercambio de conocimiento; cada conversación es una oportunidad para aprender y crecer. ¡Valoremos la sabiduría colectiva que nos rodea!",
+                    "prompt_to_media": "",
+                    "media_path": "/app/public/uploads/images/image_file_2300003.png",
+                    "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1747078406/uploads/image_file_2300003.png",
+                    "default_phrase": "La verdadera sabiduría radica en la curiosidad y la disposición a escuchar. Aprender de los demás, sin importar su experiencia, enriquece nuestra vida y nos lleva a un crecimiento constante.",
+                    "hashtags": [],
+                    "metadata_to_media": {
+                        "background_path": "",
+                        "prompt_to_background": "",
+                        "text": "La verdadera sabiduría radica en la curiosidad y la disposición a escuchar. Aprender de los demás, sin importar su experiencia, enriquece nuestra vida y nos lleva a un crecimiento constante."
+                    },
+                    "x_links": [],
+                    "ig_links": [],
+                    "fb_links": [],
+                    "theme": "light",
+                    "post_type": "metadata_to_media"
+                }
+            ],
+            "copied": true
+        },
+        {
+            "id": 24,
+            "x_content": "Abraza la oscuridad; es donde tu luz nace y crece. Camina en ella y descubre tu verdadero brillo.",
+            "meta_content": "La oscuridad no es el enemigo; es la madre de toda chispa. En tiempos de penumbra, cuando el mundo parece cubrirse de sombras, es fácil querer huir. Pero, ¿y si te dijera que justo allí, donde la luz parece haberse extinguido, es donde puedes descubrir lo más auténtico de ti? La vida nos lleva a través de túneles oscuros, y aunque el instinto nos grita que corramos, es el caminar lento lo que nos revela los destellos escondidos en nuestro interior. Cada paso en la negrura te desafía y, al mismo tiempo, te muestra de qué está hecha tu verdadera luz. No temas la oscuridad; abrázala, porque solo al atravesarla comprenderás que la chispa que buscas siempre ha estado en ti, esperando el momento exacto para brillar con toda su fuerza.",
+            "prompt_to_media": "A lone traveler stands at the entrance of a dark tunnel, pausing to look back at the fading light behind them before stepping forward into the inky blackness. As they move deeper into the tunnel, the oppressive darkness seems to wrap around them, yet within it, tiny sparks begin to flicker around their fingertips, illuminating the path with a soft, ethereal glow. With each step, the sparks grow brighter and more vibrant, revealing the beauty hidden within the shadows and symbolizing the journey of self-discovery and the inner light found in the depths of darkness.",
+            "media_path": "/app/public/uploads/images/image_file_24.png",
+            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1747084021/uploads/image_file_24.png",
+            "default_phrase": "La oscuridad no es el enemigo; es la madre de toda chispa. No huyas de ella: camina, porque solo en lo más negro del túnel descubrirás de qué está hecha tu luz.",
+            "hashtags": [
+                "#EncuentraTuLuz",
+                "#CaminaEnLaOscuridad",
+                "#ChispaInterior",
+                "#LuzEnElTúnel",
+                "#RenacerEnLaOscuridad",
+                "#DescubreTuFuerza",
+                "#ValentíaEnLaSombra",
+                "#TransformaciónEnLaOscuridad"
+            ],
+            "metadata_to_media": {
+                "background_path": "",
+                "prompt_to_background": "",
+                "text": ""
+            },
+            "x_links": [],
+            "ig_links": [],
+            "fb_links": [],
+            "theme": "dark",
+            "post_type": "prompt_to_media",
+            "topic": "Luz en medio de la oscuridad",
+            "is_processed": true,
+            "x_status": "posted",
+            "ig_status": "posted",
+            "fb_status": "posted",
+            "is_thread": false,
+            "ai_content": true,
+            "threads": [],
+            "copied": true
         }
     ]
 }
