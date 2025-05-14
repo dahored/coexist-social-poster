@@ -1,5 +1,6 @@
 import os
 import random
+import subprocess
 from PIL import Image, ImageDraw, ImageFont, ImageEnhance
 import uuid
 
@@ -179,12 +180,14 @@ class ImageServiceHandler:
         temp_file_path = os.path.join(TEMPS_DIR, temp_filename)
         canvas.save(temp_file_path, format='PNG')
 
+        self.optimize_image_file(temp_file_path)
         result = self.file_handler.move_temp_file_to_folder(temp_file_path, id)
         return result
     
     async def generate_media_by_prompt(self, prompt, id, temp_file_name="temp.png", other_name=""):
         print(f"Generating file from prompt: {prompt}")
         temp_file_path = await self.generate_image_from_prompt(prompt, temp_file_name)
+        self.optimize_image_file(temp_file_path)
         return self.file_handler.move_temp_file_to_folder(temp_file_path, id, other_name)
 
     async def generate_image_from_prompt(self, prompt, filename="temp.png"):
@@ -199,3 +202,36 @@ class ImageServiceHandler:
         
         print(f"[image_service] Service not configured. Skipping image generation for prompt: {prompt}")
         return ""
+    
+    
+
+    import subprocess
+
+    def optimize_image_file(sefl, file_path):
+        """
+        Optimiza una imagen PNG o JPEG usando pngquant o jpegoptim.
+        Solo se aplica si las herramientas están disponibles en el sistema.
+        
+        :param file_path: Ruta del archivo a optimizar.
+        """
+        ext = os.path.splitext(file_path)[1].lower()
+
+        if ext == ".png":
+            try:
+                subprocess.run(["pngquant", "--force", "--output", file_path, file_path], check=True)
+                print(f"✅ PNG optimizado con pngquant: {file_path}")
+            except FileNotFoundError:
+                print("⚠️ pngquant no está instalado, omitiendo optimización PNG.")
+            except subprocess.CalledProcessError as e:
+                print(f"❌ Error optimizando PNG: {e}")
+        
+        elif ext in [".jpg", ".jpeg"]:
+            try:
+                subprocess.run(["jpegoptim", "--strip-all", "--max=85", file_path], check=True)
+                print(f"✅ JPEG optimizado con jpegoptim: {file_path}")
+            except FileNotFoundError:
+                print("⚠️ jpegoptim no está instalado, omitiendo optimización JPEG.")
+            except subprocess.CalledProcessError as e:
+                print(f"❌ Error optimizando JPEG: {e}")
+        else:
+            print("ℹ️ Formato no soportado para optimización:", ext)

@@ -669,7 +669,7 @@
             "meta_content": "No maldigas al caos, pregúntale qué quiere mostrarte. Solo quien atraviesa la tormenta sin cerrar los ojos, descubre qué estrellas estaban ocultas detrás de las nubes. Cada desafío trae consigo una lección, un trozo de luz que ilumina nuestro camino. La vida se revela a quienes tienen la valentía de ver más allá del desorden, de abrazar lo incierto y encontrar belleza en el proceso. Así, el caos se convierte en un maestro y las estrellas en guías.",
             "prompt_to_media": "",
             "media_path": "/app/public/uploads/images/image_file_29.png",
-            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1747115068/uploads/image_file_29.png",
+            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1747265448/uploads/image_file_29.png",
             "default_phrase": "No maldigas al caos, pregúntale qué quiere mostrarte. Solo quien atraviesa la tormenta sin cerrar los ojos, descubre qué estrellas estaban ocultas detrás de las nubes.",
             "hashtags": [
                 "#NoMaldigasAlCaos",
@@ -690,9 +690,9 @@
             "post_type": "metadata_to_media",
             "topic": "Caos como maestro",
             "is_processed": true,
-            "x_status": "posted",
-            "ig_status": "posted",
-            "fb_status": "posted",
+            "x_status": "not_posted",
+            "ig_status": "not_posted",
+            "fb_status": "not_posted",
             "is_thread": true,
             "ai_content": true,
             "threads": [
@@ -702,7 +702,7 @@
                     "meta_content": "En medio del caos, encontramos oportunidades de crecimiento. Cada tormenta trae consigo una lección valiosa que nos guía hacia la claridad. Permite que la lluvia purifique tu espíritu; así, al final del recorrido, descubrirás las estrellas que siempre han estado dentro de ti.",
                     "prompt_to_media": "",
                     "media_path": "/app/public/uploads/images/image_file_2900000.png",
-                    "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1747115284/uploads/image_file_2900000.png",
+                    "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1747265451/uploads/image_file_2900000.png",
                     "default_phrase": "En cada caos hay una lección, en cada tormenta, un camino. Abre los ojos y permite que la lluvia te limpie; solo así verás las estrellas que siempre quisieron brillar en tu vida.",
                     "hashtags": [],
                     "metadata_to_media": {

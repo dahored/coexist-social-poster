@@ -10,6 +10,8 @@ WORKDIR /app
 COPY . .
 
 # Instalar las dependencias
+# RUN apt-get update && apt-get install -y jpegoptim optipng && apt-get clean
+RUN apt-get update && apt-get install -y pngquant jpegoptim && apt-get clean
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Crear carpetas necesarias dentro del contenedor (solo si no se usan volúmenes en docker-compose)
