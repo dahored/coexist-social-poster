@@ -54,7 +54,7 @@ class OpenaiServiceHandler:
         return response.choices[0].message.content
     
 
-    async def generate_hashtags(self, idea, total=0, model=None):
+    async def generate_hashtags(self, idea, total=0, model=None, social_media=None):
         """Generates hashtags using the OpenAI API"""
         if total == 0:
             return ""
@@ -68,13 +68,14 @@ class OpenaiServiceHandler:
         response = await client.chat.completions.create(
             model=self.content_model,
             messages=[
-                {"role": "system", "content": "You are a creative assistant that generates hashtags for social media."},
-                {"role": "user", "content": f"Generate {total} hashtags for this idea: {idea} in spanish and include the # symbol and only respond in a text format."}
+                {"role": "system", "content": f"You are a creative assistant that generates hashtags for {social_media} social media "},
+                {"role": "user", "content": f"Generate {total} hashtags for this idea: {idea} in spanish and include the # symbol and only respond in a text format. The hashtags should be the recommended tendency hashtags for this idea so search in the web for the best hashtags."}
             ],
             temperature=0.9,
         )
         print(f"[openai_service] Hashtags generated: {response.choices[0].message}")
         return response.choices[0].message.content
+    
     
     async def generate_post_content(self, idea, limit=1000, extra_message=None, language="spanish", model=None):
         """Generates content using the OpenAI API"""

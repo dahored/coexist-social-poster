@@ -1,503 +1,30 @@
 {
     "name": "Post List",
     "description": "A list of posts to be shared",
-    "created_date": "2025-05-05",
+    "created_date": "2025-05-16",
     "posts": [
         {
-            "id": 16,
-            "x_content": "Amar sin condiciones es valentía; ver sombras, abrazar luz, desarmarse y seguir de pie. Eso es amor verdadero.",
-            "meta_content": "Amar sin condiciones es una de las experiencias más valientes y transformadoras que podemos tener. No se trata de cerrar los ojos ante las sombras del otro, sino de verlas con claridad y decidir permanecer allí, sosteniendo una luz que ilumina incluso los rincones más oscuros.\n\nEl amor incondicional no es signo de debilidad, sino de una fuerza interna que desafía el miedo y el juicio. Es atreverse a desarmarse frente al otro, quitándose las corazas que nos protegen, y exponerse en la vulnerabilidad más pura. Es un acto de confianza, entrega y valentía que nos invita a ver la belleza en lo imperfecto.\n\nEs fácil amar bajo condiciones, cuando todo parece perfecto. Pero el verdadero desafío y la verdadera grandeza residen en ese amor que no pone límites ni restricciones, que no exige cambios ni perfección. Nos reta a abrir el corazón plenamente, a aceptar y acoger cada faceta del ser amado, comprendiendo que sus sombras son solo parte del todo, igual que las nuestras.\n\nAl elegir amar de esta manera, nos permitimos crecer juntos. Construimos relaciones basadas en la autenticidad y el respeto, donde cada uno puede ser exactamente quién es, sin miedo al rechazo. Es entender que amar no es poseer, sino acompañar, apoyar y celebrar la luz y la sombra de cada uno en su camino.\n\nAsí que, la próxima vez que te enfrentes a la oportunidad de amar sin condiciones, recuérdalo: no es debilidad, es un acto de coraje. Es elegir decir \"sí\" no solo a la persona que está delante de ti, sino también a la persona que eres capaz de ser cuando amas con todo tu ser. Porque al final del día, amar es desarmarse y, aún así, seguir de pie, juntos, iluminando el camino hacia adelante.",
-            "prompt_to_media": "\"Create an evocative piece that captures the essence of unconditional love as an act of bravery. Illustrate a scene where one person stands in the shadows of another, yet chooses to embrace their light. Highlight the strength found in vulnerability, portraying love as the courage to disarm oneself before another and still remain strong. Convey the profound beauty and courage in loving someone wholly, accepting both their darkness and light.\"",
-            "media_path": "/app/public/uploads/images/image_file_16.png",
-            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1746910840/uploads/image_file_16.png",
-            "default_phrase": "Amar sin condiciones no es ser débil, es tener el coraje de ver a otro en su sombra y aún así abrazar su luz, porque amar es desarmarse frente al otro y seguir de pie.",
-            "hashtags": [
-                "#AmorIncondicional",
-                "#CorajeDelAmor",
-                "#LuzEnLaSombra",
-                "#FuerzaEnLaVulnerabilidad",
-                "#DesarmarseParaAmar",
-                "#AmorValiente",
-                "#AmorAuténtico",
-                "#PoderDelAmor"
+            "id": 34,
+            "x_content": "En los momentos oscuros, es fácil olvidar que la luz reside en nuestro interior. Cada desafío es una oportunidad para brillar. Recuerda siempre que tu esencia es un amanecer, listo para florecer.",
+            "meta_content": "No se trata de encender una luz fuera, sino de recordar que siempre llevaste una dentro. Incluso en tus noches más largas, sigues siendo amanecer en potencia. La vida puede presentarnos desafíos que parecen apagarnos, pero dentro de cada uno de nosotros brilla una chispa única que nunca se extingue. En los momentos de duda, cuando la oscuridad parece abrumadora, es fundamental mirar hacia adentro y reconectar con esa luz interna. Esa luz es tu esencia, tus sueños, tus pasiones. Aunque a veces sientas que la tormenta no cesa, recuerda que el amanecer siempre llega. Cada nuevo día es una oportunidad para renacer, para encender esa llama. Al abrazar tu luz, inspiras a otros a hacer lo mismo. No subestimes el poder de tu brillo personal; el mundo necesita de tu destello para iluminar el camino. ¡Hoy es el día perfecto para recordar lo que llevas dentro y compartirlo con el mundo!",
+            "prompt_to_media": "Embrace the concept that it's not about igniting an external light, but about remembering you always carried one within. Even in your longest nights, you remain a potential dawn.",
+            "media_path": "/app/public/uploads/images/image_file_34.png",
+            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1747405991/uploads/image_file_34.png",
+            "default_phrase": "No se trata de encender una luz fuera, sino de recordar que siempre llevaste una dentro. Incluso en tus noches más largas, sigues siendo amanecer en potencia.",
+            "hashtags_x": [
+                "#LuzInterior",
+                "#AmanecerEnPotencia",
+                "#NocheYEsperanza"
             ],
-            "metadata_to_media": {
-                "background_path": "",
-                "prompt_to_background": "",
-                "text": ""
-            },
-            "x_links": [],
-            "ig_links": [],
-            "fb_links": [],
-            "theme": "dark",
-            "post_type": "prompt_to_media",
-            "topic": "Amor sin condiciones",
-            "is_processed": true,
-            "x_status": "posted",
-            "ig_status": "posted",
-            "fb_status": "posted",
-            "is_thread": false,
-            "ai_content": true,
-            "threads": [],
-            "copied": true
-        },
-        {
-            "id": 17,
-            "x_content": "¡Descubre más sobre nosotros! 🌟 Sigue nuestra página y únete a la aventura. 🚀",
-            "meta_content": "✨ Descubre un lugar donde la vulnerabilidad se transforma en fortaleza. Aquí no solo compartimos historias; revelamos la belleza de nuestras grietas y aprendemos a brillar con más intensidad. 🌟 Si estás listo para un viaje de autodescubrimiento y autenticidad, este es el espacio perfecto para ti. Únete a nuestra creciente comunidad y sé parte de algo más grande. Nos encantaría que formes parte de esta aventura. 🚀 ¿Te atreves a caminar con nosotros este inspirador camino? ¡Síguenos y descubre tu verdadero poder! 🌈",
-            "prompt_to_media": "",
-            "media_path": "/app/public/uploads/images/image_file_17.png",
-            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1746904941/uploads/image_file_17.png",
-            "hashtags": [
-                "#FuerzaInterior",
-                "#MostrarseAuténtico",
-                "#ResilienciaRevelada",
-                "#PoderDeLaVulnerabilidad",
-                "#SerValiente",
-                "#ResistenciaVisible",
-                "#BellezaEnLasGrietas",
-                "#AutenticidadValiente",
-                "#RevelarseSinRomperse",
-                "#FuerzaEscondida"
+            "hashtags_instagram": [
+                "#LuzInterior",
+                "#AmanecerEnPotencia",
+                "#NocheYEsperanza"
             ],
-            "metadata_to_media": {
-                "background_path": "",
-                "prompt_to_background": "",
-                "text": "Cuando muestro mis grietas, no me rompo: me revelo. Es en lo que oculto donde está mi mayor fuerza, porque solo quien se atreve a ser visto, puede verdaderamente resistir."
-            },
-            "x_links": [],
-            "ig_links": [],
-            "fb_links": [],
-            "theme": "light",
-            "post_type": "metadata_to_media",
-            "default_phrase": "Cuando muestro mis grietas, no me rompo: me revelo. Es en lo que oculto donde está mi mayor fuerza, porque solo quien se atreve a ser visto, puede verdaderamente resistir.",
-            "topic": "Fuerza en la vulnerabilidad",
-            "is_processed": true,
-            "x_status": "posted",
-            "ig_status": "posted",
-            "fb_status": "posted",
-            "is_thread": true,
-            "ai_content": true,
-            "threads": [
-                {
-                    "id": 1700000,
-                    "x_content": "Al mostrar mis grietas, muestro mi esencia. La vulnerabilidad no es debilidad, sino el coraje de ser auténtico. En cada imperfección se esconde una historia, una verdad. Es en la aceptación de uno mismo y en la valentía de mostrarnos tal cual somos donde reside la verdadera fortaleza. 🌟",
-                    "meta_content": "Mostrar mis grietas no me debilita: revela mi esencia. La vulnerabilidad es coraje, y en aceptarnos tal como somos nace la conexión, la fuerza y la verdadera belleza.",
-                    "post_type": "metadata_to_media",
-                    "prompt_to_media": "",
-                    "media_path": "/app/public/uploads/images/image_file_1700000.png",
-                    "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1746909517/uploads/image_file_1700000.png",
-                    "hashtags": [],
-                    "metadata_to_media": {
-                        "background_path": "",
-                        "prompt_to_background": "",
-                        "text": "Al mostrar mis grietas, muestro mi esencia. La vulnerabilidad no es debilidad, sino el coraje de ser auténtico. Es en la aceptación de uno mismo donde reside la verdadera fortaleza."
-                    },
-                    "x_links": [],
-                    "ig_links": [],
-                    "fb_links": [],
-                    "theme": "dark",
-                    "default_phrase": "Al mostrar mis grietas, muestro mi esencia. La vulnerabilidad no es debilidad, sino el coraje de ser auténtico. Es en la aceptación de uno mismo donde reside la verdadera fortaleza."
-                },
-                {
-                    "id": 1700001,
-                    "x_content": "Al abrazar mis imperfecciones, convierto lo que antes veía como debilidades en poderosas fortalezas. Es solo a través de la autenticidad que puedo enfrentarme al mundo con confianza, encontrando en cada paso el verdadero significado de mi resiliencia y crecimiento personal.",
-                    "meta_content": "Aceptar nuestras imperfecciones nos libera y nos fortalece. Ser auténticos revela nuestra esencia y convierte cada debilidad en una fuente de poder interior y resiliencia.",
-                    "post_type": "metadata_to_media",
-                    "prompt_to_media": "",
-                    "media_path": "/app/public/uploads/images/image_file_1700001.png",
-                    "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1746909525/uploads/image_file_1700001.png",
-                    "hashtags": [],
-                    "metadata_to_media": {
-                        "background_path": "",
-                        "prompt_to_background": "",
-                        "text": "Al aceptar mis imperfecciones, transformo mis debilidades en fortalezas. Solo siendo auténtico puedo enfrentarme al mundo y encontrar el verdadero sentido de mi resiliencia."
-                    },
-                    "x_links": [],
-                    "ig_links": [],
-                    "fb_links": [],
-                    "theme": "light",
-                    "default_phrase": "Al aceptar mis imperfecciones, transformo mis debilidades en fortalezas. Solo siendo auténtico puedo enfrentarme al mundo y encontrar el verdadero sentido de mi resiliencia."
-                },
-                {
-                    "id": 1700002,
-                    "x_content": "Aceptar nuestra vulnerabilidad es una demostración de coraje. Al mostrarnos tal como somos, abrimos la puerta a la verdadera conexión con quienes nos rodean. En nuestra autenticidad, encontramos una fortaleza interior que nos sostiene y nos revela el poder de ser genuinos. 🌿✨",
-                    "meta_content": "Mostrar nuestra vulnerabilidad no es debilidad, es valentía. Al ser auténticos, descubrimos fuerza interior y creamos conexiones profundas basadas en verdad y humanidad compartida.",
-                    "post_type": "metadata_to_media",
-                    "prompt_to_media": "",
-                    "media_path": "/app/public/uploads/images/image_file_1700002.png",
-                    "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1746909533/uploads/image_file_1700002.png",
-                    "hashtags": [],
-                    "metadata_to_media": {
-                        "background_path": "",
-                        "prompt_to_background": "",
-                        "text": "Aceptar nuestra vulnerabilidad es un acto de valentía. Al mostrarnos genuinos, descubrimos una fuerza interior que nos sostiene y nos conecta auténticamente con los demás."
-                    },
-                    "x_links": [],
-                    "ig_links": [],
-                    "fb_links": [],
-                    "theme": "dark",
-                    "default_phrase": "Aceptar nuestra vulnerabilidad es un acto de valentía. Al mostrarnos genuinos, descubrimos una fuerza interior que nos sostiene y nos conecta auténticamente con los demás."
-                },
-                {
-                    "id": 1700003,
-                    "x_content": "Mostrar nuestras grietas nos fortalece. La verdadera resistencia radica en ser auténticos: al abrazar la vulnerabilidad, nos empoderamos y revelamos nuestro verdadero coraje. Ser uno mismo, con todas las imperfecciones, es el acto más valiente y poderoso que podemos hacer.",
-                    "meta_content": "La verdadera fortaleza nace al mostrar nuestras grietas. En la vulnerabilidad hallamos autenticidad, sanación y el poder de conectar e inspirar desde lo más humano de nuestro ser.",
-                    "post_type": "metadata_to_media",
-                    "prompt_to_media": "",
-                    "media_path": "/app/public/uploads/images/image_file_1700003.png",
-                    "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1746909542/uploads/image_file_1700003.png",
-                    "hashtags": [],
-                    "metadata_to_media": {
-                        "background_path": "",
-                        "prompt_to_background": "",
-                        "text": "Al dejar ver mis grietas, me hago más fuerte. La verdadera resistencia está en mostrarnos tal como somos, porque en la vulnerabilidad encontramos el poder de ser auténticos y valientes."
-                    },
-                    "x_links": [],
-                    "ig_links": [],
-                    "fb_links": [],
-                    "theme": "light",
-                    "default_phrase": "Al dejar ver mis grietas, me hago más fuerte. La verdadera resistencia está en mostrarnos tal como somos, porque en la vulnerabilidad encontramos el poder de ser auténticos y valientes."
-                }
-            ],
-            "copied": true
-        },
-        {
-            "id": 18,
-            "x_content": "En el silencio compartido, las almas encuentran un refugio verdadero.",
-            "meta_content": "Hay momentos en la vida en que el silencio cobra más significado que cualquier palabra. Son esos instantes mágicos e indescriptibles en los que dos almas se encuentran y, sin necesidad de emitir sonido alguno, logran comunicarse en un nivel más profundo. Este fenómeno ocurre cuando las miradas se cruzan y los corazones laten al unísono, cuando las sonrisas tímidas lo dicen todo y cuando el aire se llena de una paz inexplicable.\n\nEs en esos momentos de silencio compartido que nos damos cuenta de que hemos encontrado un refugio verdadero. Un espacio seguro donde podemos ser auténticos, sin máscaras, y sentirnos aceptados tal cual somos. En este lugar, las preocupaciones y los miedos se desvanecen, dejando espacio para una conexión genuina y pura.\n\nEl silencio, en este contexto, no es un vacío incómodo, sino un puente que nos une. Nos invita a explorar la esencia del otro y nos permite ver más allá de lo superficial. Nos enseña que el amor no siempre necesita ser ruidoso para ser profundo, y que a veces, en la tranquilidad de un momento compartido, podemos descubrir la inmensidad de un sentimiento.\n\nEncontrar a alguien con quien compartir este tipo de silencio es una bendición. Es reconocer que hemos hallado un alma afín, un compañero de vida que comprende nuestras pausas y respeta nuestro ser. Porque al final, el verdadero refugio está en aquellas personas que, en silencio, nos permiten ser nosotros mismos. 💫\n\nValoremos estos momentos únicos y guardémoslos como tesoros, porque en un mundo lleno de ruido, encontrar una conexión que hable en silencio es un regalo que no tiene precio.",
-            "prompt_to_media": "Two souls sit together, enveloped in a profound silence that speaks louder than words ever could. In this quiet connection, their eyes meet and a deep understanding is shared, revealing truths that transcend spoken language. It's a moment where each heart finds solace in the presence of the other, recognizing a true refuge in the bond they share. The atmosphere is serene, the world around them fades away, leaving only the silent symphony of their unspoken truth.",
-            "media_path": "/app/public/uploads/images/image_file_18.png",
-            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1746914244/uploads/image_file_18.png",
-            "hashtags": [
-                "#SilencioQueHabla",
-                "#AlmasConectadas",
-                "#RefugioDelAlma",
-                "#VerdadesSinPalabras",
-                "#ConexiónProfunda",
-                "#SilencioQueGrita",
-                "#ComuniónDeAlmas",
-                "#VerdaderoRefugio",
-                "#AlmasGemelas",
-                "#LenguajeDelSilencio"
-            ],
-            "metadata_to_media": {
-                "background_path": "",
-                "prompt_to_background": "",
-                "text": ""
-            },
-            "x_links": [],
-            "ig_links": [],
-            "fb_links": [],
-            "theme": "dark",
-            "post_type": "prompt_to_media",
-            "default_phrase": "Hay momentos en que el silencio entre dos almas grita verdades que las palabras no alcanzan: es ahí donde el alma reconoce que ha encontrado un refugio verdadero.",
-            "topic": "El valor del silencio compartido",
-            "is_processed": true,
-            "x_status": "posted",
-            "ig_status": "posted",
-            "fb_status": "posted",
-            "is_thread": false,
-            "ai_content": true,
-            "threads": [],
-            "copied": true
-        },
-        {
-            "id": 19,
-            "x_content": "Descubre la mejor versión de ti mismo con nosotros. 🚀 ¡Síguenos para más inspiración! 🌟",
-            "meta_content": "🌟 ¡Descubre tu verdadero potencial! 🌟 El caos en tu vida no es el fin, sino el comienzo de un nuevo tú. Cada grieta es una oportunidad de crecimiento y revelación. No te resistas al cambio, ¡abraza la transformación! 🚀 Únete a nosotros y despierta a tu mejor versión. ¡Síguenos para más inspiración!",
-            "prompt_to_media": "",
-            "media_path": "/app/public/uploads/images/image_file_19.png",
-            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1746973801/uploads/image_file_19.png",
-            "hashtags": [
-                "#TransformaciónPersonal",
-                "#RenacerDesdeElCaos",
-                "#Redescubrirse",
-                "#ElPoderDeLasGrietas",
-                "#CrecimientoInterior",
-                "#ValentíaEnElCambio",
-                "#VentanasDeOportunidad",
-                "#EvoluciónConstante",
-                "#SerAuténtico",
-                "#DescubrirTuEsencia"
-            ],
-            "metadata_to_media": {
-                "background_path": "",
-                "prompt_to_background": "",
-                "text": "El caos no llega a destruirte, llega a revelarte. Cada grieta que abre en tu mundo es una ventana a la versión de ti que aún no te atreves a ser."
-            },
-            "x_links": [],
-            "ig_links": [],
-            "fb_links": [],
-            "theme": "light",
-            "post_type": "metadata_to_media",
-            "default_phrase": "El caos no llega a destruirte, llega a revelarte. Cada grieta que abre en tu mundo es una ventana a la versión de ti que aún no te atreves a ser.",
-            "topic": "Caos como maestro",
-            "is_processed": true,
-            "x_status": "posted",
-            "ig_status": "posted",
-            "fb_status": "posted",
-            "is_thread": false,
-            "ai_content": true,
-            "threads": [],
-            "copied": true
-        },
-        {
-            "id": 20,
-            "x_content": "¡Únete a nuestra aventura! 🌟✨",
-            "meta_content": "🌟 ¡Descubre un mundo donde las diferencias nos unen! 🌟 Únete a nuestra comunidad y sé parte de una magia única, donde cada perspectiva enriquece y cada voz importa. No te pierdas la oportunidad de conectar con lo diverso. ¡Síguenos y sé parte del cambio! 🎉👏",
-            "prompt_to_media": "",
-            "media_path": "/app/public/uploads/images/image_file_20.png",
-            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1746985511/uploads/image_file_20.png",
-            "hashtags": [
-                "#UnidosEnLaDiversidad",
-                "#MagiaDeLasDiferencias",
-                "#PuentesQueNosUnen",
-                "#JuntosEnLaDiversidad",
-                "#CelebrandoLaIndividualidad",
-                "#ConectarSinIgualar",
-                "#DiversidadQueInspira",
-                "#UniónEnLaDiversidad",
-                "#FuerzaEnLasDiferencias",
-                "#EncuentroDeAlmasDiferentes"
-            ],
-            "metadata_to_media": {
-                "background_path": "",
-                "prompt_to_background": "Create an inspiring visual that depicts two individuals from different backgrounds standing on opposite sides of a bridge. The bridge is made from vibrant, intertwining vines and flowers that symbolize their unique qualities. Despite their differences in appearance, clothing, and accessories, there's a sense of harmony and connection between them. The background should reflect a blend of their distinct cultures, merging seamlessly in the middle. Above them, a radiant sky with a rainbow signifies unity and hope, capturing the essence of celebrating diversity as the magical bond that bridges gaps and forges stronger connections.",
-                "text": "No somos espejos ni iguales, y ahí está la magia. La verdadera unión nace cuando entendemos que nuestras diferencias son el puente que nos une, no la grieta que nos separa."
-            },
-            "x_links": [],
-            "ig_links": [],
-            "fb_links": [],
-            "theme": "dark",
-            "post_type": "metadata_to_media_with_background",
-            "default_phrase": "No somos espejos ni iguales, y ahí está la magia. La verdadera unión nace cuando entendemos que nuestras diferencias son el puente que nos une, no la grieta que nos separa.",
-            "topic": "Unidad en la diferencia",
-            "is_processed": true,
-            "x_status": "posted",
-            "ig_status": "posted",
-            "fb_status": "posted",
-            "is_thread": false,
-            "ai_content": true,
-            "threads": [],
-            "copied": true
-        },
-        {
-            "id": 21,
-            "x_content": "¡Descubre más contenido inspirador! 🌟 Sigue y transforma tu día. 🔄✨",
-            "meta_content": "✨ ¡Descubre un nuevo horizonte con nosotros! 🌟 Si buscas inspiración, motivación y momentos que transformen tu día, has llegado al lugar correcto. Únete a nuestra comunidad y sé parte del cambio. ¡Dale al botón de seguir y empieza esta aventura juntos! 🚀👥",
-            "prompt_to_media": "",
-            "media_path": "/app/public/uploads/images/image_file_21.png",
-            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1746995598/uploads/image_file_21.png",
-            "hashtags": [
-                "#ElPoderDelPerdón",
-                "#ArquitectosDeRedención",
-                "#RebeliónInterior",
-                "#LibertadEmocional",
-                "#SuperaciónPersonal",
-                "#RedefiniendoElPerdón",
-                "#ValentíaInterior",
-                "#LibérateDelPasado",
-                "#CaminoAHaciaLaRedención",
-                "#TransformaciónPersonal"
-            ],
-            "metadata_to_media": {
-                "background_path": "",
-                "prompt_to_background": "",
-                "text": "El perdón no es olvido ni indulgencia: es rebelión. Es mirarte al espejo y decidir que ya no vas a ser prisionero del daño, sino arquitecto de tu propia redención."
-            },
-            "x_links": [],
-            "ig_links": [],
-            "fb_links": [],
-            "theme": "light",
-            "post_type": "metadata_to_media",
-            "default_phrase": "El perdón no es olvido ni indulgencia: es rebelión. Es mirarte al espejo y decidir que ya no vas a ser prisionero del daño, sino arquitecto de tu propia redención.",
-            "topic": "Redención y perdón",
-            "is_processed": true,
-            "x_status": "posted",
-            "ig_status": "posted",
-            "fb_status": "posted",
-            "is_thread": false,
-            "ai_content": true,
-            "threads": [],
-            "copied": true
-        },
-        {
-            "id": 22,
-            "x_content": "A veces, lo inexplicable también encanta. Hay belleza en amar lo que no se entiende y vivir el misterio.",
-            "meta_content": "En un mundo que a menudo demanda respuestas claras y certezas, hay un rincón especial para lo inexplicable, para lo que simplemente es. No todo en la vida está diseñado para ser descifrado; algunos misterios existen solo para ser disfrutados desde el corazón. Amar no siempre requiere comprensión total; a veces, la verdadera belleza yace en la aceptación de lo desconocido. Cuando nos rendimos al misterio, permitimos que la vida nos sorprenda y nos enseñe en formas que nunca imaginamos. Las respuestas no siempre llegan en palabras, a veces se viven, se sienten, se experimentan. Así que, en lugar de buscar entenderlo todo, abraza la libertad de no saber, y descubre la magia en el simple acto de ser.",
-            "prompt_to_media": "Find beauty in surrendering to mystery; not everything needs to be understood to be loved. Embrace the idea that some answers are meant to be lived rather than comprehended. Explore a world where the unseen and unexplained are cherished, inviting a deeper appreciation of the unknown.",
-            "media_path": "/app/public/uploads/images/image_file_22.png",
-            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1747060426/uploads/image_file_22.png",
-            "default_phrase": "No todo tiene que ser entendido para ser amado. Hay belleza en rendirse al misterio, en aceptar que algunas respuestas están destinadas solo a ser vividas.",
-            "hashtags": [
-                "#AmorSinExplicación",
-                "#BellezaDelMisterio",
-                "#VivirElEnigma",
-                "#AceptaciónMisteriosa",
-                "#RendirseAlDesconocido",
-                "#ExplorandoElAmor",
-                "#MisterioAmado",
-                "#ViveSinResponder"
-            ],
-            "metadata_to_media": {
-                "background_path": "",
-                "prompt_to_background": "",
-                "text": ""
-            },
-            "x_links": [],
-            "ig_links": [],
-            "fb_links": [],
-            "theme": "dark",
-            "post_type": "prompt_to_media",
-            "topic": "Rendirse al misterio de la vida",
-            "is_processed": true,
-            "x_status": "posted",
-            "ig_status": "posted",
-            "fb_status": "posted",
-            "is_thread": false,
-            "ai_content": true,
-            "threads": [],
-            "copied": true
-        },
-        {
-            "id": 23,
-            "x_content": "🌟 ¡Únete a nuestra comunidad de aprendizaje y crecimiento! 🌱 Comparte, aprende y crece con nosotros. ¡Síguenos para inspirarte cada día! 🚀✨ ",
-            "meta_content": "🌟 ¡Descubre un mundo de sabiduría y aprendizaje! ✨ Aquí celebramos el poder de la humildad y el crecimiento personal. Únete a nuestra comunidad y atrévete a aprender algo nuevo cada día. 🚀 ¡Síguenos y transforma tu visión del conocimiento! 📖❤️",
-            "prompt_to_media": "",
-            "media_path": "/app/public/uploads/images/image_file_23.png",
-            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1747071001/uploads/image_file_23.png",
-            "default_phrase": "El sabio no es el que lo sabe todo, sino el que se atreve a aprender incluso de quien menos espera. La humildad no es rendirse, es abrir espacio para crecer.",
-            "hashtags": [
-                "#SabiduríaHumilde",
-                "#AprenderDeTodos",
-                "#CrecimientoPersonal",
-                "#Humildad",
-                "#SabioEnCadaLección",
-                "#EspacioParaCrecer",
-                "#EscucharYAprender",
-                "#ValorDeLaHumildad",
-                "#AprendizajeContinuo",
-                "#LeccionesDeVida"
-            ],
-            "metadata_to_media": {
-                "background_path": "",
-                "prompt_to_background": "",
-                "text": "El sabio no es el que lo sabe todo, sino el que se atreve a aprender incluso de quien menos espera. La humildad no es rendirse, es abrir espacio para crecer."
-            },
-            "x_links": [],
-            "ig_links": [],
-            "fb_links": [],
-            "theme": "light",
-            "post_type": "metadata_to_media",
-            "topic": "Sabiduría en la humildad",
-            "is_processed": true,
-            "x_status": "posted",
-            "ig_status": "posted",
-            "fb_status": "posted",
-            "is_thread": true,
-            "ai_content": true,
-            "threads": [
-                {
-                    "id": 2300000,
-                    "x_content": "La verdadera sabiduría no se encuentra solo en libros, sino en cada experiencia y persona que cruzamos en nuestro camino. Cada encuentro trae consigo una lección valiosa. Practicar la humildad nos abre a un crecimiento constante y profundo, transformando nuestra vida en un aprendizaje continuo. ",
-                    "meta_content": "La verdadera sabiduría se encuentra al aprender de cada experiencia y persona. La humildad es clave para crecer.",
-                    "prompt_to_media": "",
-                    "media_path": "/app/public/uploads/images/image_file_2300000.png",
-                    "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1747078380/uploads/image_file_2300000.png",
-                    "default_phrase": "La verdadera sabiduría radica en reconocer que cada experiencia y persona puede enseñarnos algo nuevo. La humildad es el primer paso hacia un crecimiento constante y profundo en nuestras vidas.",
-                    "hashtags": [],
-                    "metadata_to_media": {
-                        "background_path": "",
-                        "prompt_to_background": "",
-                        "text": "La verdadera sabiduría radica en reconocer que cada experiencia y persona puede enseñarnos algo nuevo. La humildad es el primer paso hacia un crecimiento constante y profundo en nuestras vidas."
-                    },
-                    "x_links": [],
-                    "ig_links": [],
-                    "fb_links": [],
-                    "theme": "dark",
-                    "post_type": "metadata_to_media"
-                },
-                {
-                    "id": 2300001,
-                    "x_content": "La verdadera sabiduría no se encuentra solo en los libros, sino en la humildad de aprender de cada experiencia y persona que cruzamos en nuestro camino. Al abrir nuestra mente y corazón, descubrimos lecciones valiosas que nos enriquecen y nos hacen crecer. ¡Nunca dejemos de aprender!",
-                    "meta_content": "La verdadera sabiduría se encuentra en la humildad de aprender de cada experiencia y persona. Al abrir nuestra mente y corazón, crecemos de maneras inesperadas y enriquecedoras. Cada interacción, cada desafío, ofrece lecciones valiosas que nos moldean. Nunca olvidemos que el aprendizaje es un viaje continuo. ¡Sigamos creciendo juntos!",
-                    "prompt_to_media": "",
-                    "media_path": "/app/public/uploads/images/image_file_2300001.png",
-                    "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1747078389/uploads/image_file_2300001.png",
-                    "default_phrase": "La verdadera sabiduría radica en la humildad de aprender de cada experiencia y persona. Al abrir nuestra mente y corazón, crecemos en formas inesperadas y enriquecedoras. ¡Nunca dejemos de aprender!",
-                    "hashtags": [],
-                    "metadata_to_media": {
-                        "background_path": "",
-                        "prompt_to_background": "",
-                        "text": "La verdadera sabiduría radica en la humildad de aprender de cada experiencia y persona. Al abrir nuestra mente y corazón, crecemos en formas inesperadas y enriquecedoras. ¡Nunca dejemos de aprender!"
-                    },
-                    "x_links": [],
-                    "ig_links": [],
-                    "fb_links": [],
-                    "theme": "light",
-                    "post_type": "metadata_to_media"
-                },
-                {
-                    "id": 2300002,
-                    "x_content": "Cada encuentro es una oportunidad de aprendizaje. La verdadera sabiduría radica en reconocer que siempre hay algo nuevo por descubrir. A veces, las lecciones más valiosas vienen de lugares inesperados. Abramos nuestros corazones y mentes a la riqueza del conocimiento compartido.",
-                    "meta_content": "Cada encuentro es una oportunidad para aprender. La sabiduría reside en descubrir lo nuevo en cada experiencia.",
-                    "prompt_to_media": "",
-                    "media_path": "/app/public/uploads/images/image_file_2300002.png",
-                    "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1747078398/uploads/image_file_2300002.png",
-                    "default_phrase": "Cada encuentro es una oportunidad de aprendizaje. La verdadera sabiduría radica en reconocer que siempre hay algo nuevo por descubrir, sin importar de dónde venga esa enseñanza.",
-                    "hashtags": [],
-                    "metadata_to_media": {
-                        "background_path": "",
-                        "prompt_to_background": "",
-                        "text": "Cada encuentro es una oportunidad de aprendizaje. La verdadera sabiduría radica en reconocer que siempre hay algo nuevo por descubrir, sin importar de dónde venga esa enseñanza."
-                    },
-                    "x_links": [],
-                    "ig_links": [],
-                    "fb_links": [],
-                    "theme": "dark",
-                    "post_type": "metadata_to_media"
-                },
-                {
-                    "id": 2300003,
-                    "x_content": "La verdadera sabiduría no se encuentra solo en la experiencia acumulada, sino en la curiosidad y la disposición a escuchar. Cada persona tiene una historia que contar y algo que enseñarnos. Aprendamos de los demás y permitamos que su conocimiento enriquezca nuestro propio camino. La vida es un viaje de crecimiento constante. ",
-                    "meta_content": "La verdadera sabiduría surge de la curiosidad y la escucha activa. Aprender de los demás, sin importar su experiencia, nos enriquece y fomenta un crecimiento constante en nuestras vidas. Cada persona tiene una historia, una lección valiosa que ofrecer. Al abrirnos a nuevas perspectivas, no solo expandimos nuestro entendimiento, sino que también fortalecemos nuestras relaciones y comunidades. La vida es un continuo intercambio de conocimiento; cada conversación es una oportunidad para aprender y crecer. ¡Valoremos la sabiduría colectiva que nos rodea!",
-                    "prompt_to_media": "",
-                    "media_path": "/app/public/uploads/images/image_file_2300003.png",
-                    "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1747078406/uploads/image_file_2300003.png",
-                    "default_phrase": "La verdadera sabiduría radica en la curiosidad y la disposición a escuchar. Aprender de los demás, sin importar su experiencia, enriquece nuestra vida y nos lleva a un crecimiento constante.",
-                    "hashtags": [],
-                    "metadata_to_media": {
-                        "background_path": "",
-                        "prompt_to_background": "",
-                        "text": "La verdadera sabiduría radica en la curiosidad y la disposición a escuchar. Aprender de los demás, sin importar su experiencia, enriquece nuestra vida y nos lleva a un crecimiento constante."
-                    },
-                    "x_links": [],
-                    "ig_links": [],
-                    "fb_links": [],
-                    "theme": "light",
-                    "post_type": "metadata_to_media"
-                }
-            ],
-            "copied": true
-        },
-        {
-            "id": 24,
-            "x_content": "Abraza la oscuridad; es donde tu luz nace y crece. Camina en ella y descubre tu verdadero brillo.",
-            "meta_content": "La oscuridad no es el enemigo; es la madre de toda chispa. En tiempos de penumbra, cuando el mundo parece cubrirse de sombras, es fácil querer huir. Pero, ¿y si te dijera que justo allí, donde la luz parece haberse extinguido, es donde puedes descubrir lo más auténtico de ti? La vida nos lleva a través de túneles oscuros, y aunque el instinto nos grita que corramos, es el caminar lento lo que nos revela los destellos escondidos en nuestro interior. Cada paso en la negrura te desafía y, al mismo tiempo, te muestra de qué está hecha tu verdadera luz. No temas la oscuridad; abrázala, porque solo al atravesarla comprenderás que la chispa que buscas siempre ha estado en ti, esperando el momento exacto para brillar con toda su fuerza.",
-            "prompt_to_media": "A lone traveler stands at the entrance of a dark tunnel, pausing to look back at the fading light behind them before stepping forward into the inky blackness. As they move deeper into the tunnel, the oppressive darkness seems to wrap around them, yet within it, tiny sparks begin to flicker around their fingertips, illuminating the path with a soft, ethereal glow. With each step, the sparks grow brighter and more vibrant, revealing the beauty hidden within the shadows and symbolizing the journey of self-discovery and the inner light found in the depths of darkness.",
-            "media_path": "/app/public/uploads/images/image_file_24.png",
-            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1747084021/uploads/image_file_24.png",
-            "default_phrase": "La oscuridad no es el enemigo; es la madre de toda chispa. No huyas de ella: camina, porque solo en lo más negro del túnel descubrirás de qué está hecha tu luz.",
-            "hashtags": [
-                "#EncuentraTuLuz",
-                "#CaminaEnLaOscuridad",
-                "#ChispaInterior",
-                "#LuzEnElTúnel",
-                "#RenacerEnLaOscuridad",
-                "#DescubreTuFuerza",
-                "#ValentíaEnLaSombra",
-                "#TransformaciónEnLaOscuridad"
+            "hashtags_facebook": [
+                "#LuzInterior",
+                "#AmanecerEnPotencia",
+                "#NocheYEsperanza"
             ],
             "metadata_to_media": {
                 "background_path": "",
@@ -517,30 +44,32 @@
             "is_thread": false,
             "ai_content": true,
             "threads": [],
-            "copied": true
+            "copied": false
         },
         {
-            "id": 25,
-            "x_content": "🌟 ¡Únete a nuestra aventura! 🚀 Aquí compartimos inspiración y momentos que hacen vibrar tu alma. Síguenos y sé parte de la magia. ✨💖",
-            "meta_content": "🌟 ¡Descubre tu camino y vive la danza del destino! Cada paso que das te acerca más a lo que está escrito para ti. Únete a nuestra comunidad de soñadores y viajeros. ✨ Aquí compartimos inspiración, aventuras y momentos que transforman. Síguenos y forma parte de esta travesía única. ¡Tu viaje comienza ahora! 🚀💕",
+            "id": 35,
+            "x_content": "Elegir no siempre cambia el destino, pero sí transforma tu esencia. Cada decisión es un espejo que refleja el alma en evolución. Al enfrentarlas, despiertas la fuerza que llevas dentro y forjas tu verdadero yo.",
+            "meta_content": "Elegir no siempre cambia el destino, pero sí cambia quién eres cuando lo enfrentas. Cada decisión es como un espejo que refleja nuestra esencia, mostrando la fortaleza y vulnerabilidad que habitan en nosotros. Enfrentar elecciones nos desafía a salir de nuestra zona de confort y nos invita a explorar lo desconocido. Así, mientras tomamos decisiones, estamos forjando nuestro carácter y construyendo un camino único. Al final, lo que realmente importa no es solo hacia dónde vamos, sino quiénes nos convertimos en el proceso.",
             "prompt_to_media": "",
-            "media_path": "/app/public/uploads/images/image_file_25.png",
-            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1747113168/uploads/image_file_25.png",
-            "default_phrase": "Tal vez el destino ya está escrito, pero cada paso que das lo vuelve tuyo. Eres tanto el viajero como el camino, y en esa danza, hasta el destino tiembla.",
-            "hashtags": [
-                "#DestinoEscrito",
-                "#ViajeYCamino",
-                "#DanzaDelDestino",
-                "#PasosPropios",
-                "#EresElViajero",
-                "#ElCaminoEsTuyo",
-                "#ViveElViaje",
-                "#DestinoDanzante"
+            "media_path": "/app/public/uploads/images/image_file_35.png",
+            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1747422481/uploads/image_file_35.png",
+            "default_phrase": "Elegir no siempre cambia el destino, pero sí cambia quién eres cuando lo enfrentas. En cada decisión revelas el alma que está despertando detrás de tus pasos.",
+            "hashtags_x": [
+                "#DecisionesQueTransforman",
+                "#AlmaDespertando"
+            ],
+            "hashtags_instagram": [
+                "#DecisionesQueTransforman",
+                "#AlmaDespertando"
+            ],
+            "hashtags_facebook": [
+                "#DecisionesQueTransforman",
+                "#AlmaDespertando"
             ],
             "metadata_to_media": {
                 "background_path": "",
                 "prompt_to_background": "",
-                "text": "Tal vez el destino ya está escrito, pero cada paso que das lo vuelve tuyo. Eres tanto el viajero como el camino, y en esa danza, hasta el destino tiembla."
+                "text": "Elegir no siempre cambia el destino, pero sí cambia quién eres cuando lo enfrentas. En cada decisión revelas el alma que está despertando detrás de tus pasos."
             },
             "x_links": [],
             "ig_links": [],
@@ -552,163 +81,62 @@
             "x_status": "posted",
             "ig_status": "posted",
             "fb_status": "posted",
-            "is_thread": false,
-            "ai_content": true,
-            "threads": [],
-            "copied": false
-        },
-        {
-            "id": 26,
-            "x_content": "✨ ¡Únete a nuestra comunidad! 🌟 Aquí celebramos la belleza de la imperfección y el amor auténtico. 💖 ¡Síguenos y descubre más! 💫",
-            "meta_content": "🌟 ¡Únete a nuestra comunidad! Aquí celebramos la belleza de la imperfección y el amor en todas sus formas. 💖 Descubre frases inspiradoras, reflexiones profundas y momentos que te harán sentir comprendido. 💬 ¡No te lo pierdas! Síguenos y acompáñanos en este viaje de autodescubrimiento y conexión. 🌈✨ ¡Te estamos esperando!",
-            "prompt_to_media": "",
-            "media_path": "/app/public/uploads/images/image_file_26.png",
-            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1747113434/uploads/image_file_26.png",
-            "default_phrase": "Amar es decir: te veo completo, con tus demonios y tus ángeles, y aún así elijo quedarme. No porque seas perfecto, sino porque en tu imperfección yo también me reconozco.",
-            "hashtags": [
-                "#AmorAuténtico",
-                "#AceptaciónTotal",
-                "#ImperfeccionesBellísimas",
-                "#ElijoQuedarme",
-                "#DemoniosYAngeles",
-                "#ConexiónProfunda",
-                "#ReconocimientoMutuo"
-            ],
-            "metadata_to_media": {
-                "background_path": "",
-                "prompt_to_background": "Acknowledge the beauty in loving someone fully by embracing their entire being, both their flaws and strengths. Express the choice to stay not due to their perfection, but because in their imperfections, you find a reflection of yourself.",
-                "text": "Amar es decir: te veo completo, con tus demonios y tus ángeles, y aún así elijo quedarme. No porque seas perfecto, sino porque en tu imperfección yo también me reconozco."
-            },
-            "x_links": [],
-            "ig_links": [],
-            "fb_links": [],
-            "theme": "dark",
-            "post_type": "metadata_to_media_with_background",
-            "topic": "Amor sin condiciones",
-            "is_processed": true,
-            "x_status": "posted",
-            "ig_status": "posted",
-            "fb_status": "posted",
-            "is_thread": false,
-            "ai_content": true,
-            "threads": [],
-            "copied": false
-        },
-        {
-            "id": 27,
-            "x_content": "¡Únete a nuestra comunidad! 🌟 Comparte, crece y descubre juntos. Tu viaje comienza aquí. ¡Síguenos y se parte de algo especial! 💖",
-            "meta_content": "🌟 ¡Únete a nuestra comunidad! Aquí celebramos la fuerza de ser vulnerables y el poder de la conexión. 💖 Tus lágrimas son un puente hacia la empatía y el entendimiento. Siguenos y descubre un espacio donde cada emoción cuenta. Juntos, aprendemos, crecemos y encontramos consuelo. 🌈 No temas ser tú mismo, ¡te esperamos con los brazos abiertos! 🤗✨",
-            "prompt_to_media": "",
-            "media_path": "/app/public/uploads/images/image_file_27.png",
-            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1747116613/uploads/image_file_27.png",
-            "default_phrase": "No es débil quien llora, es fuerte quien no teme romperse frente a otro. Porque las lágrimas no son caída, son puente entre dos corazones que se atreven a encontrarse.",
-            "hashtags": [
-                "#FuerzaEnLasLágrimas",
-                "#ValentíaEmocional",
-                "#PuentesDeCorazón",
-                "#RomperElSilencio",
-                "#CuidadoEmocional",
-                "#ConexionesAuténticas"
-            ],
-            "metadata_to_media": {
-                "background_path": "",
-                "prompt_to_background": "",
-                "text": "No es débil quien llora, es fuerte quien no teme romperse frente a otro. Porque las lágrimas no son caída, son puente entre dos corazones que se atreven a encontrarse."
-            },
-            "x_links": [],
-            "ig_links": [],
-            "fb_links": [],
-            "theme": "light",
-            "post_type": "metadata_to_media",
-            "topic": "Fuerza en la vulnerabilidad",
-            "is_processed": true,
-            "x_status": "posted",
-            "ig_status": "posted",
-            "fb_status": "posted",
-            "is_thread": false,
-            "ai_content": true,
-            "threads": [],
-            "copied": false
-        },
-        {
-            "id": 28,
-            "x_content": "En ese silencio compartido, las palabras no son necesarias. Es un abrazo al alma, un espacio donde la vulnerabilidad florece y las conexiones auténticas trascienden el ruido exterior.",
-            "meta_content": "En un mundo que grita para existir, sentarse en silencio junto a otro es un acto revolucionario. Ahí, entre respiraciones, se confiesan las verdades más puras. Es en la quietud donde las emociones fluyen sin prisas, donde el bullicio de la vida cotidiana se desvanece y se da paso a la conexión auténtica. En ese espacio compartido, los miedos se disipan y las inseguridades se desnudan, revelando la esencia de lo que realmente somos.\n\nLa simplicidad del silencio puede desarmar resentimientos y crear puentes donde antes había muros. Es un momento sagrado que nos permite escuchar no solo las palabras, sino también los pensamientos no expresados. En la intimidad de ese silencio, descubrimos que, a veces, las respuestas más profundas no necesitan ser dichas; simplemente están ahí, esperando ser abrazadas. Este acto de estar presente, de ser testigos de la existencia del otro, transforma nuestro ser y el mundo que nos rodea.",
-            "prompt_to_media": "In a world that screams to exist, sitting in silence next to another is a revolutionary act. There, between breaths, the purest truths are confessed.",
-            "media_path": "/app/public/uploads/images/image_file_28.png",
-            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1747114123/uploads/image_file_28.png",
-            "default_phrase": "En un mundo que grita para existir, sentarse en silencio junto a otro es un acto revolucionario. Ahí, entre respiraciones, se confiesan las verdades más puras.",
-            "hashtags": [
-                "#SilencioRevolucionario",
-                "#ConexiónVerdadera",
-                "#RespiracionesComplices"
-            ],
-            "metadata_to_media": {
-                "background_path": "",
-                "prompt_to_background": "",
-                "text": ""
-            },
-            "x_links": [],
-            "ig_links": [],
-            "fb_links": [],
-            "theme": "dark",
-            "post_type": "prompt_to_media",
-            "topic": "El valor del silencio compartido",
-            "is_processed": true,
-            "x_status": "posted",
-            "ig_status": "posted",
-            "fb_status": "posted",
-            "is_thread": false,
-            "ai_content": true,
-            "threads": [],
-            "copied": false
-        },
-        {
-            "id": 29,
-            "x_content": "El caos es una oportunidad disfrazada. Al enfrentar la tormenta con valentía, aprendemos a ver la belleza que se oculta tras las dificultades.",
-            "meta_content": "No maldigas al caos, pregúntale qué quiere mostrarte. Solo quien atraviesa la tormenta sin cerrar los ojos, descubre qué estrellas estaban ocultas detrás de las nubes. Cada desafío trae consigo una lección, un trozo de luz que ilumina nuestro camino. La vida se revela a quienes tienen la valentía de ver más allá del desorden, de abrazar lo incierto y encontrar belleza en el proceso. Así, el caos se convierte en un maestro y las estrellas en guías.",
-            "prompt_to_media": "",
-            "media_path": "/app/public/uploads/images/image_file_29.png",
-            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1747265448/uploads/image_file_29.png",
-            "default_phrase": "No maldigas al caos, pregúntale qué quiere mostrarte. Solo quien atraviesa la tormenta sin cerrar los ojos, descubre qué estrellas estaban ocultas detrás de las nubes.",
-            "hashtags": [
-                "#NoMaldigasAlCaos",
-                "#DescubreLasEstrellas",
-                "#AtravesarLaTormenta",
-                "#LeccionesDelCaos",
-                "#MirarDetrásDeLasNubes"
-            ],
-            "metadata_to_media": {
-                "background_path": "",
-                "prompt_to_background": "",
-                "text": "No maldigas al caos, pregúntale qué quiere mostrarte. Solo quien atraviesa la tormenta sin cerrar los ojos, descubre qué estrellas estaban ocultas detrás de las nubes."
-            },
-            "x_links": [],
-            "ig_links": [],
-            "fb_links": [],
-            "theme": "light",
-            "post_type": "metadata_to_media",
-            "topic": "Caos como maestro",
-            "is_processed": true,
-            "x_status": "not_posted",
-            "ig_status": "not_posted",
-            "fb_status": "not_posted",
             "is_thread": true,
             "ai_content": true,
             "threads": [
                 {
-                    "id": 2900000,
-                    "x_content": "En medio del caos, cada desafío es una oportunidad disfrazada. Las tormentas no son solo para dañarte, sino para renovarte. Permite que la lluvia de experiencias te purifique y, al final, descubrirás que las estrellas que brillan en ti siempre estuvieron ahí, esperando ser vistas.",
-                    "meta_content": "En medio del caos, encontramos oportunidades de crecimiento. Cada tormenta trae consigo una lección valiosa que nos guía hacia la claridad. Permite que la lluvia purifique tu espíritu; así, al final del recorrido, descubrirás las estrellas que siempre han estado dentro de ti.",
+                    "id": 3500000,
+                    "x_content": "Cada elección es un espejo que refleja nuestra esencia. En cada decisión, revelamos nuestra fortaleza y autenticidad. Aunque el destino sea constante, es en estos momentos de elección donde descubrimos quiénes somos realmente y hacia dónde queremos ir. ",
+                    "meta_content": "Cada elección revela quiénes somos. Enfrentar decisiones nos fortalece y nos acerca a nuestra verdad interior.",
                     "prompt_to_media": "",
-                    "media_path": "/app/public/uploads/images/image_file_2900000.png",
-                    "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1747265451/uploads/image_file_2900000.png",
-                    "default_phrase": "En cada caos hay una lección, en cada tormenta, un camino. Abre los ojos y permite que la lluvia te limpie; solo así verás las estrellas que siempre quisieron brillar en tu vida.",
+                    "media_path": "/app/public/uploads/images/image_file_3500000.png",
+                    "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1747422490/uploads/image_file_3500000.png",
+                    "default_phrase": "Cada elección es un espejo que refleja nuestra esencia. Aunque el destino permanezca, al enfrentar decisiones, descubrimos la fortaleza y la verdad que habitan en nuestro interior.",
                     "hashtags": [],
                     "metadata_to_media": {
                         "background_path": "",
                         "prompt_to_background": "",
-                        "text": "En cada caos hay una lección, en cada tormenta, un camino. Abre los ojos y permite que la lluvia te limpie; solo así verás las estrellas que siempre quisieron brillar en tu vida."
+                        "text": "Cada elección es un espejo que refleja nuestra esencia. Aunque el destino permanezca, al enfrentar decisiones, descubrimos la fortaleza y la verdad que habitan en nuestro interior."
+                    },
+                    "x_links": [],
+                    "ig_links": [],
+                    "fb_links": [],
+                    "theme": "dark",
+                    "post_type": "metadata_to_media"
+                },
+                {
+                    "id": 3500001,
+                    "x_content": "Cada elección nos lleva a un nuevo destino, revelando quiénes somos realmente. Enfrentar decisiones con valentía nos empodera, permitiéndonos construir una vida auténtica. Al aceptar nuestros miedos y deseos, abrazamos el viaje hacia la transformación y el crecimiento personal.",
+                    "meta_content": "Cada elección revela quien somos realmente, desnudando nuestras verdades y forjando un camino auténtico y valiente.",
+                    "prompt_to_media": "",
+                    "media_path": "/app/public/uploads/images/image_file_3500001.png",
+                    "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1747422497/uploads/image_file_3500001.png",
+                    "default_phrase": "Cada elección nos transforma, desnudando nuestras verdades. Al enfrentar decisiones, descubrimos la fuerza que reside en nuestro interior y el camino que forjamos con valentía y autenticidad.",
+                    "hashtags": [],
+                    "metadata_to_media": {
+                        "background_path": "",
+                        "prompt_to_background": "",
+                        "text": "Cada elección nos transforma, desnudando nuestras verdades. Al enfrentar decisiones, descubrimos la fuerza que reside en nuestro interior y el camino que forjamos con valentía y autenticidad."
+                    },
+                    "x_links": [],
+                    "ig_links": [],
+                    "fb_links": [],
+                    "theme": "light",
+                    "post_type": "metadata_to_media"
+                },
+                {
+                    "id": 3500002,
+                    "x_content": "Cada elección es un reflejo de nuestra esencia. Enfrentamos retos que nos moldean, donde el verdadero crecimiento ocurre. Lo que decidimos hoy, forja no solo nuestro camino, sino también el carácter que llevamos dentro. Así, cada paso nos acerca a nuestro potencial.",
+                    "meta_content": "Cada elección revela nuestra esencia. Desafíos nos moldean y despiertan el gran potencial que llevamos en el corazón.",
+                    "prompt_to_media": "",
+                    "media_path": "/app/public/uploads/images/image_file_3500002.png",
+                    "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1747422504/uploads/image_file_3500002.png",
+                    "default_phrase": "Cada elección es un reflejo de nuestra esencia. Aunque el destino no cambie, enfrentamos desafíos que moldean nuestro carácter y despiertan el potencial que llevamos dentro. ",
+                    "hashtags": [],
+                    "metadata_to_media": {
+                        "background_path": "",
+                        "prompt_to_background": "",
+                        "text": "Cada elección es un reflejo de nuestra esencia. Aunque el destino no cambie, enfrentamos desafíos que moldean nuestro carácter y despiertan el potencial que llevamos dentro. "
                     },
                     "x_links": [],
                     "ig_links": [],
@@ -720,19 +148,31 @@
             "copied": false
         },
         {
-            "id": 30,
-            "x_content": "La armonía se construye en el respeto y la celebración de nuestras diferencias. La diversidad enriquece nuestra experiencia compartida.",
-            "meta_content": "La armonía no nace de hacer que todos piensen igual, sino de aprender a danzar con las diferencias, sin intentar borrarlas, porque ahí vive la belleza del nosotros. En un mundo donde la diversidad nos enriquece, cada voz, cada experiencia, cada perspectiva aporta un matiz único al lienzo de la vida. La verdadera conexión surge al aceptar que no todos somos iguales, y que esa diversidad es lo que nos hace fuertes. \n\nEn vez de buscar el consenso a toda costa, aprendamos a escuchar y valorar lo que cada quien trae a la mesa. Cultivar empatía es esencial; permite que nuestras diferencias se conviertan en puentes en lugar de muros. Cuando celebramos nuestras singularidades, creamos una sinfonía de ideas y emociones, donde la verdadera belleza resplandece en el arte compartido de vivir juntos. Así, cada paso que damos se convierte en un baile colectivo, lleno de color y significado.",
-            "prompt_to_media": "Explore the concept that true harmony does not emerge from forcing everyone to think alike, but rather from learning to embrace and dance with our differences. Highlight the beauty that resides in our diversity and the ways it enriches our collective experience. Create a narrative that illustrates how celebrating our unique perspectives enhances unity and fosters a deeper understanding among individuals.",
-            "media_path": "/app/public/uploads/images/image_file_30.png",
-            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1747116826/uploads/image_file_30.png",
-            "default_phrase": "La armonía no nace de hacer que todos piensen igual, sino de aprender a danzar con las diferencias, sin intentar borrarlas, porque ahí vive la belleza del nosotros.",
-            "hashtags": [
-                "#DanzarConLasDiferencias",
-                "#BellezaDelNosotros",
-                "#ArmoníaEnLaDiversidad",
-                "#AprenderASerUnos",
-                "#CelebrarLasDiferencias"
+            "id": 36,
+            "x_content": "El amor auténtico se nutre de la aceptación. No es un arte de perfección, sino un refugio donde cada imperfección brilla. Al dar espacio, creamos un lazo sincero y duradero. ",
+            "meta_content": "El amor auténtico no busca moldear, sino sostener. Es un amor que acepta al otro tal cual es, sin intentos de cambiarlo. En la vida, a menudo nos encontramos con la necesidad de encajar en expectativas ajenas, pero el verdadero cariño va más allá de los deberes y los merecimientos. Este amor es un refugio en el que cada persona puede ser libre, donde las imperfecciones se celebran y las diferencias se valoran.\n\nCuando amamos así, creamos un espacio seguro donde cada uno puede crecer sin miedo al juicio. Se trata de compartir, de acompañar en el camino y de ser testigos del crecimiento del otro. En la autenticidad del amor no hay lugar para las condiciones; simplemente permanece, en las risas y en las lágrimas, en los momentos sencillos y en los retos. El amor verdadero es una fuerza que sostiene, que apoya y que, ante todo, respeta la esencia de cada ser.",
+            "prompt_to_media": "Authentic love does not seek to shape, but to support. It embraces without correcting, looks beyond duty and deserving, and simply stays. Convey this concept through a visual representation that captures the essence of unconditional love, illustrating the warmth of acceptance and the strength of presence in relationships. Consider incorporating elements that symbolize understanding, patience, and emotional connection, portraying a serene moment between individuals who embody these qualities.",
+            "media_path": "/app/public/uploads/images/image_file_36.png",
+            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1747431216/uploads/image_file_36.png",
+            "default_phrase": "El amor auténtico no busca moldear, sino sostener. Es aquel que abraza sin corregir, que ve más allá del deber y el merecer, y simplemente permanece.",
+            "hashtags_x": [
+                "#AmorAuténtico",
+                "#RelacionesSaludables",
+                "#AmorIncondicional",
+                "#CrecimientoPersonal",
+                "#AceptaciónMutua",
+                "#VínculosProfundos",
+                "#AmorQuePermanece"
+            ],
+            "hashtags_instagram": [
+                "#AmorAuténtico",
+                "#RelacionesSanadoras"
+            ],
+            "hashtags_facebook": [
+                "#AmorAuténtico",
+                "#RelacionesSanas",
+                "#AceptaciónIncondicional",
+                "#AmorVerdadero"
             ],
             "metadata_to_media": {
                 "background_path": "",
@@ -744,7 +184,461 @@
             "fb_links": [],
             "theme": "dark",
             "post_type": "prompt_to_media",
+            "topic": "Amor sin condiciones",
+            "is_processed": true,
+            "x_status": "posted",
+            "ig_status": "posted",
+            "fb_status": "posted",
+            "is_thread": false,
+            "ai_content": true,
+            "threads": [],
+            "copied": false
+        },
+        {
+            "id": 37,
+            "x_content": "¡Únete a nuestra comunidad! 🌟 Aquí compartimos inspiración y crecimiento en cada paso. Dale seguir y transforma tu caos en nuevas oportunidades. Te esperamos con los brazos abiertos. 💖✨",
+            "meta_content": "¡Descubre un mundo de inspiración y crecimiento! 🌱✨ Únete a nuestra comunidad donde compartimos ideas que transforman el caos en oportunidades. Juntos, exploraremos caminos hacia lo nuevo y lo posible. ¡Síguenos y dale vida a tus sueños! Tu viaje comienza aquí. 🚀💫",
+            "prompt_to_media": "",
+            "media_path": "/app/public/uploads/images/image_file_37.png",
+            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1747431435/uploads/image_file_37.png",
+            "default_phrase": "Cuando todo se derrumba, escucha. El caos no habla con palabras suaves, pero su lenguaje revela los cimientos que ya no sirven y los que están por nacer.",
+            "hashtags_x": [
+                "#EscuchaElCaos",
+                "#RenacerDelDesorden",
+                "#TransformaciónInterior",
+                "#NuevosCimientos"
+            ],
+            "hashtags_instagram": [
+                "#EscuchaElCaos",
+                "#RenacerEnElCaos",
+                "#TransformaciónPersonal",
+                "#FuerzaInterior",
+                "#NuevosComienzos"
+            ],
+            "hashtags_facebook": [
+                "#EscuchaElCaos",
+                "#RenacerEnElCaos",
+                "#FuerzaInterior",
+                "#TransformaciónPersonal",
+                "#CimientosFuertes"
+            ],
+            "metadata_to_media": {
+                "background_path": "",
+                "prompt_to_background": "",
+                "text": "Cuando todo se derrumba, escucha. El caos no habla con palabras suaves, pero su lenguaje revela los cimientos que ya no sirven y los que están por nacer."
+            },
+            "x_links": [],
+            "ig_links": [],
+            "fb_links": [],
+            "theme": "light",
+            "post_type": "metadata_to_media",
+            "topic": "Caos como maestro",
+            "is_processed": true,
+            "x_status": "posted",
+            "ig_status": "posted",
+            "fb_status": "posted",
+            "is_thread": false,
+            "ai_content": true,
+            "threads": [],
+            "copied": false
+        },
+        {
+            "id": 38,
+            "x_content": "¡Únete a nuestra comunidad! 🌟 Aquí encontrarás inspiración y luz en cada paso. Sigue nuestra página y descubre todo lo que puedes ser. ✨ #CrecimientoPersonal ",
+            "meta_content": "🌟 ¡Descubre el poder de la transformación! 🌟 Aquí exploramos el camino hacia el perdón y la aceptación, porque cada sombra puede ser parte de tu luz. 💫 Únete a nuestra comunidad y encuentra inspiración para crecer y brillar. No estás solo en este viaje. Sigue nuestra página y sé parte de una experiencia que te ayudará a ser la mejor versión de ti mismo. ¡Te esperamos con los brazos abiertos! ✨❤️",
+            "prompt_to_media": "",
+            "media_path": "/app/public/uploads/images/image_file_38.png",
+            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1747502255/uploads/image_file_38.png",
+            "default_phrase": "Perdonarte no es negar lo que hiciste, es aceptar que puedes ser más que eso. No necesitas olvidar tu sombra para convertirla en parte de tu luz.",
+            "hashtags_x": [
+                "#Perdón",
+                "#Aceptación",
+                "#CrecimientoPersonal",
+                "#Autoconocimiento",
+                "#EvoluciónEmocional"
+            ],
+            "hashtags_instagram": [
+                "#Perdón",
+                "#Autoaceptación",
+                "#CrecimientoPersonal",
+                "#Transformación",
+                "#LuzYSombra"
+            ],
+            "hashtags_facebook": [
+                "#PerdónPersonal",
+                "#LuzYSombra"
+            ],
+            "metadata_to_media": {
+                "background_path": "",
+                "prompt_to_background": "Forgiving yourself is not denying what you did, it's accepting that you can be more than that. You don't need to forget your shadow to turn it into part of your light.",
+                "text": "Perdonarte no es negar lo que hiciste, es aceptar que puedes ser más que eso. No necesitas olvidar tu sombra para convertirla en parte de tu luz."
+            },
+            "x_links": [],
+            "ig_links": [],
+            "fb_links": [],
+            "theme": "dark",
+            "post_type": "metadata_to_media_with_background",
+            "topic": "Redención y perdón",
+            "is_processed": true,
+            "x_status": "posted",
+            "ig_status": "posted",
+            "fb_status": "posted",
+            "is_thread": false,
+            "ai_content": true,
+            "threads": [],
+            "copied": false
+        },
+        {
+            "id": 39,
+            "x_content": "🌟 ¡Únete a nuestra comunidad! Aquí celebramos la diversidad y el respeto. 💫 Descubre cómo la unión de almas crea una hermosa sinfonía. Síguenos y forma parte de este viaje hacia la aceptación y la conexión. 💖✨",
+            "meta_content": "🌟 ¡Únete a nuestra comunidad! Aquí celebramos la diversidad y la belleza de ser auténticos. Aceptar al otro no significa perderse, sino encontrar armonía en nuestras diferencias. 🎶 ¡Explora con nosotros el poder de la unidad y el respeto! Comparte pensamientos, inspira a otros y sé parte de esta sinfonía única. 🎉 Síguenos y juntos crearemos un espacio lleno de respeto y aprendizaje. ¡Te esperamos! 💖",
+            "prompt_to_media": "",
+            "media_path": "/app/public/uploads/images/image_file_39.png",
+            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1747515601/uploads/image_file_39.png",
+            "default_phrase": "Aceptar al otro no es dejar de ser tú. Es entender que la unidad no exige fusión, sino respeto, y que en la tensión entre dos almas nace la sinfonía.",
+            "hashtags_x": [
+                "#AceptaciónMutua",
+                "#RespetoRecíproco"
+            ],
+            "hashtags_instagram": [
+                "#RespetoMutuo",
+                "#UnidadEnLaDiversidad"
+            ],
+            "hashtags_facebook": [
+                "#AceptaciónMutua",
+                "#RespetoYUnidad",
+                "#SinfoníaEntreAlmas"
+            ],
+            "metadata_to_media": {
+                "background_path": "",
+                "prompt_to_background": "",
+                "text": "Aceptar al otro no es dejar de ser tú. Es entender que la unidad no exige fusión, sino respeto, y que en la tensión entre dos almas nace la sinfonía."
+            },
+            "x_links": [],
+            "ig_links": [],
+            "fb_links": [],
+            "theme": "light",
+            "post_type": "metadata_to_media",
             "topic": "Unidad en la diferencia",
+            "is_processed": true,
+            "x_status": "posted",
+            "ig_status": "posted",
+            "fb_status": "posted",
+            "is_thread": false,
+            "ai_content": true,
+            "threads": [],
+            "copied": false
+        },
+        {
+            "id": 40,
+            "x_content": "Controlar no es vivir. La vida se revela cuando dejas de exigirle certezas y empiezas a bailar con su incertidumbre. Cada paso sin miedo se convierte en un milagro que transforma tu esencia.",
+            "meta_content": "Controlar no es vivir. La vida se revela cuando dejas de exigirle certezas y empiezas a bailar con su incertidumbre como si cada paso fuera un milagro. En esa danza, aprendemos que el verdadero arte de existir no radica en aferrarnos a lo que podemos predecir, sino en abrazar lo desconocido con los brazos abiertos. Cada giro y cada pausa traen consigo lecciones inesperadas, momentos de belleza que florecen en el caos. Permitirse fluir es un acto de valentía; es reconocer que en la vulnerabilidad también reside la fuerza. La vida es un viaje, no un destino. Así que, quítate las cadenas de la necesidad de control y permítete el lujo de vivir plenamente, en cada acordé de incertidumbre.",
+            "prompt_to_media": "Explore the concept that true living comes from embracing uncertainty rather than seeking control. Imagine a world where life unfolds as a dance, each step taken with grace and acceptance of the unknown, celebrating the miracles found in spontaneity. Illustrate the beauty of surrendering to the flow of existence, highlighting moments of joy and discovery that emerge when we let go of the need for certainty.",
+            "media_path": "/app/public/uploads/images/image_file_40.png",
+            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1747605849/uploads/image_file_40.png",
+            "default_phrase": "Controlar no es vivir. La vida se revela cuando dejas de exigirle certezas y empiezas a bailar con su incertidumbre como si cada paso fuera un milagro.",
+            "hashtags_x": [
+                "#VivirSinControl",
+                "#BailandoConLaIncertidumbre",
+                "#MilagrosDiarios"
+            ],
+            "hashtags_instagram": [
+                "#VivirSinControles",
+                "#BailarConLaVida",
+                "#Incertidumbre",
+                "#MilagrosCotidianos",
+                "#FluirEnElMomento",
+                "#DejarIr",
+                "#VidaAutentica",
+                "#Aceptacion"
+            ],
+            "hashtags_facebook": [
+                "#VivirSinControl",
+                "#BailarConLaIncertidumbre",
+                "#MilagrosDiarios",
+                "#AceptaLaVida"
+            ],
+            "metadata_to_media": {
+                "background_path": "",
+                "prompt_to_background": "",
+                "text": ""
+            },
+            "x_links": [],
+            "ig_links": [],
+            "fb_links": [],
+            "theme": "dark",
+            "post_type": "prompt_to_media",
+            "topic": "Rendirse al misterio de la vida",
+            "is_processed": true,
+            "x_status": "posted",
+            "ig_status": "posted",
+            "fb_status": "posted",
+            "is_thread": false,
+            "ai_content": true,
+            "threads": [],
+            "copied": false
+        },
+        {
+            "id": 41,
+            "x_content": "La valentía de mostrarse sin escudos nos lleva a una autenticidad liberadora. Al abrazar nuestras vulnerabilidades, encontramos la verdadera fuerza y conexión con los demás.",
+            "meta_content": "Quien se atreve a mostrarse sin escudos no se expone: se libera. La verdadera fuerza no está en resistir, sino en ser real incluso cuando duele. Cuando despojamos nuestras armaduras, encontramos la autenticidad que nos conecta con los demás. En la vulnerabilidad, en el dolor, se gesta una visión más profunda de nosotros mismos y del mundo. Al aceptar nuestra verdad, abrazamos la libertad de ser.",
+            "prompt_to_media": "",
+            "media_path": "/app/public/uploads/images/image_file_41.png",
+            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1747607104/uploads/image_file_41.png",
+            "default_phrase": "Quien se atreve a mostrarse sin escudos no se expone: se libera. Porque la verdadera fuerza no está en resistir, sino en ser real incluso cuando duele.",
+            "hashtags_x": [
+                "#Autenticidad",
+                "#ValentíaEmocional",
+                "#LiberaciónPersonal",
+                "#FuerzaInterior"
+            ],
+            "hashtags_instagram": [
+                "#Autenticidad",
+                "#LiberaciónEmocional",
+                "#Valentía",
+                "#SerReal",
+                "#CrecimientoPersonal",
+                "#FuerzaInterior"
+            ],
+            "hashtags_facebook": [
+                "#Autenticidad",
+                "#LiberaciónEmocional",
+                "#FuerzaInterior"
+            ],
+            "metadata_to_media": {
+                "background_path": "",
+                "prompt_to_background": "",
+                "text": "Quien se atreve a mostrarse sin escudos no se expone: se libera. Porque la verdadera fuerza no está en resistir, sino en ser real incluso cuando duele."
+            },
+            "x_links": [],
+            "ig_links": [],
+            "fb_links": [],
+            "theme": "light",
+            "post_type": "metadata_to_media",
+            "topic": "Fuerza en la vulnerabilidad",
+            "is_processed": true,
+            "x_status": "posted",
+            "ig_status": "posted",
+            "fb_status": "posted",
+            "is_thread": true,
+            "ai_content": true,
+            "threads": [
+                {
+                    "id": 4100000,
+                    "x_content": "La autenticidad nos empodera, rompiendo barreras que ni sabíamos que existían. Al abrazar nuestras heridas, transformamos el dolor en sabiduría. Ser verdaderos nos conecta con los demás y nos impulsa a vivir con valentía. La verdadera fortaleza nace de la honestidad.",
+                    "meta_content": "La valentía de ser auténtico nos libera de las cadenas invisibles que nos atan a expectativas ajenas. Al abrazar nuestras heridas, transformamos el dolor en sabiduría. Cada verdad que compartimos nos acerca a nuestra verdadera esencia. Ser real es, sin duda, nuestro mayor poder.",
+                    "prompt_to_media": "",
+                    "media_path": "/app/public/uploads/images/image_file_4100000.png",
+                    "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1747607115/uploads/image_file_4100000.png",
+                    "default_phrase": "La valentía de mostrarse auténtico nos libera de cadenas invisibles. Cada herida se convierte en una lección, y cada verdad, en un paso hacia la verdadera fortaleza. Ser real es nuestro mayor poder.",
+                    "hashtags_x": [],
+                    "hashtags_instagram": [],
+                    "hashtags_facebook": [],
+                    "metadata_to_media": {
+                        "background_path": "",
+                        "prompt_to_background": "",
+                        "text": "La valentía de mostrarse auténtico nos libera de cadenas invisibles. Cada herida se convierte en una lección, y cada verdad, en un paso hacia la verdadera fortaleza. Ser real es nuestro mayor poder."
+                    },
+                    "x_links": [],
+                    "ig_links": [],
+                    "fb_links": [],
+                    "theme": "dark",
+                    "post_type": "metadata_to_media"
+                }
+            ],
+            "copied": false
+        },
+        {
+            "id": 42,
+            "x_content": "El verdadero conocimiento se encuentra en la escucha activa. Quien calla se convierte en un faro de sabiduría, nutriendo su mente y corazón.",
+            "meta_content": "El que sabe, calla más de lo que habla. No por orgullo, sino porque ha comprendido que la verdadera sabiduría florece en quien escucha más que en quien se esfuerza por demostrar su conocimiento. En un mundo donde el ruido predomina, el silencio se convierte en un refugio invaluable. Escuchar nos permite absorber experiencias ajenas, abrirnos a nuevas perspectivas y aprender de lo que nos rodea. En las conversaciones, a menudo los más sabios son aquellos que, con su calma, invitan a otros a expresar sus ideas. Reflexionemos sobre esto: cada palabra no dicha puede ser una oportunidad para crecer, para conectar de manera más profunda y para cultivar una comprensión más rica de la vida. A veces, el silencio dice más que mil palabras.",
+            "prompt_to_media": "Explore the concept that true wisdom comes from listening more than speaking. Delve into the idea that those who possess deep knowledge often choose silence over boastfulness, not out of pride, but from the understanding that insight grows in those who are attentive and reflective. Illustrate how this dynamic plays out in interpersonal relationships and learning environments, emphasizing the transformative power of being an active listener.",
+            "media_path": "/app/public/uploads/images/image_file_42.png",
+            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1747608389/uploads/image_file_42.png",
+            "default_phrase": "El que sabe, calla más de lo que habla. No por orgullo, sino porque entendió que la sabiduría florece en quien escucha más que en quien demuestra.",
+            "hashtags_x": [
+                "#SabiduríaSilenciosa",
+                "#EscucharEsPoder",
+                "#ReflexionesProfundas",
+                "#CrecimientoPersonal",
+                "#SabiduríaInterior"
+            ],
+            "hashtags_instagram": [
+                "#Sabiduría",
+                "#EscuchaActiva",
+                "#ReflexiónProfunda",
+                "#CrecimientoPersonal",
+                "#Humildad",
+                "#PoderDeLaSilencio",
+                "#InteligenciaEmocional"
+            ],
+            "hashtags_facebook": [
+                "#SabiduríaSilenciosa",
+                "#EscucharEsPoder",
+                "#ReflexionesDeVida"
+            ],
+            "metadata_to_media": {
+                "background_path": "",
+                "prompt_to_background": "",
+                "text": ""
+            },
+            "x_links": [],
+            "ig_links": [],
+            "fb_links": [],
+            "theme": "dark",
+            "post_type": "prompt_to_media",
+            "topic": "Sabiduría en la humildad",
+            "is_processed": true,
+            "x_status": "posted",
+            "ig_status": "posted",
+            "fb_status": "posted",
+            "is_thread": false,
+            "ai_content": true,
+            "threads": [],
+            "copied": false
+        },
+        {
+            "id": 43,
+            "x_content": "🌟 ¡Únete a nuestra comunidad! Aquí compartimos momentos, emociones y conexiones sin palabras. Dale follow y descubre un espacio donde el silencio habla más que mil palabras. 💫✨",
+            "meta_content": "✨ ¡Descubre momentos que trascienden las palabras! 🌌 Únete a nuestra comunidad y conecta con almas afines. Aquí compartimos reflexiones, inspiración y la belleza del silencio. Síguenos y sé parte de esta travesía hacia lo auténtico. ¡Te esperamos! 💫",
+            "prompt_to_media": "",
+            "media_path": "/app/public/uploads/images/image_file_43.png",
+            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1747665001/uploads/image_file_43.png",
+            "default_phrase": "No todos los encuentros necesitan palabras. Hay almas que se reconocen en la pausa, y en ese espacio sin ruido, nace la conexión más verdadera.",
+            "hashtags_x": [
+                "#ConexiónSilenciosa",
+                "#EncuentrosEspirituales",
+                "#AlmasQueReconocen"
+            ],
+            "hashtags_instagram": [
+                "#ConexiónSilenciosa",
+                "#AlmasGemelas",
+                "#EncuentrosSignificativos",
+                "#AmistadSinPalabras",
+                "#MomentosMágicos",
+                "#ComunicaciónNoVerbal",
+                "#EspaciosDePaz",
+                "#SentimientosProfundos"
+            ],
+            "hashtags_facebook": [
+                "#ConexionesSilenciosas",
+                "#AlmasQueSeReconocen",
+                "#MomentosSinPalabras",
+                "#VínculosVerdaderos"
+            ],
+            "metadata_to_media": {
+                "background_path": "",
+                "prompt_to_background": "",
+                "text": "No todos los encuentros necesitan palabras. Hay almas que se reconocen en la pausa, y en ese espacio sin ruido, nace la conexión más verdadera."
+            },
+            "x_links": [],
+            "ig_links": [],
+            "fb_links": [],
+            "theme": "light",
+            "post_type": "metadata_to_media",
+            "topic": "El valor del silencio compartido",
+            "is_processed": true,
+            "x_status": "posted",
+            "ig_status": "posted",
+            "fb_status": "posted",
+            "is_thread": false,
+            "ai_content": true,
+            "threads": [],
+            "copied": false
+        },
+        {
+            "id": 44,
+            "x_content": "¡Únete a nuestra comunidad! 🌟 Juntos tejemos pensamientos y sueños. Síguenos y se parte de esta historia. 💫",
+            "meta_content": "🌟 ¡Descubre un mundo donde cada instante cuenta! Te invitamos a seguirnos y ser parte de esta comunidad llena de inspiración y reflexión. Juntos, habitaremos la vida con conciencia y amor. 💖 Únete a nuestro viaje, ¡tu historia comienza aquí! ✨",
+            "prompt_to_media": "",
+            "media_path": "/app/public/uploads/images/image_file_44.png",
+            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1747675834/uploads/image_file_44.png",
+            "default_phrase": "No siempre elegimos lo que vivimos, pero sí cómo lo habitamos. En ese acto silencioso de responder, tejemos el destino con hilos de conciencia.",
+            "hashtags_x": [
+                "#VivirConConciencia",
+                "#TejiendoDestinos",
+                "#HilosDeVida",
+                "#ReflexionesProfundas",
+                "#EleccionesConscientes",
+                "#HabitandoLaVida",
+                "#CrecimientoPersonal",
+                "#ConcienciaPlena"
+            ],
+            "hashtags_instagram": [
+                "#ConcienciaPlena",
+                "#VivirConIntención",
+                "#DestinoConsciente",
+                "#HilosDeVida",
+                "#HabitarElMomento",
+                "#CrecimientoPersonal",
+                "#ReflexionesDiarias"
+            ],
+            "hashtags_facebook": [
+                "#HilosDeConciencia",
+                "#VivirConIntención",
+                "#TejiendoElDestino",
+                "#ReflexiónInterior",
+                "#ConcienciaPlena",
+                "#HabitarElMomento"
+            ],
+            "metadata_to_media": {
+                "background_path": "",
+                "prompt_to_background": "We may not always choose our experiences, but we have the power to decide how we inhabit them. In that silent act of responding, we weave our destiny with threads of awareness. Explore the journey of embracing life's unexpected moments and transforming them into opportunities for growth and self-discovery.",
+                "text": "No siempre elegimos lo que vivimos, pero sí cómo lo habitamos. En ese acto silencioso de responder, tejemos el destino con hilos de conciencia."
+            },
+            "x_links": [],
+            "ig_links": [],
+            "fb_links": [],
+            "theme": "dark",
+            "post_type": "metadata_to_media_with_background",
+            "topic": "Destino y elección",
+            "is_processed": true,
+            "x_status": "posted",
+            "ig_status": "posted",
+            "fb_status": "posted",
+            "is_thread": false,
+            "ai_content": true,
+            "threads": [],
+            "copied": false
+        },
+        {
+            "id": 45,
+            "x_content": "¡Bienvenidos a un espacio de amor y reflexión! 💖 Aquí compartimos mensajes que inspiran y conectan. Síguenos y acompáñanos en este viaje de emociones y aprendizajes. ¡Tu historia también cuenta! 🌟",
+            "meta_content": "💖 ¡Únete a nuestra comunidad! Aquí celebramos el amor en todas sus formas y recordamos que la belleza está en lo imperfecto. 🌟 Si buscas inspiración, reflexiones y momentos que toquen el corazón, sigue nuestra página y acompáñanos en este hermoso viaje. Juntos descubriremos que el amor se elige cada día. ¡Te esperamos! ✨",
+            "prompt_to_media": "",
+            "media_path": "/app/public/uploads/images/image_file_45.png",
+            "media_path_remote": "https://res.cloudinary.com/donbyy2ev/image/upload/v1747688402/uploads/image_file_45.png",
+            "default_phrase": "El amor no es una promesa de perfección, es una decisión diaria de ver al otro incluso cuando no brilla. Porque amar es recordar que todos caemos, y aún así somos dignos.",
+            "hashtags_x": [
+                "#AmorReal",
+                "#DecisiónDiaria",
+                "#AceptaciónIncondicional"
+            ],
+            "hashtags_instagram": [
+                "#AmorAuténtico",
+                "#RelacionesConscientes",
+                "#AmorIncondicional",
+                "#CrecimientoJuntos",
+                "#AceptaciónMutua",
+                "#CompromisoDiario",
+                "#ImperfecciónBela",
+                "#DignosDeAmar"
+            ],
+            "hashtags_facebook": [
+                "#AmorAuténtico",
+                "#DecisiónDiaria"
+            ],
+            "metadata_to_media": {
+                "background_path": "",
+                "prompt_to_background": "",
+                "text": "El amor no es una promesa de perfección, es una decisión diaria de ver al otro incluso cuando no brilla. Porque amar es recordar que todos caemos, y aún así somos dignos."
+            },
+            "x_links": [],
+            "ig_links": [],
+            "fb_links": [],
+            "theme": "light",
+            "post_type": "metadata_to_media",
+            "topic": "Amor sin condiciones",
             "is_processed": true,
             "x_status": "posted",
             "ig_status": "posted",

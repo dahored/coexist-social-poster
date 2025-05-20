@@ -136,7 +136,7 @@ class FacebookAPI:
         for t in threads:
             thread_caption = t.get(KEY_CONTENT, "").strip()
             thread_links = t.get("fb_links", [])
-            thread_hashtags = t.get("hashtags", [])
+            thread_hashtags = t.get("hashtags_facebook", [])
 
             if thread_caption:
                 captions.append(thread_caption)
@@ -180,7 +180,7 @@ class FacebookAPI:
         is_album = post_data.get("is_thread")
         threads = post_data.get("threads")
         links = post_data.get("fb_links", [])
-        hashtags = post_data.get("hashtags", [])
+        hashtags = post_data.get("hashtags_facebook", [])
 
         if is_album:
             thread_media_paths = [

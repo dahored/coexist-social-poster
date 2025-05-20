@@ -43,7 +43,9 @@ class PostGeneratorService:
             "media_path": "",
             "media_path_remote": "",
             "default_phrase": "",
-            "hashtags": [],
+            "hashtags_x": [],
+            "hashtags_instagram": [],
+            "hashtags_facebook": [],
             "metadata_to_media": {
                 "background_path": "",
                 "prompt_to_background": "",
@@ -206,7 +208,9 @@ class PostGeneratorService:
 
         post_data = await self.generate_media_by_post_type(post_data)
         if not is_thread:
-            post_data = await self.generate_post_hashtags(post_data)
+            post_data = await self.generate_post_hashtags(post_data, "x")
+            post_data = await self.generate_post_hashtags(post_data, "instagram")
+            post_data = await self.generate_post_hashtags(post_data, "facebook")
 
         post_data = await self.generate_post_content(post_data, "x_content", is_thread, last_content, total_threads=total_threads)
         post_data = await self.generate_post_content(post_data, "meta_content", is_thread, last_content, total_threads=total_threads)
@@ -292,14 +296,18 @@ class PostGeneratorService:
 
         return post_data
     
-    async def generate_post_hashtags(self, post_data):
+    async def generate_post_hashtags(self, post_data, social_media):
         """
         Generate hashtags for a single post.
         """
-        total_random_hashtags = random.randint(2, 8)
-        if not len(post_data["hashtags"]) > 0:
-            hashtags = await self.openai_service.generate_hashtags(post_data["default_phrase"], total_random_hashtags, model=MODEL_MINI)
-            post_data["hashtags"] = split_array(hashtags)
+        min_hashtags = 2
+        max_hasgtags = 8
+
+        total_random_hashtags = random.randint(min_hashtags, max_hasgtags)
+        if not len(post_data[f"hashtags_{social_media}"]) > 0:
+            hashtags = await self.openai_service.generate_hashtags(post_data["default_phrase"], total_random_hashtags, model=MODEL_MINI, social_media=social_media)
+            post_data[f"hashtags_{social_media}"] = split_array(hashtags)
+            
         return post_data
     
     async def generate_post_content(self, post_data, content_type, is_thread=False, last_content={}, total_threads=0):
@@ -307,8 +315,15 @@ class PostGeneratorService:
         Generate content for a single post.
         """
         post_type = post_data["post_type"]
-        hashtags_string = join_array(post_data["hashtags"])
-        characters_hashtags = count_characters(hashtags_string) + 3
+        x_hashtags_string = join_array(post_data["hashtags_x"])
+        instagram_hashtags_string = join_array(post_data["hashtags_instagram"])
+        facebook_hashtags_string = join_array(post_data["hashtags_facebook"])
+        
+        x_characters_hashtags = count_characters(x_hashtags_string) + 3
+        instagram_characters_hashtags = count_characters(instagram_hashtags_string)
+        facebook_characters_hashtags = count_characters(facebook_hashtags_string)
+        meta_characters_hashtags = (instagram_characters_hashtags + facebook_characters_hashtags) + 3
+
         x_content_limit = int(os.getenv("X_CONTENT_LIMIT", "288"))
         meta_content_limit = int(os.getenv("META_CONTENT_LIMIT", "1000"))
 
@@ -318,14 +333,15 @@ class PostGeneratorService:
         if is_thread:
             x_content_limit = x_content_limit
             meta_content_limit = int(os.getenv("META_CONTENT_LIMIT", "1000")) / divider_content
-            characters_hashtags = 0
-            print(f"characters_hashtags {characters_hashtags} x_content_limit {x_content_limit} meta_content_limit {meta_content_limit}")
+            x_characters_hashtags = 0
+            instagram_characters_hashtags = 0
+            facebook_characters_hashtags = 0
         
         message = f"continue with the reflection according to the idea and the idea must be in the in-depth content and respect the limit characters"
 
         if post_type == "prompt_to_media":
             if content_type == "x_content" and not post_data["x_content"]:
-                limit = str(x_content_limit - characters_hashtags)
+                limit = str(x_content_limit - x_characters_hashtags)
                 print(f"Limit: {limit}")
                 last_content_x = last_content.get("x_content", post_data["default_phrase"])
 
@@ -334,7 +350,7 @@ class PostGeneratorService:
                 post_data["x_content"] = await self.openai_service.generate_post_content(last_content_x, limit, message)
 
             elif content_type == "meta_content" and not post_data["meta_content"]:
-                limit = str(meta_content_limit - characters_hashtags)
+                limit = str(meta_content_limit - meta_characters_hashtags)
                 last_content_meta = last_content.get("meta_content", post_data["default_phrase"])
 
                 post_data["meta_content"] = await self.openai_service.generate_post_content(last_content_meta, limit, message)
@@ -345,12 +361,12 @@ class PostGeneratorService:
                 message = f"Generate an invitation to follow, you can include emojis, or phrases that motivate or invite the user to follow the page"
 
             if content_type == "x_content" and not post_data["x_content"]:
-                limit = str(x_content_limit - characters_hashtags)
+                limit = str(x_content_limit - x_characters_hashtags)
 
                 post_data["x_content"] = await self.openai_service.generate_post_content(post_data["default_phrase"], limit, message, model=MODEL_MINI)
 
             elif content_type == "meta_content" and not post_data["meta_content"]:
-                limit = str((meta_content_limit/2) - characters_hashtags)
+                limit = str((meta_content_limit/2) - meta_characters_hashtags)
 
                 post_data["meta_content"] = await self.openai_service.generate_post_content(post_data["default_phrase"], limit, message, model=MODEL_MINI)
 

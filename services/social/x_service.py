@@ -142,7 +142,7 @@ class XAPI:
         is_thread = tweet_data.get("is_thread")
         threads = tweet_data.get("threads")
         links = tweet_data.get("x_links", [])
-        hashtags = tweet_data.get("hashtags", [])
+        hashtags = tweet_data.get("hashtags_x", [])
 
         if is_thread:
             first_caption = self.combine_caption(tweet_text, links, hashtags)
