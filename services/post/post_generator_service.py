@@ -271,13 +271,13 @@ class PostGeneratorService:
         regenerate = False
 
         if post_type == "prompt_to_media" and not post_data["prompt_to_media"]:
-            post_data["prompt_to_media"] = await self.openai_service.generate_prompt_to_media_post(post_data["default_phrase"])
+            post_data["prompt_to_media"] = await self.openai_service.generate_prompt_image_from_idea(post_data["default_phrase"])
 
         if (post_type == "metadata_to_media" or post_type == "metadata_to_media_with_background") and not post_data["metadata_to_media"]["text"]:
             post_data["metadata_to_media"]["text"] = post_data["default_phrase"]
 
         if post_type == "metadata_to_media_with_background" and not post_data["metadata_to_media"]["prompt_to_background"]:
-           post_data["metadata_to_media"]["prompt_to_background"] = await self.openai_service.generate_prompt_to_media_post(post_data["default_phrase"])
+           post_data["metadata_to_media"]["prompt_to_background"] = await self.openai_service.generate_prompt_image_from_idea(post_data["default_phrase"])
 
         if not post_data.get("media_path") and (post_data["metadata_to_media"].get("text") or post_data.get("prompt_to_media")):
             print(f"Post {post_data['id']} has no media files")

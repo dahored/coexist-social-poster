@@ -45,7 +45,7 @@ class OpenaiServiceHandler:
         response = await client.chat.completions.create(
             model=self.content_model,
             messages=[
-                {"role": "system", "content": "You are a creative assistant that generates prompts for AI-service this prompt is necesary to generate a media according to the idea"},
+                {"role": "system", "content": "You are a creative assistant that generates prompts for AI-service this prompt is necesary to generate a media according to the idea, not translations, this is a prompt to generate a media post."},
                 {"role": "user", "content": f"Generate a text prompt from this idea: {idea}, without quotation marks and in {language}."}
             ],
             temperature=0.9,
@@ -69,7 +69,7 @@ class OpenaiServiceHandler:
             model=self.content_model,
             messages=[
                 {"role": "system", "content": f"You are a creative assistant that generates hashtags for {social_media} social media "},
-                {"role": "user", "content": f"Generate {total} hashtags for this idea: {idea} in spanish and include the # symbol and only respond in a text format. The hashtags should be the recommended tendency hashtags for this idea so search in the web for the best hashtags."}
+                {"role": "user", "content": f"Generate {total} hashtags for this idea: {idea} in spanish and include the # symbol and only respond in a text format. The hashtags should be the recommended tendency hashtags for this idea so search in the web for the best hashtags. For the winning hashtags search in the web for the best hashtags for this idea, do not include any other text, just the hashtags."}
             ],
             temperature=0.9,
         )
@@ -126,7 +126,7 @@ class OpenaiServiceHandler:
     async def generate_image_from_prompt(self, prompt, filename=None):
         """Generates an image using DALL·E and saves it locally"""
         try:
-            print(f"[openai_service] Requesting image from prompt: {prompt}")
+            print(f"[openai_service] Requesting image from prompt: {prompt} with model: {self.openai_image_model}")
 
             # Create image with DALL·E
             response = await openai.AsyncOpenAI().images.generate(
